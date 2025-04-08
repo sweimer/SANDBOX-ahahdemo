@@ -28,8 +28,10 @@ const customConfig = {
     "no-unsanitized/property": "error",
   },
   languageOptions: {
-    ecmaVersion: 2020,
-    sourceType: "module",
+    parserOptions: {
+      ecmaVersion: 2022,
+      sourceType: "module",
+    },
     globals: {
       window: true,
       document: true,
