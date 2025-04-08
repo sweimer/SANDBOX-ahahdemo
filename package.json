@@ -53,7 +53,7 @@
   "scripts": {
     "build": "gulp",
     "lint": "npm run lint:js && npm run lint:sass",
-    "lint:js": "eslint packages/**/**/*.js",
+    "lint:js": "ESLINT_USE_FLAT_CONFIG=true eslint --config='eslint.config.mjs' packages/**/**/*.js ",
     "lint:sass": "gulp lintSass",
     "mocha": "mocha",
     "prepare": "npx gulp",
