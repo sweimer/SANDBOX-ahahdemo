@@ -1,0 +1,122 @@
+// Standardized colors as defined in the styleguide: https://hhs.github.io/samhsa-pattern-library/colors/
+// [OCWT-10777] - Organized colors alphabetically for easier reference.
+$barney:        #54278F;
+$black:         #000000;
+$blueice:       #EDF3F5;
+$cerulean-20:   #DAEAF6;
+$cerulean-40:   #C2DDF1;
+$cerulean-60:   #9DC9E9;
+$cerulean-80:   #85BCE4;
+$cerulean:      #5191CD;
+$charcoal:      #4A4A4A;
+$clarinet:      #001a4e;
+$cosmiclatte:   #D7FFE4;
+$crimson-10:    #F4E3DB;
+$crimson-20:    #E69B9A;
+$crimson-40:    #DC7371;
+$crimson-60:    #D45653;
+$crimson:       #CD3835;
+$dark-yellow:   #FFBE2E;
+$endeavour:     #225185;
+$exotic-lira:   #d6097a;
+$fog:           #A3A7A9;
+$grenadier:     #D54309;
+$haze:          #f4f4f4;
+$light-green:   #CFEBDE;
+$light-grey:    #F7F7F7;
+$light-silver:  #EFEFEF;
+$light-yellow:  #FAF3D1;
+$midnight-20:   #BBC3C9;
+$midnight-40:   #8E9BA5;
+$midnight-60:   #617381;
+$midnight-80:   #405666;
+$midnight:      #1E384B;
+$mist:          #EEEEEE;
+$offwhite:      #E6E6E6;
+$pinkrock:      #F4E3D8;
+$porcelain-20:  #EDF3F5;
+$porcelain-40:  #EDF1F4;
+$royalblue:     #005EA2;
+$ruby:          #A82D2B;
+$russet:        #9c3d10;
+$sapphire:      #1F419A;
+$seafoam:       #EDF1F4;
+$seaweed:       #0E769E;
+$semi-transparent-black: rgba(0, 0, 0, 0.16);
+$silver:        #DDDDDD;
+$slate:         #757575;
+$smoke:         #CDCDCD;
+$steel:         #5F636A;
+$success:       #0F9D58;
+$teal-20:       #BAD2DA;
+$teal-40:       #8CB4C2;
+$teal-60:       #5E96AA;
+$teal-80:       #3C7F98;
+$teal:          #1A6986;
+$topaz:         #5CC0D0;
+$vivid-blue:    #2491FF;
+$white:         #FFFFFF;
+
+// Social Media colors - these are necessarily customized
+$blog-color:    #1C7491;  // SAMHSA Blog
+$fb-color:      #3A67B8;  // Facebook
+$ig-color:      #C13584;  // Instagram
+$lk-color:      #0E76A8;  // LinkedIn
+$rss-color:     #F89C40;  // RSS
+$tw-color:      #00A2F9;  // Twitter
+$x-color:       #000000;  // X (AKA Twitter)
+$yt-color:      #FF0000;  // YouTube
+
+// Utility Color Variables
+//
+// These are aliases to the standard palette above. These are used to isolate colors by use case so we can change
+// them without impacting other uses of the same color.
+
+// Font Colors
+$base-font-color: $charcoal;
+$action-color: $sapphire;
+$action-color-hover: $ruby;
+$light-font-color: $white;
+
+// Message Colors
+$message-color: $smoke;
+$error-color: $crimson;
+$warning-color: $dark-yellow;
+$status-color: $success;
+
+// Background Colors
+$base-background-color: $white;
+$second-background-color: $white;
+$base-accent-color: $midnight;
+$highlight-color: $light-yellow;
+$megamenu-highlight-color: $midnight;
+$megamenu-gray: $mist;
+
+// Main menu color
+$mm-bg-1: $midnight;
+$mm-bg-2: $midnight;
+$mm-color: $white;
+$mm-icon-color: $white;
+
+// Side menu color
+$sm-bg-1: $crimson;
+$sm-bg-2: $smoke;
+$sm-bg-3: $mist;
+$sm-bg-4: $silver;
+$sm-color-1: $white;
+$sm-color-2: $black;
+$sm-border: 1px solid $white;
+
+// This is superfish SAMHSA Main Menu
+$superfish-1-color: $white;
+$superfish-1-color-txt: $midnight;
+$superfish-1-background-color-level-first: $midnight;
+$superfish-1-background-color-level-second: $mist;
+$superfish-1-background-color-level-third: $smoke;
+$superfish-1-background-color-level-fourth: $fog;
+
+/* Right Sidebar -- Recent Posts */
+$border-color-line: $fog;
+
+/* 508 - Focus Colors */
+$focus-blue: $vivid-blue;

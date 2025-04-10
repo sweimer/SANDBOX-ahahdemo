@@ -1,0 +1,51 @@
+header {
+  border-bottom: 1px solid black;
+
+  .usa-banner__inner {
+    padding-bottom: .25rem;
+    padding-top: .25rem;
+
+    .usa-banner__header-text {
+
+    }
+  }
+
+  .nav-top-container {
+    text-align: center;
+    margin: 14px 0 12px 0;
+
+    .site-logo {
+      svg {
+        fill: #1e384b;
+        width: 250px;
+        height: 60px;
+      }
+    }
+  }
+
+  .search-block-form {
+    position: absolute;
+    top: 300px;
+    width: calc(100% - 80px);
+
+    input[type="search"] {
+      color: #fff;
+      max-width: 100%;
+      font-size: 36px;
+      padding: 40px;
+      border: none;
+      border-bottom: 2px solid white;
+      background: transparent;
+      text-align: center;
+    }
+    input[type="submit"] {
+      color: #fff;
+      max-width: 100%;
+      font-size: 24px;
+      padding: 40px;
+      background: transparent;
+      border: none;
+      text-align: center;
+    }
+  }
+}

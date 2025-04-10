@@ -1,0 +1,63 @@
+.u-visually-hidden,.usa-sr-only,.visually-hidden {
+  clip: rect(1px,1px,1px,1px)!important;
+  height: 1px!important;
+  overflow: hidden!important;
+  position: absolute!important;
+  width: 1px!important;
+  word-wrap: normal!important
+}
+
+.usa-hero {
+  line-height: 1.5;
+  background-image: url(https://zerowasteeurope.eu/wp-content/uploads/2024/12/ZWE-CSOs-at-INC5-photo-BFFP.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  height: 500px;
+}
+.usa-hero__callout {
+  height: 100%;
+}
+
+.grid-container.full-width {
+  max-width: 100% !important;
+}
+.grid-container.darkblue {
+  background-color: #162e51;
+  color: #fff;
+  a {
+    color: #fff;
+    &:hover {
+      color: #eee;
+    }
+  }
+}
+.grid-container.lightblue {
+  background-color: #00bde3;
+  color: #fff;
+  a {
+    color: #fff;
+    &:hover {
+      color: #eee;
+    }
+  }
+}
+
+.usa-collection__item.full-width {
+  max-width: 100% !important;
+}
+.usa-banner__inner.full-width {
+  max-width: 100% !important;
+}
+
+footer.darkblue {
+  background-color: #162e51;
+  color: #fff;
+
+  a {
+    color: #fff;
+    &:hover {
+      color: #eee;
+    }
+  }
+}
