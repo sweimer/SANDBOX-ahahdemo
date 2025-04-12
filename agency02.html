@@ -6,25 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Example Project</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="assets/uswds/dist/js/uswds-init.min.js"></script>
-  <link rel="stylesheet" href="assets/uswds/css/uswds.min.css">
+  <link rel="stylesheet" href="dist/css/uswds.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <style>
-    /* Override animation duration */
     .animate__animated {
-      animation-duration: 2s; /* Makes the animation slower */
+      animation-duration: 4s;
     }
   </style>
 </head>
 <body>
 
-<header>
+  <header>
   <a class="usa-skipnav" href="#main-content">Skip to main content</a>
   <section class="usa-banner grid-container full-width" aria-label="Official government website">
     <div class="usa-accordion">
-
       <div class="usa-banner__inner full-width">
         <div class="grid-col-auto">
           <img class="usa-banner__header-flag" src="assets/img/us_flag_small.gif" alt="U.S. flag" />
@@ -37,7 +34,6 @@
           <span class="usa-banner__button-text">Here’s how you know</span>
         </button>
       </div>
-
       <div class="usa-banner__content usa-accordion__content" id="gov-banner" hidden="">
         <div class="grid-row grid-gap-lg">
           <div class="usa-banner__guidance tablet---grid-col-6">
@@ -75,458 +71,841 @@
         </div>
       </div>
   </section>
-  <section class="usa-nav-top grid-container full-width grid-row" style="position: absolute;">
-    <div class="nav-top-container grid-col-1">
-      <button class="c-hamburger c-hamburger--htx">
-        <span>toggle menu</span>
-      </button>
-      <nav class="sub-menu">
-        <ul class="list-unstyled">
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="agency01.html">Agency 01</a>
-          </li>
-          <li>
-            <a href="agency02.html">Agency 02</a>
-          </li>
-          <li>
-            <a href="agency03.html">Agency 03</a>
-          </li>
-          <li>
-            <a href="agency04.html">Agency 04</a>
-          </li>
-          <li>
-            <a href="agency05.html">Agency 05</a>
-          </li>
-          <li>
-            <a href="agency06.html">Agency 06</a>
-          </li>
-          <li>
-            <a href="http://localhost:6006/">Storybook</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="nav-top-container grid-col-9" style="margin-top: 25px;">
-      <a href="https://www.samhsa.gov/" title="Home" rel="home" class="site-logo">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499.3 168.6" class="samhsa-logo">
-          <path
-            d="M30.5,129.2a9.2,9.2,0,0,0,4.6,1.3c2.9,0,4.6-1.6,4.6-3.9s-1.3-3.4-4-4.6-5.5-3.3-5.5-6.4,2.8-6.2,7-6.2a9.6,9.6,0,0,1,4.5,1l-.8,2.4a7.6,7.6,0,0,0-3.8-1c-2.9,0-4,1.8-4,3.4s1.3,3.2,4.2,4.5,5.2,3.6,5.2,6.7-2.6,6.5-7.5,6.5a11.2,11.2,0,0,1-5.3-1.3Z"
-          ></path>
-          <path d="M58.1,128.1c0,1.8.1,3.2.2,4.5H55.7v-2.4h-.1a5.6,5.6,0,0,1-4.9,2.8c-2.6,0-5.2-1.7-5.2-7v-9.8h2.9v9.3c0,3,.8,5.1,3.3,5.1A3.7,3.7,0,0,0,55,128a3.7,3.7,0,0,0,.3-1.5V116.2h2.8Z"></path>
-          <path
-            d="M61.9,132.6c.1-1,.1-2.8.1-4.1V108.7h2.9v9.9h0a5.4,5.4,0,0,1,5-2.8c3.6,0,6.2,3.3,6.2,8.4s-3.3,8.8-6.7,8.8a5.3,5.3,0,0,1-4.8-2.9h-.1v2.5Zm3-6.3a3.4,3.4,0,0,0,.1,1,4,4,0,0,0,3.9,3.3c2.8,0,4.3-2.6,4.3-6.3s-1.4-6.1-4.3-6.1a4.2,4.2,0,0,0-3.9,3.4,4.9,4.9,0,0,0-.1,1.2Z"
-          ></path>
-          <path
-            d="M78.5,129.7a7.3,7.3,0,0,0,3.6,1.1c2,0,3-1.1,3-2.5s-.8-2.1-2.8-3.1-4.1-2.7-4.1-4.6,2.1-4.8,5.4-4.8a7.7,7.7,0,0,1,3.7,1l-.7,2.1a6,6,0,0,0-3.1-.9,2.2,2.2,0,0,0-2.5,2.2c0,1.3.8,1.9,2.8,2.8s4,2.6,4,5-2.2,4.9-5.8,4.9a7.9,7.9,0,0,1-4.2-1.1Z"
-          ></path>
-          <path d="M94.1,111.6v4.6h4v2.2h-4v9.1c0,2.1.7,3.1,2.1,3.1l1.6-.2v2.2a8.1,8.1,0,0,1-2.5.3,4.2,4.2,0,0,1-3-1.1c-.8-.9-1.1-2.3-1.1-4.3v-9.1H88.9v-2.2h2.4v-3.9Z"></path>
-          <path
-            d="M108.8,132.6l-.3-2h0a5.6,5.6,0,0,1-4.6,2.4,4.5,4.5,0,0,1-4.6-4.7c0-4.1,3.4-6.1,9-6.1v-.4c0-1.6-.4-3.8-3.4-3.8a6.8,6.8,0,0,0-3.8,1.1l-.7-1.9a9.2,9.2,0,0,1,5-1.4c4.5,0,5.8,3.1,5.8,6.5v6.5a23,23,0,0,0,.2,3.8Zm-.5-8.4c-2.6-.1-6.2.4-6.2,3.7a2.6,2.6,0,0,0,2.6,2.9,3.6,3.6,0,0,0,3.5-2.7,2.8,2.8,0,0,0,.1-.9Z"
-          ></path>
-          <path d="M115,120.6c0-1.8-.1-3.1-.2-4.4h2.6v2.5h.1a5.5,5.5,0,0,1,4.9-2.9c2.3,0,5.3,1.5,5.3,6.6v10.2h-2.9v-9.8c0-2.4-.8-4.6-3.3-4.6a3.9,3.9,0,0,0-3.6,3,5.2,5.2,0,0,0-.2,1.4v10H115Z"></path>
-          <path d="M142.2,132.1a9.1,9.1,0,0,1-4.1.8c-4.5,0-7.5-3.2-7.5-8.3s3.1-8.7,8.1-8.7a8.2,8.2,0,0,1,3.6.7l-.6,2.3a5.5,5.5,0,0,0-3-.7c-3.4,0-5.2,2.9-5.2,6.2s2.1,6.2,5.2,6.2a6.8,6.8,0,0,0,3.1-.7Z"></path>
-          <path d="M146.2,124.9c.1,4.3,2.4,5.8,5.1,5.8a9.7,9.7,0,0,0,4-.8l.5,2.1a11.5,11.5,0,0,1-4.9.9c-4.7,0-7.5-3.3-7.5-8.2s2.8-8.9,7.1-8.9,6.2,4.4,6.2,7.6c0,.7-.1,1.1-.1,1.5Zm7.7-2.1c0-2.3-.9-4.8-3.6-4.8s-3.9,2.6-4.1,4.8Z"></path>
-          <path d="M169,125.5l-2.1,7.1H164l7-22.9h3.3l7,22.9h-2.9l-2.2-7.1Zm6.7-2.2-2-6.4c-.4-1.5-.8-3-1.1-4.5h-.1a36.9,36.9,0,0,1-1.1,4.5l-1.9,6.4Z"></path>
-          <path
-            d="M183.5,132.6c.1-1,.1-2.8.1-4.1V108.7h2.9v9.9h.1a5.3,5.3,0,0,1,4.9-2.8c3.7,0,6.3,3.3,6.2,8.4s-3.3,8.8-6.6,8.8a5.3,5.3,0,0,1-4.9-2.9h-.1v2.5Zm3-6.3a3.4,3.4,0,0,0,.1,1,4.1,4.1,0,0,0,3.9,3.3c2.8,0,4.3-2.6,4.3-6.3s-1.4-6.1-4.3-6.1a4.3,4.3,0,0,0-3.9,3.4c0,.4-.1.8-.1,1.2Z"
-          ></path>
-          <path d="M213.2,128.1c0,1.8,0,3.2.1,4.5h-2.5l-.2-2.4h-.1a5.6,5.6,0,0,1-4.8,2.8c-2.7,0-5.2-1.7-5.2-7v-9.8h2.9v9.3c0,3,.8,5.1,3.2,5.1a3.8,3.8,0,0,0,3.5-2.6,6.8,6.8,0,0,0,.2-1.5V116.2h2.9Z"></path>
-          <path
-            d="M216.6,129.7a7.7,7.7,0,0,0,3.6,1.1c2,0,3-1.1,3-2.5s-.8-2.1-2.8-3.1-4.1-2.7-4-4.6,2.1-4.8,5.3-4.8a7.1,7.1,0,0,1,3.7,1l-.7,2.1a6,6,0,0,0-3.1-.9,2.2,2.2,0,0,0-2.5,2.2c0,1.3.8,1.9,2.8,2.8s4,2.6,4,5-2.2,4.9-5.8,4.9a7.9,7.9,0,0,1-4.2-1.1Z"
-          ></path>
-          <path d="M230.5,124.9c0,4.3,2.4,5.8,5.1,5.8a10,10,0,0,0,4-.8l.5,2.1a11.5,11.5,0,0,1-4.9.9c-4.7,0-7.5-3.3-7.5-8.2s2.7-8.9,7.1-8.9,6.1,4.4,6.1,7.6v1.5Zm7.7-2.1c0-2.3-.9-4.8-3.7-4.8s-3.8,2.6-4,4.8Z"></path>
-          <path
-            d="M258,132.6l-.2-2h-.1a5.2,5.2,0,0,1-4.5,2.4,4.5,4.5,0,0,1-4.7-4.7c0-4.1,3.5-6.1,9-6.1v-.4c0-1.6-.4-3.8-3.4-3.8a7.3,7.3,0,0,0-3.8,1.1l-.6-1.9a8.9,8.9,0,0,1,4.9-1.4c4.5,0,5.8,3.1,5.8,6.5v6.5c0,1.3.1,2.7.2,3.8Zm-.4-8.4c-2.7-.1-6.2.4-6.2,3.7s1.2,2.9,2.5,2.9a3.6,3.6,0,0,0,3.6-2.7,2.8,2.8,0,0,0,.1-.9Z"
-          ></path>
-          <path d="M264.2,120.6c0-1.8,0-3.1-.1-4.4h2.5l.2,2.5h.1a5.4,5.4,0,0,1,4.9-2.9c2.3,0,5.2,1.5,5.2,6.6v10.2h-2.8v-9.8c0-2.4-.8-4.6-3.4-4.6a3.8,3.8,0,0,0-3.5,3,5.2,5.2,0,0,0-.2,1.4v10h-2.9Z"></path>
-          <path
-            d="M293.8,108.7v19.8c0,1.3.1,3,.1,4.1h-2.5l-.2-2.6h-.1a5.2,5.2,0,0,1-4.9,3c-3.6,0-6.4-3.3-6.4-8.4s3.1-8.8,6.7-8.8a4.7,4.7,0,0,1,4.4,2.4h0v-9.5Zm-2.9,14a5.3,5.3,0,0,0-.1-1.2,3.9,3.9,0,0,0-3.7-3.3c-2.8,0-4.4,2.8-4.4,6.3s1.5,6.1,4.3,6.1a3.9,3.9,0,0,0,3.8-3.3,4.9,4.9,0,0,0,.1-1.2Z"
-          ></path>
-          <path
-            d="M321.5,122.6c-.2-3.1-.4-6.8-.3-9.6h-.1c-.7,2.6-1.6,5.5-2.6,8.5l-3.7,11h-2.1l-3.4-10.7c-1-3.2-1.8-6.1-2.4-8.8h-.1c0,2.8-.2,6.5-.4,9.8l-.5,9.8h-2.7l1.5-22.9h3.5l3.6,10.9a77,77,0,0,1,2.1,7.8h.1c.6-2.4,1.3-4.8,2.2-7.8l3.7-10.9h3.5l1.4,22.9H322Z"
-          ></path>
-          <path d="M330.2,124.9c0,4.3,2.4,5.8,5.1,5.8a10,10,0,0,0,4-.8l.5,2.1a11.5,11.5,0,0,1-4.9.9c-4.8,0-7.5-3.3-7.5-8.2s2.7-8.9,7.1-8.9,6.1,4.4,6.1,7.6a6.2,6.2,0,0,1-.1,1.5Zm7.7-2.1c0-2.3-.9-4.8-3.7-4.8s-3.8,2.6-4,4.8Z"></path>
-          <path d="M343.5,120.6c0-1.8-.1-3.1-.1-4.4h2.5l.2,2.5h0a5.7,5.7,0,0,1,5-2.9c2.2,0,5.2,1.5,5.2,6.6v10.2h-2.8v-9.8c0-2.4-.8-4.6-3.4-4.6a3.7,3.7,0,0,0-3.5,3,3,3,0,0,0-.2,1.4v10h-2.9Z"></path>
-          <path d="M363.6,111.6v4.6h4v2.2h-4v9.1c0,2.1.7,3.1,2.1,3.1l1.5-.2.2,2.2a8.1,8.1,0,0,1-2.5.3,4.1,4.1,0,0,1-3-1.1c-.8-.9-1.1-2.3-1.1-4.3v-9.1h-2.4v-2.2h2.4v-3.9Z"></path>
-          <path
-            d="M378.4,132.6l-.3-2H378a5.2,5.2,0,0,1-4.5,2.4,4.5,4.5,0,0,1-4.7-4.7c0-4.1,3.5-6.1,9.1-6.1v-.4c0-1.6-.5-3.8-3.4-3.8a7.4,7.4,0,0,0-3.9,1.1l-.6-1.9a9.2,9.2,0,0,1,5-1.4c4.5,0,5.7,3.1,5.7,6.5v6.5a22.5,22.5,0,0,0,.3,3.8Zm-.5-8.4c-2.6-.1-6.2.4-6.2,3.7s1.2,2.9,2.6,2.9a3.6,3.6,0,0,0,3.5-2.7,2.8,2.8,0,0,0,.1-.9Z"
-          ></path>
-          <path d="M384.7,108.7h2.8v23.9h-2.8Z"></path>
-          <path d="M400.7,109.7v9.7h9.7v-9.7h2.8v22.9h-2.8V121.9h-9.7v10.7h-2.9V109.7Z"></path>
-          <path d="M419.1,124.9c0,4.3,2.4,5.8,5.1,5.8a10,10,0,0,0,4-.8l.5,2.1a11.7,11.7,0,0,1-5,.9c-4.7,0-7.4-3.3-7.4-8.2s2.7-8.9,7.1-8.9,6.1,4.4,6.1,7.6a6.2,6.2,0,0,1-.1,1.5Zm7.6-2.1c.1-2.3-.9-4.8-3.6-4.8s-3.8,2.6-4,4.8Z"></path>
-          <path
-            d="M440.7,132.6l-.2-2h-.1a5.4,5.4,0,0,1-4.5,2.4,4.5,4.5,0,0,1-4.7-4.7c0-4.1,3.5-6.1,9-6.1v-.4c0-1.6-.4-3.8-3.4-3.8a6.8,6.8,0,0,0-3.8,1.1l-.6-1.9a8.9,8.9,0,0,1,4.9-1.4c4.5,0,5.8,3.1,5.8,6.5v6.5a23,23,0,0,0,.2,3.8Zm-.4-8.4c-2.7-.1-6.2.4-6.2,3.7s1.2,2.9,2.5,2.9a3.7,3.7,0,0,0,3.6-2.7c0-.3.1-.6.1-.9Z"
-          ></path>
-          <path d="M447,108.7h2.9v23.9H447Z"></path>
-          <path d="M457.5,111.6v4.6h3.9v2.2h-3.9v9.1c0,2.1.6,3.1,2,3.1l1.6-.2v2.2a7.4,7.4,0,0,1-2.4.3,4.3,4.3,0,0,1-3.1-1.1c-.8-.9-1.1-2.3-1.1-4.3v-9.1h-2.4v-2.2h2.4v-3.9Z"></path>
-          <path d="M463.9,108.7h2.8v9.8h.1a5.8,5.8,0,0,1,1.9-1.9,5.4,5.4,0,0,1,2.8-.8c2.2,0,5.2,1.5,5.2,6.7v10.1h-2.9v-9.8c0-2.4-.8-4.6-3.3-4.6a3.9,3.9,0,0,0-3.6,2.9,5.9,5.9,0,0,0-.2,1.4v10.1h-2.8Z"></path>
-          <path
-            d="M108.2,164.2a9.2,9.2,0,0,0,4.6,1.3c2.9,0,4.6-1.6,4.6-3.9s-1.3-3.4-4-4.6-5.5-3.3-5.5-6.4,2.8-6.2,7-6.2a9.3,9.3,0,0,1,4.5,1l-.8,2.4a7.6,7.6,0,0,0-3.8-1c-2.9,0-4,1.8-4,3.4s1.3,3.2,4.2,4.5,5.2,3.6,5.2,6.7-2.6,6.5-7.5,6.5a11.2,11.2,0,0,1-5.3-1.3Z"
-          ></path>
-          <path d="M125.2,159.9c.1,4.3,2.4,5.8,5.1,5.8a9.3,9.3,0,0,0,4-.8l.5,2.1a11.5,11.5,0,0,1-4.9.9c-4.7,0-7.5-3.3-7.5-8.2s2.8-8.9,7.1-8.9,6.2,4.4,6.2,7.6c0,.7-.1,1.1-.1,1.5Zm7.7-2.1c0-2.3-.9-4.8-3.6-4.8s-3.9,2.6-4.1,4.8Z"></path>
-          <path d="M138.5,156c0-1.7,0-3.4-.1-4.8h2.5l.2,3h.1a4.6,4.6,0,0,1,4.2-3.4h.7v2.8h-.8c-2,0-3.4,1.6-3.8,3.7a6.1,6.1,0,0,0-.1,1.4v8.9h-2.9Z"></path>
-          <path d="M150.3,151.2l2.9,9.2c.5,1.4.8,2.8,1.2,4.2h.1c.3-1.4.7-2.8,1.1-4.2l2.9-9.2h3l-5.9,16.4h-2.7l-5.6-16.4Z"></path>
-          <path d="M166.7,146.7a1.7,1.7,0,0,1-1.8,1.8,1.7,1.7,0,0,1-1.7-1.8,1.8,1.8,0,0,1,1.8-1.9A1.7,1.7,0,0,1,166.7,146.7Zm-3.2,20.9V151.2h2.9v16.4Z"></path>
-          <path d="M181,167.1a9.1,9.1,0,0,1-4.1.8c-4.5,0-7.6-3.2-7.6-8.3s3.2-8.7,8.2-8.7a8.2,8.2,0,0,1,3.6.7l-.6,2.3a5.5,5.5,0,0,0-3-.7c-3.5,0-5.2,2.9-5.2,6.2s2.1,6.2,5.1,6.2a6.9,6.9,0,0,0,3.2-.7Z"></path>
-          <path d="M185.1,159.9c0,4.3,2.4,5.8,5.1,5.8a10,10,0,0,0,4-.8l.5,2.1a11.5,11.5,0,0,1-4.9.9c-4.8,0-7.5-3.3-7.5-8.2s2.7-8.9,7.1-8.9,6.1,4.4,6.1,7.6a6.2,6.2,0,0,1-.1,1.5Zm7.7-2.1c0-2.3-.9-4.8-3.7-4.8s-3.8,2.6-4,4.8Z"></path>
-          <path
-            d="M198,164.7a7.3,7.3,0,0,0,3.6,1.1c1.9,0,2.9-1.1,2.9-2.5s-.7-2.1-2.7-3.1-4.1-2.7-4.1-4.6,2.1-4.8,5.3-4.8a7.1,7.1,0,0,1,3.7,1l-.7,2.1a5.6,5.6,0,0,0-3-.9,2.2,2.2,0,0,0-2.5,2.2c0,1.3.8,1.9,2.8,2.8s4,2.6,4,5-2.3,4.9-5.8,4.9a7.7,7.7,0,0,1-4.2-1.1Z"
-          ></path>
-          <path d="M219.9,160.5l-2.2,7.1h-2.9l7.1-22.9h3.3l7,22.9h-3l-2.1-7.1Zm6.6-2.2-1.9-6.4a36.9,36.9,0,0,1-1.1-4.5h-.1c-.3,1.5-.7,3-1.1,4.5l-1.9,6.4Z"></path>
-          <path
-            d="M247.3,143.7v19.8c0,1.3,0,3,.1,4.1h-2.5l-.2-2.6h-.1a5.2,5.2,0,0,1-4.9,3c-3.6,0-6.4-3.3-6.4-8.4s3.1-8.8,6.7-8.8a4.6,4.6,0,0,1,4.3,2.4h.1v-9.5Zm-2.9,14a5.3,5.3,0,0,0-.1-1.2,4,4,0,0,0-3.8-3.3c-2.8,0-4.3,2.8-4.3,6.3s1.4,6.1,4.3,6.1a3.9,3.9,0,0,0,3.8-3.3,4.9,4.9,0,0,0,.1-1.2Z"
-          ></path>
-          <path
-            d="M251.3,155.6c0-1.8-.1-3.1-.2-4.4h2.5l.2,2.4h.1a5.1,5.1,0,0,1,4.7-2.8,4.5,4.5,0,0,1,4.3,3.1h0a7.6,7.6,0,0,1,1.8-2.1,5.5,5.5,0,0,1,3.2-1c2.2,0,5,1.5,5,6.8v10h-2.8V158c0-2.8-.9-4.8-3.2-4.8a3.6,3.6,0,0,0-3.2,2.6,7.7,7.7,0,0,0-.2,1.5v10.3h-2.8V157.5c0-2.4-.9-4.3-3.1-4.3a3.6,3.6,0,0,0-3.3,2.9,3.4,3.4,0,0,0-.2,1.5v10h-2.8Z"
-          ></path>
-          <path d="M280,146.7a1.6,1.6,0,0,1-1.8,1.8,1.7,1.7,0,0,1-1.7-1.8,1.8,1.8,0,0,1,1.8-1.9A1.7,1.7,0,0,1,280,146.7Zm-3.1,20.9V151.2h2.8v16.4Z"></path>
-          <path d="M283.7,155.6c0-1.8,0-3.1-.1-4.4h2.5l.2,2.5h.1a5.4,5.4,0,0,1,4.9-2.9c2.3,0,5.2,1.5,5.2,6.6v10.2h-2.8v-9.8c0-2.4-.8-4.6-3.4-4.6a3.7,3.7,0,0,0-3.5,3,5.2,5.2,0,0,0-.2,1.4v10h-2.9Z"></path>
-          <path d="M303.7,146.7a1.7,1.7,0,0,1-1.8,1.8,1.7,1.7,0,0,1-1.7-1.8,1.7,1.7,0,0,1,1.7-1.9A1.8,1.8,0,0,1,303.7,146.7Zm-3.2,20.9V151.2h2.9v16.4Z"></path>
-          <path
-            d="M306.9,164.7a7.3,7.3,0,0,0,3.6,1.1c2,0,3-1.1,3-2.5s-.8-2.1-2.8-3.1-4.1-2.7-4.1-4.6,2.1-4.8,5.4-4.8a7.7,7.7,0,0,1,3.7,1l-.8,2.1a5.3,5.3,0,0,0-3-.9,2.2,2.2,0,0,0-2.5,2.2c0,1.3.8,1.9,2.8,2.8s4,2.6,4,5-2.2,4.9-5.8,4.9a7.7,7.7,0,0,1-4.2-1.1Z"
-          ></path>
-          <path d="M322.6,146.6v4.6h4v2.2h-4v9.1c0,2.1.7,3.1,2.1,3.1l1.6-.2v2.2a8.1,8.1,0,0,1-2.5.3,4.2,4.2,0,0,1-3-1.1c-.8-.9-1.1-2.3-1.1-4.3v-9.1h-2.4v-2.2h2.4v-3.9Z"></path>
-          <path d="M329,156c0-1.7,0-3.4-.1-4.8h2.5l.2,3h.1a4.6,4.6,0,0,1,4.2-3.4h.7v2.8h-.8c-2,0-3.4,1.6-3.8,3.7a6.1,6.1,0,0,0-.1,1.4v8.9H329Z"></path>
-          <path
-            d="M346.9,167.6l-.2-2h-.1a5.2,5.2,0,0,1-4.5,2.4,4.5,4.5,0,0,1-4.7-4.7c0-4.1,3.5-6.1,9-6.1v-.4c0-1.6-.4-3.8-3.4-3.8a6.8,6.8,0,0,0-3.8,1.1l-.6-1.9a8.9,8.9,0,0,1,4.9-1.4c4.5,0,5.8,3.1,5.8,6.5v6.5c0,1.3.1,2.7.2,3.8Zm-.4-8.4c-2.7-.1-6.2.4-6.2,3.7s1.2,2.9,2.5,2.9a3.7,3.7,0,0,0,3.6-2.7,2.8,2.8,0,0,0,.1-.9Z"
-          ></path>
-          <path d="M356.5,146.6v4.6h3.9v2.2h-3.9v9.1c0,2.1.6,3.1,2.1,3.1l1.5-.2v2.2a7,7,0,0,1-2.4.3,3.9,3.9,0,0,1-3-1.1c-.8-.9-1.1-2.3-1.1-4.3v-9.1h-2.4v-2.2h2.4v-3.9Z"></path>
-          <path d="M366.1,146.7a1.7,1.7,0,0,1-1.8,1.8,1.7,1.7,0,0,1-1.7-1.8,1.7,1.7,0,0,1,1.7-1.9A1.8,1.8,0,0,1,366.1,146.7Zm-3.2,20.9V151.2h2.9v16.4Z"></path>
-          <path d="M383.2,159.3c0,6.2-3.8,8.7-7.3,8.7s-7.2-3.1-7.2-8.5,3.4-8.7,7.4-8.7S383.2,154.1,383.2,159.3Zm-11.6.1c0,3.4,1.6,6.4,4.4,6.4s4.3-3.1,4.3-6.4-1.1-6.4-4.3-6.4S371.6,156.5,371.6,159.4Z"></path>
-          <path d="M386.2,155.6c0-1.8-.1-3.1-.2-4.4h2.6v2.5h.1a5.5,5.5,0,0,1,4.9-2.9c2.3,0,5.3,1.5,5.3,6.6v10.2h-2.9v-9.8c0-2.4-.8-4.6-3.3-4.6a3.9,3.9,0,0,0-3.6,3,5.2,5.2,0,0,0-.2,1.4v10h-2.8Z"></path>
-          <path
-            d="M242.9.9a12,12,0,0,1,2.7-.8h21.9c2.8,0,3.9,1.3,3.6,4.1l-7.8,58.7c-1.1,7.8-2.1,15.6-3.1,23.3-.4,2.4-.7,4.8,2.2,6.2l-.2.5a7.3,7.3,0,0,1-2,.5H242.9c-3.6,0-4.7-1.6-4.1-5.2l9.3-56.9a3.1,3.1,0,0,0-.3-1.8l-4.1,6.9-32,55a3.4,3.4,0,0,1-3.6,2.1c-3.9-.2-7.9-.1-12.3-.1l4.5-63.7-.4-.2a15.5,15.5,0,0,0-1.2,2.2l-27,54.1c-1.7,3.3-1.5,4.4,1.7,7a7.8,7.8,0,0,1-2.3.6H155.2c-4.5,0-5.5-1.7-3.4-5.7L168,56.8,193,9.5A14.2,14.2,0,0,0,194.6,5c.2-.9-.6-2-1-3L192.9.8a3.4,3.4,0,0,1,1.5-.7h20.5c3.5.1,4.4.9,4.2,4.5-.6,13.4-1.4,26.9-2.1,40.3a95,95,0,0,0-.1,10.7c1.7-3.1,3.5-6.2,5.3-9.3,7-12.2,14-24.4,20.9-36.6.6-1,1-1.9,1.5-2.9S246.1,2.6,242.9.9Z"
-          ></path>
-          <path
-            d="M332.1,49.3h-9.7c-5.9,0-11.8.1-17.7,0a2.4,2.4,0,0,0-2.7,1.8c-4.5,11.8-9.2,23.5-13.7,35.2-1.2,3.1-.9,4.2,2.3,6.5a12.2,12.2,0,0,1-2.7.6H269.5c-4.8,0-5.6-1.1-3.9-5.5l24.3-61c2.4-5.9,4.7-11.7,7-17.6a13.7,13.7,0,0,0,1.2-4.4,7.9,7.9,0,0,0-.8-2.9c-.1-.5-.5-1.1-.4-1.3a1.8,1.8,0,0,1,1.3-.6h19.7c2.5,0,3.4,1.5,2.4,4.1-2.5,6.6-5.1,13.2-7.7,19.8l-4,10.5h27.1c1.6,0,2.5-.4,3.1-2,3-7.8,6.2-15.5,9.2-23.3.9-2.6,2.8-5.3-.1-7.9-.1,0,.4-1.1.8-1.2a3.6,3.6,0,0,1,1.8-.2h16.6c4.9.1,5.6,1,3.8,5.5L346.6,67.7c-2.4,6.3-4.9,12.5-7.3,18.7-.8,2.1-1,4.1,1.2,5.5.3.2.3.6.5.9a4.7,4.7,0,0,1-1.5.6h-19c-4.7,0-5.5-1.2-3.8-5.5l7.5-18.8C326.8,62.6,329.3,56.2,332.1,49.3Z"
-          ></path>
-          <path
-            d="M493,92.6a11.6,11.6,0,0,1-2.6.8H473.6c-3.4,0-4.6-1.3-4.3-4.7l1.5-16.8a5.7,5.7,0,0,0,0-1.3l-.4-.3H441.5a3,3,0,0,0-1.9,1.3c-3.8,5-7.6,10.1-11.3,15.2-1.8,2.4-1.5,3.6,1.1,5.1.3.2.4.5.7.8s-.7.7-1,.7H409.3c-3,0-4-1.6-2.5-4.2a75,75,0,0,1,4.8-6.7L467,10.2a30.2,30.2,0,0,0,2.1-3.3c1.6-2.8,1.5-3.6-1.1-6.1a9.6,9.6,0,0,1,2.3-.7h25.2c3,0,4.1,1.1,3.8,4.1-.7,7.4-1.6,14.8-2.4,22.2-1.8,16-3.7,31.9-5.5,47.9-.4,4.2-.9,8.4-1.4,12.6C489.8,89.1,489.8,91.3,493,92.6ZM476.8,20.5l-.5-.2c-8.6,11.9-17.1,23.8-25.8,36h22.4Z"
-          ></path>
-          <path
-            d="M148.9,93.1a15.2,15.2,0,0,1-2.1.3H130.9c-4.2-.1-5.3-1.4-4.9-5.6s1.1-10.8,1.6-16.3a7.2,7.2,0,0,0-.1-1.3H99.3A3.7,3.7,0,0,0,95.9,72c-3.5,4.9-7.2,9.7-10.8,14.6-2,2.8-1.5,4.3,2.2,5.9-.9.4-1.4.9-2,.9H65.5c-2.3,0-3.2-1.4-2.3-3.6a13.8,13.8,0,0,1,2-3.3l58.4-76.2A31.2,31.2,0,0,0,126.3,6c.9-1.8,1-3.6-2-4.9a9.6,9.6,0,0,1,2.5-1h25.6c2.8,0,3.9,1.1,3.6,4.1-.8,7.8-1.7,15.6-2.6,23.4-1.9,17.2-3.9,34.4-5.8,51.5l-.9,7.4c-.2,2.3-.3,4.6,2.4,5.9ZM107.2,56.3h22.4c1.3-12.1,2.6-24,4-36l-.6-.2Z"
-          ></path>
-          <path
-            d="M92.2.2c-1.6,4-3,7.9-4.7,11.5a6.3,6.3,0,0,1-5.8,3.6l-15.2.3H60.9A12.1,12.1,0,0,0,48.4,27.3c-.3,2.9.6,5.3,3.4,6.4l13,5.2c1.8.7,3.6,1.3,5.4,2.1,6.5,3.1,9,7.5,7.6,14.5-1.9,10-5.7,19.3-12.4,27.1A29,29,0,0,1,43,93.4c-13,.2-26,.1-39,0C0,93.4-.8,92,.7,88.3s3.8-9.7,5.8-14.5a10.7,10.7,0,0,1,1.9-2.3c.8,5.4,1.3,6.3,7.2,6.5,7.5.2,15,.1,22.6,0s14.9-7.9,14.7-15.3c-.1-3.2-1.5-5.6-4.4-6.8s-6.6-2.5-9.9-3.6-4.7-1.4-7-2.4c-6.7-2.8-10-9.2-8-16.1A63,63,0,0,1,36.7,9.7c5.4-6.3,13-9.1,21-9.4C69-.2,80.3.2,92.2.2Z"
-          ></path>
-          <path
-            d="M351.3,71.5c.7,6.3,2.9,6.4,7,6.5,7.7.2,15.4.1,23,0s14.8-8.1,14.4-15.6c-.1-2.6-1.1-4.9-3.5-6.1s-5.2-2.2-7.9-3.2-5.7-1.6-8.5-2.7c-8.1-2.9-11.5-9.6-9-17.8a67,67,0,0,1,12.4-22.5C384.8,3.4,392.7.6,401.1.2c11.1-.4,22.3-.1,34.2-.1-2,4.5-3.4,8.8-5.7,12.7s-5.5,2.8-8.7,2.8h-17c-7,0-11.9,4.5-12.6,11.5-.3,3.1.6,5.5,3.5,6.8l8.8,3.6c3.3,1.3,6.8,2.2,10.1,3.8,6.1,3.1,8.4,7.5,7,14.2-2,10.4-5.9,19.9-13,27.9a28.6,28.6,0,0,1-21.1,9.9c-13.2.3-26.5.2-39.7.1-3.9,0-4.8-1.4-3.3-5.1s3.8-9.7,5.8-14.5C349.7,73,350.5,72.5,351.3,71.5Z"
-          ></path>
-        </svg>
-        <span class="visually-hidden">SAMHSA.gov, Substance Abuse and Mental Health Services Administration</span>
-      </a>
-    </div>
-    <div class="nav-top-container grid-col-1" style="margin-top: 12px;">
-      <button class="c-hamburger-2 c-hamburger--htx-2">
-          <span>
-            <i class="fas fa-search"></i>
-          </span>
-      </button>
-      <div class="sub-search">
-        <form class="search-block-form usa-search usa-search--small js-search-form" data-drupal-selector="search-block-form" action="/search-results/index.html" id="search-block-form" data-dashlane-rid="dfdca1ef4b8e4364">
-
-            <label class="usa-label form-item__label visually-hidden">
-                    HHS Search block
-                  </label>
-
-            <input
-                    data-drupal-selector="hhs-search-input-67f6c615c033b"
-                    id="hhs-search-input-67f6c615c033b"
-                    aria-label="HHS Search block"
-                    class="form-search usa-input usagov-search-autocomplete usa-input ui-autocomplete-input"
-                    name="query"
-                    autocomplete="off"
-                    type="search"
-                    size="60"
-                    maxlength="128"
-                    placeholder="Type Your Search..."
-                    data-dashlane-rid="c6eff06867732c2a"
-                  />
-
-          <input class="btn samhsasearchbutton topsearchbutton" data-disable-with="Search" name="commit" style="margin: 0px 0px 0px -5px;" type="submit" value="Press Enter to Search" data-dashlane-rid="814d9a8204854c87">
-
-        </form>
-      </div>
-    </div>
-  </section>
 </header>
 
-<main>
-  <!-- SECTION - MISSION STATEMENT  -->
-  <div
-  class="parallax"
-  style="background-image: url('https://cdn.makezine.com/uploads/2011/06/main_large_cin1.gif');"
-></div>
-  <section class="grid-container usa-section">
-    <div class="grid-row grid-gap">
-      <div class="tablet:grid-col-4">
-        <h2 class="font-heading-xl margin-top-0 tablet:margin-bottom-0">
-          A tagline highlights your approach
-        </h2><br/>
-        <div class="animate__animated animate__bounce">
-          This text will bounce!
+  <main>
+    <!-- SECTION - PARALLAX - MISSION  -->
+    <section id="section-header"
+             class="grid-container full-width parallax section-header"
+             style="background-image: url('https://cdn.makezine.com/uploads/2011/06/main_large_cin1.gif');"
+    >
+      <div class="fake-logo">
+        <img src="assets/img/logo-transparent-svg.svg" alt="Logo" />
+      </div>
+      <div class="share-block">
+          <ul class="share-buttons">
+            <li>
+              <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.samhsa.gov/find-help" title="Share on Facebook" rel="noopener" target="_blank">
+                <span class="fa fa-brands fa-facebook-f animate__animated animate__heartBeat" aria-hidden="true" alt="Share on Facebook"></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/intent/tweet?url=https://www.samhsa.gov/find-help" title="Share on X" rel="noopener" target="_blank">
+                <span class="fa fa-brands fa-square-x-twitter animate__animated animate__heartBeat" aria-hidden="true" alt="Share on X"></span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:?subject=Check this out from SAMHSA&amp;body=Find Help and Treatment for Mental Health, Drug, Alcohol Issues | SAMHSA - https://www.samhsa.gov/find-help" title="Share via Email" rel="noopener" target="_blank" class="mailto" data-extlink="">
+                <span class="fa fas fa-envelope animate__animated animate__heartBeat" aria-hidden="true" alt="Share via Email"></span>
+              </a><svg focusable="false" class="mailto" role="img" aria-label="(link sends email)" xmlns="http://www.w3.org/2000/svg" viewBox="0 10 70 20"><metadata><sfw xmlns="http://ns.adobe.com/SaveForWeb/1.0/"><slicesourcebounds y="-8160" x="-8165" width="16389" height="16384" bottomleftorigin="true"></slicesourcebounds><optimizationsettings><targetsettings targetsettingsid="0" fileformat="PNG24Format"><png24format transparency="true" filtered="false" interlaced="false" nomattecolor="false" mattecolor="#FFFFFF"></png24format></targetsettings></optimizationsettings></sfw></metadata><title>(link sends email)</title><path d="M56 14H8c-1.1 0-2 0.9-2 2v32c0 1.1 0.9 2 2 2h48c1.1 0 2-0.9 2-2V16C58 14.9 57.1 14 56 14zM50.5 18L32 33.4 13.5 18H50.5zM10 46V20.3l20.7 17.3C31.1 37.8 31.5 38 32 38s0.9-0.2 1.3-0.5L54 20.3V46H10z"></path></svg>
+            </li>
+            <li>
+              <a href="#" onclick="window.print();" title="Print this page">
+                <span class="fa fa-solid fa-print animate__animated animate__heartBeat" aria-hidden="true" alt="Print this page"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      <div class="nav-block">
+        <div class="nav-block-menu">
+          <button class="c-hamburger c-hamburger--htx animate__animated animate__heartBeat">
+            <span>toggle menu</span>
+          </button>
+          <nav class="sub-menu">
+            <div class="sub-menu-inner">
+              <ul class="list-unstyled">
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="agency01.html">Agency 01</a>
+              </li>
+              <li>
+                <a href="agency02.html">Agency 02</a>
+              </li>
+              <li>
+                <a href="agency03.html">Agency 03</a>
+              </li>
+              <li>
+                <a href="agency04.html">Agency 04</a>
+              </li>
+              <li>
+                <a href="agency05.html">Agency 05</a>
+              </li>
+              <li>
+                <a href="agency06.html">Agency 06</a>
+              </li>
+              <li>
+                <a href="http://localhost:6006/">Storybook</a>
+              </li>
+            </ul>
+              <img src="assets/img/logo-transparent-svg.svg" alt="Logo" />
+            </div>
+          </nav>
+        </div>
+        <div class="nav-block-search">
+          <button class="c-hamburger-2 c-hamburger--htx-2 animate__animated animate__heartBeat">
+            <span>
+              <i class="fas fa-search"></i>
+            </span>
+          </button>
+          <div class="sub-search">
+            <form class="search-block-form usa-search usa-search--small js-search-form" data-drupal-selector="search-block-form" action="/search-results/index.html" id="search-block-form" data-dashlane-rid="dfdca1ef4b8e4364">
+
+              <label class="usa-label form-item__label visually-hidden">
+                HHS Search block
+              </label>
+
+              <input
+                data-drupal-selector="hhs-search-input-67f6c615c033b"
+                id="hhs-search-input-67f6c615c033b"
+                aria-label="HHS Search block"
+                class="form-search usa-input usagov-search-autocomplete usa-input ui-autocomplete-input"
+                name="query"
+                autocomplete="off"
+                type="search"
+                size="60"
+                maxlength="128"
+                placeholder="Type Your Search..."
+                data-dashlane-rid="c6eff06867732c2a"
+              />
+
+              <input class="btn samhsasearchbutton topsearchbutton" data-disable-with="Search" name="commit" style="margin: 0px 0px 0px -5px;" type="submit" value="Press Enter to Search" data-dashlane-rid="814d9a8204854c87">
+
+            </form>
+          </div>
         </div>
       </div>
-      <div class="tablet:grid-col-8">
+      <div class="mission-block grid-row grid-gap usa-grid over-image">
+        <div class="tablet:grid-col-6">
+          <h2 class="font-heading-xl margin-top-0 tablet:margin-bottom-0">
+            Our Mission
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div class="tablet:grid-col-6">
+          <ul class="grid-row grid-gap" style="list-style: none; padding: 0;">
+            <li class="grid-col-6 grid-row" style="margin-bottom:14px;">
+              <div class="grid-col-2">
+                <i class="fa-regular fa-thumbs-up animate__animated animate__heartBeat" style="font-size: 30px; color:white;"></i>
+              </div>
+              <div class="grid-col-10" style="float: left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+            </li>
+            <li class="grid-col-6 grid-row" style="margin-bottom:14px;">
+              <div class="grid-col-2">
+                <i class="fa-regular fa-face-smile animate__animated animate__heartBeat" style="font-size: 30px; color:white;"></i>
+              </div>
+              <div class="grid-col-10" style="float: left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+            </li>
+            <li class="grid-col-6 grid-row" style="margin-bottom:14px;">
+              <div class="grid-col-2">
+                <i class="fa-regular fa-bell animate__animated animate__heartBeat" style="font-size: 30px; color:white;"></i>
+              </div>
+              <div class="grid-col-10" style="float: left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+            </li>
+            <li class="grid-col-6 grid-row" style="margin-bottom:14px;">
+              <div class="grid-col-2">
+                <i class="fa-regular fa-image animate__animated animate__heartBeat" style="font-size: 30px; color:white;"></i>
+              </div>
+              <div class="grid-col-10" style="float: left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!--  SECTION - PARALLAX - CARDS  -->
+    <section id="section-cards"
+               class="grid-container full-width usa-section section-cards parallax"
+               style="background-image: url('https://iso.500px.com/wp-content/uploads/2017/07/stock-photo-219973977-960x1000.jpg');"
+      >
+        <h2 class="font-heading-xl" style="color:white;">
+          Find The Help You Need
+        </h2>
+        <ul class="usa-card-group grid-row grid-gap">
+          <li class="usa-card grid-col-12 desktop:grid-col-4">
+            <div class="usa-card__container">
+              <div class="usa-card__header">
+                <h4 class="usa-card__heading">Agency 01</h4>
+              </div>
+              <div class="usa-card__media">
+                <div class="usa-card__img">
+                  <img
+                    src="https://iso.500px.com/wp-content/uploads/2017/07/stock-photo-219973977-960x1000.jpg"
+                    alt="A placeholder image"
+                  />
+                </div>
+              </div>
+              <div class="usa-card__body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum
+                  tenetur quo cupiditate, eaque qui officia recusandae.
+                </p>
+              </div>
+              <div class="usa-card__footer">
+                <a href="#" class="usa-button">Agency 01</a>
+              </div>
+            </div>
+          </li>
+          <li class="usa-card grid-col-12 desktop:grid-col-4">
+            <div class="usa-card__container">
+              <div class="usa-card__header">
+                <h4 class="usa-card__heading">Agency 02</h4>
+              </div>
+              <div class="usa-card__media">
+                <div class="usa-card__img">
+                  <img
+                    src="https://iso.500px.com/wp-content/uploads/2017/07/stock-photo-219973977-960x1000.jpg"
+                    alt="A placeholder image"
+                  />
+                </div>
+              </div>
+              <div class="usa-card__body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum
+                  tenetur quo cupiditate, eaque qui officia recusandae.
+                </p>
+              </div>
+              <div class="usa-card__footer">
+                <a href="#" class="usa-button">Agency 02</a>
+              </div>
+            </div>
+          </li>
+          <li class="usa-card grid-col-12 desktop:grid-col-4">
+            <div class="usa-card__container">
+              <div class="usa-card__header">
+                <h4 class="usa-card__heading">Agency 03</h4>
+              </div>
+              <div class="usa-card__media">
+                <div class="usa-card__img">
+                  <img
+                    src="https://iso.500px.com/wp-content/uploads/2017/07/stock-photo-219973977-960x1000.jpg"
+                    alt="A placeholder image"
+                  />
+                </div>
+              </div>
+              <div class="usa-card__body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum
+                  tenetur quo cupiditate, eaque qui officia recusandae.
+                </p>
+              </div>
+              <div class="usa-card__footer">
+                <a href="#" class="usa-button">Agency 03</a>
+              </div>
+            </div>
+          </li>
+          <li class="usa-card grid-col-12 desktop:grid-col-4">
+            <div class="usa-card__container">
+              <div class="usa-card__header">
+                <h4 class="usa-card__heading">Agency 04</h4>
+              </div>
+              <div class="usa-card__media">
+                <div class="usa-card__img">
+                  <img
+                    src="https://iso.500px.com/wp-content/uploads/2017/07/stock-photo-219973977-960x1000.jpg"
+                    alt="A placeholder image"
+                  />
+                </div>
+              </div>
+              <div class="usa-card__body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum
+                  tenetur quo cupiditate, eaque qui officia recusandae.
+                </p>
+              </div>
+              <div class="usa-card__footer">
+                <a href="#" class="usa-button">Agency 04</a>
+              </div>
+            </div>
+          </li>
+          <li class="usa-card grid-col-12 desktop:grid-col-4">
+            <div class="usa-card__container">
+              <div class="usa-card__header">
+                <h4 class="usa-card__heading">Agency 05</h4>
+              </div>
+              <div class="usa-card__media">
+                <div class="usa-card__img">
+                  <img
+                    src="https://iso.500px.com/wp-content/uploads/2017/07/stock-photo-219973977-960x1000.jpg"
+                    alt="A placeholder image"
+                  />
+                </div>
+              </div>
+              <div class="usa-card__body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum
+                  tenetur quo cupiditate, eaque qui officia recusandae.
+                </p>
+              </div>
+              <div class="usa-card__footer">
+                <a href="#" class="usa-button">Agency 05</a>
+              </div>
+            </div>
+          </li>
+          <li class="usa-card grid-col-12 desktop:grid-col-4">
+            <div class="usa-card__container">
+              <div class="usa-card__header">
+                <h4 class="usa-card__heading">Agency 06</h4>
+              </div>
+              <div class="usa-card__media">
+                <div class="usa-card__img">
+                  <img
+                    src="https://iso.500px.com/wp-content/uploads/2017/07/stock-photo-219973977-960x1000.jpg"
+                    alt="A placeholder image"
+                  />
+                </div>
+              </div>
+              <div class="usa-card__body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum
+                  tenetur quo cupiditate, eaque qui officia recusandae.
+                </p>
+              </div>
+              <div class="usa-card__footer">
+                <a href="#" class="usa-button">Agency 06</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+    <!--  SECTION - CALENDAR COLLECTIONS  -->
+    <section id="section-collectioncards"
+             class="grid-container usa-section section-collectioncards section-paintstroke"
+    >
+      <div class="tablet:grid-col-12">
+        <h2 class="font-heading-xl">
+          News and Announcements
+        </h2>
+        <ul class="usa-collection">
+          <li class="usa-collection__item full-width">
+            <div class="usa-collection__calendar-date">
+              <time datetime="2020-09-30T12:00:00+01:00"><span class="usa-collection__calendar-date-month">SEP</span> <span class="usa-collection__calendar-date-day">30</span></time>
+            </div>
+            <div class="usa-collection__body">
+              <h4 class="usa-collection__heading">
+                <a class="usa-link" href="https://trumpadministration.archives.performance.gov/presidents-winners-press-release/">Gears of Government President’s Award winners</a>
+              </h4>
+              <p class="usa-collection__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </li>
+          <li class="usa-collection__item full-width">
+            <div class="usa-collection__calendar-date">
+              <time datetime="2020-09-30T12:00:00+01:00"><span class="usa-collection__calendar-date-month">SEP</span> <span class="usa-collection__calendar-date-day">30</span></time>
+            </div>
+            <div class="usa-collection__body">
+              <h4 class="usa-collection__heading">
+                <a class="usa-link" href="https://trumpadministration.archives.performance.gov/sba-wosb-dashboard/">Women-owned small business dashboard</a>
+              </h4>
+              <p class="usa-collection__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </li>
+          <li class="usa-collection__item full-width">
+            <div class="usa-collection__calendar-date">
+              <time datetime="2020-09-17T12:00:00+01:00"><span class="usa-collection__calendar-date-month">SEP</span> <span class="usa-collection__calendar-date-day">17</span></time>
+            </div>
+            <div class="usa-collection__body">
+              <h4 class="usa-collection__heading">
+                <a class="usa-link" href="https://trumpadministration.archives.performance.gov/September-2020-Updates-Show-Progress/">September 2020 updates show progress on cross-agency and agency priority goals</a>
+              </h4>
+              <p class="usa-collection__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--  SECTION - PARALLAX - HOVER CARDS  -->
+    <section id="section-hovercards"
+             class="grid-container full-width usa-section parallax section-hovercards"
+             style="background-image: url('https://images.unsplash.com/photo-1474291102916-622af5ff18bb?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"
+    >
+      <div class="usa-grid over-image">
+        <h2 class="font-heading-xl" style="color:white;">
+          Resources
+        </h2>
         <p>
-          The tagline should inspire confidence and interest, focusing on the value that your overall approach offers to your audience. Use a heading typeface and keep your tagline to just a few words, and don’t confuse or mystify.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
+        <div class="grc-list usa-grid grid-row grid-gap">
+          <a rel="external noopener noreferrer" target="_blank" title="" href="https://www.nasa.gov/careers" class="grid-col-4">
+            <img decoding="async" loading="lazy" width="300" height="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyvFyVaCDiit4NhGDCchK23uHUZ5dy_FNzvQ&s" class="grc-grid-item-image wp-post-image" alt="" />
+            <div class="grc-grid-item-label">Lorem ipsum</div>
+            <div class="grc-grid-item-overlay">
+              <div class="grc-grid-item-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </div>
+            </div>
+          </a>
+
+          <a rel="external noopener noreferrer" target="_blank" title="" href="https://intern.nasa.gov/" class="grid-col-4">
+            <img decoding="async" loading="lazy" width="300" height="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyvFyVaCDiit4NhGDCchK23uHUZ5dy_FNzvQ&s" class="grc-grid-item-image wp-post-image" alt="" />
+            <div class="grc-grid-item-label">Lorem ipsum</div>
+            <div class="grc-grid-item-overlay">
+              <div class="grc-grid-item-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </div>
+            </div>
+          </a>
+
+          <a rel="external noopener noreferrer" target="_blank" title="" href="https://www.nasa.gov/centers/glenn/business/index.html" class="grid-col-4">
+            <img decoding="async" loading="lazy" width="300" height="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyvFyVaCDiit4NhGDCchK23uHUZ5dy_FNzvQ&s" class="grc-grid-item-image wp-post-image" alt="" />
+            <div class="grc-grid-item-label">Lorem ipsum</div>
+            <div class="grc-grid-item-overlay">
+              <div class="grc-grid-item-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION - SPOTLIGHT  -->
+    <section id="section-spotlight"
+             class="grid-container usa-section section-spotlight"
+    >
+      <div class="grid-row grid-gap">
+        <div class="grid-offset-2 grid-col-4">
+          <h2 class="font-heading-xl margin-top-0 tablet:margin-bottom-0">
+            Spotlight
+          </h2>
+          <div>
+            <img
+              class="hoverpulse"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Robert_F._Kennedy_Jr.%2C_official_portrait_%282025%29_%28cropped_3-4%29.jpg/500px-Robert_F._Kennedy_Jr.%2C_official_portrait_%282025%29_%28cropped_3-4%29.jpg"
+              alt="Spotlight Image"
+              style="margin-top:14px; height:auto;" />
+          </div>
+        </div>
+        <div class="grid-col-4" style="margin-top:30px;">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--  SECTION - PARALLAX - VIDEO CARDS  -->
+    <section id="section-videocard"
+             class="grid-container full-width usa-section parallax section-videocard"
+             style="background-image: url('https://images.unsplash.com/photo-1525715843408-5c6ec44503b1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHdvbWFuJTIwcmVhZGluZ3xlbnwwfHwwfHx8MA%3D%3D');"
+    >
+      <div class="usa-grid over-image">
+        <h2 class="font-heading-xl">Section Library - Video Card</h2>
         <p>
-          Use the right side of the grid to explain the tagline a bit more. What are your goals? How do you do your work? Write in the present tense, and stay brief here. People who are interested can find details on internal pages.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
+        <div style="margin-bottom: 20px;text-align: center;">
+          <iframe style="box-shadow: 5px 5px 5px black;" width="560" height="315" src="https://www.youtube.com/embed/9XfbG-80Jv4?si=w_zqg5Wbxb1ua59b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
       </div>
-    </div>
-</section>
+    </section>
 
-  <!--  SECTION - BUBBLE CARDS  -->
-  <div
-  class="parallax"
-  style="background-image: url('https://iso.500px.com/wp-content/uploads/2017/07/stock-photo-219973977-960x1000.jpg');"
-></div>
-  <section id="section-bubblecards" class="grid-container full-width darkblue usa-graphic-list usa-section">
-    <div class="usa-graphic-list__row grid-row grid-gap">
-      <div class="usa-media-block tablet:grid-col">
-        <img class="usa-media-block__img" src="assets/img/circle-124.png" alt="Alt text" />
-        <div class="usa-media-block__body">
-          <h2 class="usa-graphic-list__heading">
-            <a href="agency01.html">Agency 01</a>
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+    <!--  SECTION - BUBBLE CARDS  -->
+    <section id="section-bubblecards"
+             class="grid-container full-width darkblue usa-graphic-list usa-section section-bubblecards"
+    >
+      <h2 class="font-heading-xl" style="color:white;">
+        Section Library - Bubble/Flag Cards
+      </h2>
+      <div class="usa-graphic-list__row grid-row grid-gap">
+        <div class="usa-media-block tablet:grid-col">
+          <i class="fa-solid fa-camera" style="font-size:150px;margin-right: 20px"></i>
+          <div class="usa-media-block__body">
+            <h2 class="usa-graphic-list__heading">
+              <a href="agency01.html">Agency 01</a>
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div class="usa-media-block tablet:grid-col">
+          <i class="fa-solid fa-thumbs-up" style="font-size:150px;margin-right: 20px"></i>
+          <div class="usa-media-block__body">
+            <h2 class="usa-graphic-list__heading">
+              <a href="agency02.html">Agency 02</a>
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="usa-media-block tablet:grid-col">
-        <img class="usa-media-block__img" src="assets/img/circle-124.png" alt="Alt text" />
-        <div class="usa-media-block__body">
-          <h2 class="usa-graphic-list__heading">
-            <a href="agency02.html">Agency 02</a>
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+      <div class="usa-graphic-list__row grid-row grid-gap">
+        <div class="usa-media-block tablet:grid-col">
+          <i class="fa-solid fa-bell" style="font-size:150px;margin-right: 20px"></i>
+          <div class="usa-media-block__body">
+            <h2 class="usa-graphic-list__heading">
+              <a href="agency03.html">Agency 03</a>
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div class="usa-media-block tablet:grid-col">
+          <i class="fa-solid fa-headphones" style="font-size:150px;margin-right: 20px"></i>
+          <div class="usa-media-block__body">
+            <h2 class="usa-graphic-list__heading">
+              <a href="agency04.html">Agency 04</a>
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="usa-graphic-list__row grid-row grid-gap">
-      <div class="usa-media-block tablet:grid-col">
-        <img class="usa-media-block__img" src="assets/img/circle-124.png" alt="Alt text" />
-        <div class="usa-media-block__body">
-          <h2 class="usa-graphic-list__heading">
-            <a href="agency03.html">Agency 03</a>
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+      <div class="usa-graphic-list__row grid-row grid-gap">
+        <div class="usa-media-block tablet:grid-col">
+          <i class="fa-solid fa-face-smile" style="font-size:150px;margin-right: 20px"></i>
+          <div class="usa-media-block__body">
+            <h2 class="usa-graphic-list__heading">
+              <a href="agency05.html">Agency 05</a>
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+        <div class="usa-media-block tablet:grid-col">
+          <i class="fa-solid fa-cloud" style="font-size:150px;margin-right: 20px"></i>
+          <div class="usa-media-block__body">
+            <h2 class="usa-graphic-list__heading">
+              <a href="agency06.html">Agency 06</a>
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="usa-media-block tablet:grid-col">
-        <img class="usa-media-block__img" src="assets/img/circle-124.png" alt="Alt text" />
-        <div class="usa-media-block__body">
-          <h2 class="usa-graphic-list__heading">
-            <a href="agency04.html">Agency 04</a>
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="usa-graphic-list__row grid-row grid-gap">
-      <div class="usa-media-block tablet:grid-col">
-        <img class="usa-media-block__img" src="assets/img/circle-124.png" alt="Alt text" />
-        <div class="usa-media-block__body">
-          <h2 class="usa-graphic-list__heading">
-            <a href="agency05.html">Agency 05</a>
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-      </div>
-      <div class="usa-media-block tablet:grid-col">
-        <img class="usa-media-block__img" src="assets/img/circle-124.png" alt="Alt text" />
-        <div class="usa-media-block__body">
-          <h2 class="usa-graphic-list__heading">
-            <a href="agency06.html">Agency 06</a>
-          </h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!--  SECTION - CALENDAR COLLECTIONS  -->
-  <div
-    class="parallax"
-    style="background-image: url('https://images.unsplash.com/photo-1525715843408-5c6ec44503b1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHdvbWFuJTIwcmVhZGluZ3xlbnwwfHwwfHx8MA%3D%3D');"
-  ></div>
-  <section id="section-collectioncards" class="grid-container usa-section">
-  <div class="tablet:grid-col-12">
-    <h3 class="site-preview-heading"><a id="calendar-display" class="usa-anchor"></a>Calendar display</h3>
-    <ul class="usa-collection">
-      <li class="usa-collection__item full-width">
-        <div class="usa-collection__calendar-date">
-          <time datetime="2020-09-30T12:00:00+01:00"><span class="usa-collection__calendar-date-month">SEP</span> <span class="usa-collection__calendar-date-day">30</span></time>
-        </div>
-        <div class="usa-collection__body">
-          <h4 class="usa-collection__heading">
-            <a class="usa-link" href="https://trumpadministration.archives.performance.gov/presidents-winners-press-release/">Gears of Government President’s Award winners</a>
-          </h4>
-          <p class="usa-collection__description">
-            Today, the Administration announces the winners of the Gears of Government President’s Award. This program recognizes the contributions of individuals and teams across the federal workforce who make a profound difference
-            in the lives of the American people.
-          </p>
-        </div>
-      </li>
-      <li class="usa-collection__item full-width">
-        <div class="usa-collection__calendar-date">
-          <time datetime="2020-09-30T12:00:00+01:00"><span class="usa-collection__calendar-date-month">SEP</span> <span class="usa-collection__calendar-date-day">30</span></time>
-        </div>
-        <div class="usa-collection__body">
-          <h4 class="usa-collection__heading">
-            <a class="usa-link" href="https://trumpadministration.archives.performance.gov/sba-wosb-dashboard/">Women-owned small business dashboard</a>
-          </h4>
-          <p class="usa-collection__description">
-            In honor of National Women’s Small Business Month, we’ve partnered with SBA’s Office of Government Contracting and Business Development and Office of Program Performance, Analysis, and Evaluation to highlight the
-            Women-Owned Small Businesses (WOSBs) data dashboard!
-          </p>
-        </div>
-      </li>
-      <li class="usa-collection__item full-width">
-        <div class="usa-collection__calendar-date">
-          <time datetime="2020-09-17T12:00:00+01:00"><span class="usa-collection__calendar-date-month">SEP</span> <span class="usa-collection__calendar-date-day">17</span></time>
-        </div>
-        <div class="usa-collection__body">
-          <h4 class="usa-collection__heading">
-            <a class="usa-link" href="https://trumpadministration.archives.performance.gov/September-2020-Updates-Show-Progress/">September 2020 updates show progress on cross-agency and agency priority goals</a>
-          </h4>
-          <p class="usa-collection__description">
-            Today, we published progress updates for both Cross-Agency Priority (CAP) Goals and Agency Priority Goals (APGs) for the third quarter of FY2020. These updates highlight recent milestones and accomplishments as well as
-            related initiatives that support progress towards a more modern and effective government.
-          </p>
-        </div>
-      </li>
-    </ul>
-  </div>
-</section>
-
-  <!--  SECTION - CLICKABLE CARDS  -->
-  <div
-    class="parallax"
-    style="background-image: url('https://images.unsplash.com/photo-1474291102916-622af5ff18bb?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"
-  ></div>
-  <section id="section-clickablecard" class="grid-container full-width usa-section animate-trigger">
-    <div class="grid-row grid-gap animate_clickablecard_target">
-      <div class="tablet:grid-col-6 mobile-lg:grid-col-12 clickable-card-component" style="padding-bottom: 50px;">
-        <a href="/simple-styleguide#Standards-ClickableCard" class="usa-card clickable-card-links" tabindex="0" aria-label="More about Donc consectetur quiche interduo elit er">
-          <div class="usa-card__container clickable-card">
-            <header class="usa-card__header">
-              <h2 class="usa-card__heading">Donc consectetur quiche interduo elit er</h2>
-            </header>
-            <div class="usa-card__body">
-              <p>Sed id interdum elit. Quisque sagittis erat eu dolor ornare, blandit sagittis augue suscipit. Fusce tempor a massa sit amet suscipit.</p>
-            </div>
-            <div class="usa-card__footer" style="text-align: right;">
-              <i class="fas fa-arrow-right" aria-hidden="true" style="color: #4a4a4a; width: 21px;"></i>
+    <!--  SECTION - PARALLAX - SLIDER  -->
+    <section id="section-slider"
+             class="grid-container full-width usa-section parallax section-slider"
+             style="background-image: url('https://st3.depositphotos.com/4259987/17676/i/600/depositphotos_176768184-stock-photo-portrait-happy-beautiful-student-reading.jpg');"
+    >
+      <div class="usa-grid over-image">
+        <h2 class="font-heading-xl">Section Library - Slider Card</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <div class="slideshow-container">
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
+            <div class="text">
+              <h3>Slider 01</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
             </div>
           </div>
-        </a>
-      </div>
 
-      <div class="tablet:grid-col-6 mobile-lg:grid-col-12 clickable-card-component" style="padding-bottom: 50px;">
-        <a href="/simple-styleguide#Standards-ClickableCard" class="usa-card clickable-card-links" tabindex="0" aria-label="More about Donc consectetur quiche interduo elit er">
-          <div class="usa-card__container clickable-card">
-            <header class="usa-card__header">
-              <h2 class="usa-card__heading"><i class="fa-regular fa-file" style="color: #1A6986; padding-right: 10px;"></i>Donc consectetur quiche interduo</h2>
-            </header>
-            <div class="usa-card__body">
-              <p>Sed id interdum elit. Quisque sagittis erat eu dolor ornare, blandit sagittis augue suscipit. Fusce tempor a massa sit amet suscipit.</p>
-            </div>
-            <div class="usa-card__footer" style="text-align: right;">
-              <i class="fas fa-arrow-right" aria-hidden="true" style="color: #4a4a4a; width: 21px;"></i>
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" style="width:100%">
+            <div class="text">
+              <h3>Slider 02</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
             </div>
           </div>
-        </a>
-      </div>
-    </div>
-    <div class="grid-row grid-gap animate_clickablecard_target">
-      <div class="tablet:grid-col-6 mobile-lg:grid-col-12 clickable-card-component" style="padding-bottom: 50px;">
-        <a href="/simple-styleguide#Standards-ClickableCard" class="usa-card clickable-card-links" tabindex="0" aria-label="More about Donc consectetur quiche interduo elit er">
-          <div class="usa-card__container clickable-card">
-            <header class="usa-card__header">
-              <h2 class="usa-card__heading">Donc consectetur quiche interduo elit er</h2>
-            </header>
-            <div class="usa-card__body">
-              <p>Sed id interdum elit. Quisque sagittis erat eu dolor ornare, blandit sagittis augue suscipit. Fusce tempor a massa sit amet suscipit.</p>
-            </div>
-            <div class="usa-card__footer" style="text-align: right;">
-              <i class="fas fa-arrow-right" aria-hidden="true" style="color: #4a4a4a; width: 21px;"></i>
-            </div>
-          </div>
-        </a>
-      </div>
 
-      <div class="tablet:grid-col-6 mobile-lg:grid-col-12 clickable-card-component" style="padding-bottom: 50px;">
-        <a href="/simple-styleguide#Standards-ClickableCard" class="usa-card clickable-card-links" tabindex="0" aria-label="More about Donc consectetur quiche interduo elit er">
-          <div class="usa-card__container clickable-card">
-            <header class="usa-card__header">
-              <h2 class="usa-card__heading"><i class="fa-regular fa-file" style="color: #1A6986; padding-right: 10px;"></i>Donc consectetur quiche interduo</h2>
-            </header>
-            <div class="usa-card__body">
-              <p>Sed id interdum elit. Quisque sagittis erat eu dolor ornare, blandit sagittis augue suscipit. Fusce tempor a massa sit amet suscipit.</p>
-            </div>
-            <div class="usa-card__footer" style="text-align: right;">
-              <i class="fas fa-arrow-right" aria-hidden="true" style="color: #4a4a4a; width: 21px;"></i>
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="https://www.w3schools.com/howto/img_lights_wide.jpg" style="width:100%">
+            <div class="text">
+              <h3>Slider 03</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
             </div>
           </div>
-        </a>
-      </div>
-    </div>
-    <div class="grid-row grid-gap animate_clickablecard_target">
-      <div class="tablet:grid-col-6 mobile-lg:grid-col-12 clickable-card-component" style="padding-bottom: 50px;">
-        <a href="/simple-styleguide#Standards-ClickableCard" class="usa-card clickable-card-links" tabindex="0" aria-label="More about Donc consectetur quiche interduo elit er">
-          <div class="usa-card__container clickable-card">
-            <header class="usa-card__header">
-              <h2 class="usa-card__heading">Donc consectetur quiche interduo elit er</h2>
-            </header>
-            <div class="usa-card__body">
-              <p>Sed id interdum elit. Quisque sagittis erat eu dolor ornare, blandit sagittis augue suscipit. Fusce tempor a massa sit amet suscipit.</p>
-            </div>
-            <div class="usa-card__footer" style="text-align: right;">
-              <i class="fas fa-arrow-right" aria-hidden="true" style="color: #4a4a4a; width: 21px;"></i>
-            </div>
-          </div>
-        </a>
-      </div>
 
-      <div class="tablet:grid-col-6 mobile-lg:grid-col-12 clickable-card-component" style="padding-bottom: 50px;">
-        <a href="/simple-styleguide#Standards-ClickableCard" class="usa-card clickable-card-links" tabindex="0" aria-label="More about Donc consectetur quiche interduo elit er">
-          <div class="usa-card__container clickable-card">
-            <header class="usa-card__header">
-              <h2 class="usa-card__heading"><i class="fa-regular fa-file" style="color: #1A6986; padding-right: 10px;"></i>Donc consectetur quiche interduo</h2>
-            </header>
-            <div class="usa-card__body">
-              <p>Sed id interdum elit. Quisque sagittis erat eu dolor ornare, blandit sagittis augue suscipit. Fusce tempor a massa sit amet suscipit.</p>
-            </div>
-            <div class="usa-card__footer" style="text-align: right;">
-              <i class="fas fa-arrow-right" aria-hidden="true" style="color: #4a4a4a; width: 21px;"></i>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-</main>
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
 
-<footer class="darkblue usa-footer">
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+      </div>
+    </section>
+
+    <!--  SECTION - CLICKABLE CARDS  -->
+    <section id="section-clickablecard"
+             class="grid-container usa-section animate-trigger section-clickablecard section-paintstroke"
+    >
+      <h2 class="font-heading-xl">
+        Section Library - Clickable Card
+      </h2>
+      <div class="grid-row grid-gap animate_clickablecard_target">
+        <div class="tablet:grid-col-6 mobile-lg:grid-col-12 clickable-card-component hoverpulse" style="padding-bottom: 50px;">
+          <a href="/simple-styleguide#Standards-ClickableCard" class="usa-card clickable-card-links" tabindex="0" aria-label="More about Donc consectetur quiche interduo elit er">
+            <div class="usa-card__container clickable-card">
+              <header class="usa-card__header">
+                <h2 class="usa-card__heading">
+                  <i class="fa-regular fa-comments" style="font-size: 50px; color: #1A6986; padding-right: 10px;"></i>
+                  Agency 01
+                </h2>
+              </header>
+              <div class="usa-card__body">
+                <p>Sed id interdum elit. Quisque sagittis erat eu dolor ornare, blandit sagittis augue suscipit. Fusce tempor a massa sit amet suscipit.</p>
+              </div>
+              <div class="usa-card__footer" style="text-align: right;">
+                <i class="fas fa-arrow-right" aria-hidden="true" style="color: #4a4a4a; width: 21px;"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="tablet:grid-col-6 mobile-lg:grid-col-12 clickable-card-component hoverpulse" style="padding-bottom: 50px;">
+          <a href="/simple-styleguide#Standards-ClickableCard" class="usa-card clickable-card-links" tabindex="0" aria-label="More about Donc consectetur quiche interduo elit er">
+            <div class="usa-card__container clickable-card">
+              <header class="usa-card__header">
+                <h2 class="usa-card__heading">
+                  <i class="fa-regular fa-snowflake" style="font-size: 50px; color: #1A6986; padding-right: 10px;"></i>
+                  Donc consectetur quiche interduo
+                </h2>
+              </header>
+              <div class="usa-card__body">
+                <p>Sed id interdum elit. Quisque sagittis erat eu dolor ornare, blandit sagittis augue suscipit. Fusce tempor a massa sit amet suscipit.</p>
+              </div>
+              <div class="usa-card__footer" style="text-align: right;">
+                <i class="fas fa-arrow-right" aria-hidden="true" style="color: #4a4a4a; width: 21px;"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="grid-row grid-gap animate_clickablecard_target">
+        <div class="tablet:grid-col-6 mobile-lg:grid-col-12 clickable-card-component hoverpulse" style="padding-bottom: 50px;">
+          <a href="/simple-styleguide#Standards-ClickableCard" class="usa-card clickable-card-links" tabindex="0" aria-label="More about Donc consectetur quiche interduo elit er">
+            <div class="usa-card__container clickable-card">
+              <header class="usa-card__header">
+                <h2 class="usa-card__heading">
+                  <i class="fa-regular fa-paper-plane" style="font-size: 50px; color: #1A6986; padding-right: 10px;"></i>
+                  Donc consectetur quiche interduo elit er
+                </h2>
+              </header>
+              <div class="usa-card__body">
+                <p>Sed id interdum elit. Quisque sagittis erat eu dolor ornare, blandit sagittis augue suscipit. Fusce tempor a massa sit amet suscipit.</p>
+              </div>
+              <div class="usa-card__footer" style="text-align: right;">
+                <i class="fas fa-arrow-right" aria-hidden="true" style="color: #4a4a4a; width: 21px;"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="tablet:grid-col-6 mobile-lg:grid-col-12 clickable-card-component hoverpulse" style="padding-bottom: 50px;">
+          <a href="/simple-styleguide#Standards-ClickableCard" class="usa-card clickable-card-links" tabindex="0" aria-label="More about Donc consectetur quiche interduo elit er">
+            <div class="usa-card__container clickable-card">
+              <header class="usa-card__header">
+                <h2 class="usa-card__heading">
+                  <i class="fa-regular fa-heart" style="font-size: 50px; color: #1A6986; padding-right: 10px;"></i>
+                  Donc consectetur quiche interduo
+                </h2>
+              </header>
+              <div class="usa-card__body">
+                <p>Sed id interdum elit. Quisque sagittis erat eu dolor ornare, blandit sagittis augue suscipit. Fusce tempor a massa sit amet suscipit.</p>
+              </div>
+              <div class="usa-card__footer" style="text-align: right;">
+                <i class="fas fa-arrow-right" aria-hidden="true" style="color: #4a4a4a; width: 21px;"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="grid-row grid-gap animate_clickablecard_target">
+        <div class="tablet:grid-col-6 mobile-lg:grid-col-12 clickable-card-component hoverpulse" style="padding-bottom: 50px;">
+          <a href="/simple-styleguide#Standards-ClickableCard" class="usa-card clickable-card-links" tabindex="0" aria-label="More about Donc consectetur quiche interduo elit er">
+            <div class="usa-card__container clickable-card">
+              <header class="usa-card__header">
+                <h2 class="usa-card__heading">
+                  <i class="fa-regular fa-hand" style="text-decoration:none; font-size: 50px; color: #1A6986; padding-right: 10px;"></i>
+                  Donc consectetur quiche interduo elit er
+                </h2>
+              </header>
+              <div class="usa-card__body">
+                <p>Sed id interdum elit. Quisque sagittis erat eu dolor ornare, blandit sagittis augue suscipit. Fusce tempor a massa sit amet suscipit.</p>
+              </div>
+              <div class="usa-card__footer" style="text-align: right;">
+                <i class="fas fa-arrow-right" aria-hidden="true" style="color: #4a4a4a; width: 21px;"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="tablet:grid-col-6 mobile-lg:grid-col-12 clickable-card-component hoverpulse" style="padding-bottom: 50px;">
+          <a href="/simple-styleguide#Standards-ClickableCard" class="usa-card clickable-card-links" tabindex="0" aria-label="More about Donc consectetur quiche interduo elit er">
+            <div class="usa-card__container clickable-card">
+              <header class="usa-card__header">
+                <h2 class="usa-card__heading">
+                  <i class="fa-regular fa-lightbulb" style="font-size: 50px; color: #1A6986; padding-right: 10px;"></i>
+                  Donc consectetur quiche interduo
+                </h2>
+              </header>
+              <div class="usa-card__body">
+                <p>Sed id interdum elit. Quisque sagittis erat eu dolor ornare, blandit sagittis augue suscipit. Fusce tempor a massa sit amet suscipit.</p>
+              </div>
+              <div class="usa-card__footer" style="text-align: right;">
+                <i class="fas fa-arrow-right" aria-hidden="true" style="color: #4a4a4a; width: 21px;"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--  SECTION - PARALLAX - TAB PANEL  -->
+    <section id="section-tabpanel"
+             class="grid-container full-width usa-section parallax section-tabpanel"
+             style="background-image: url('https://st2.depositphotos.com/2612745/7245/i/600/depositphotos_72451479-stock-photo-woman-reading-a-book.jpg');"
+    >
+      <div class="usa-grid over-image custom-tab">
+        <h2 class="font-heading-xl">Section Library - Tab Panel</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <div class="tab-list" role="tablist" aria-label="tab navigation">
+          <button id="panel-1669841" role="tab" type="button" aria-label="tab navigation" class="tab-btn" aria-controls="tab-1669841" aria-selected="true">
+            <span class="tab-title">
+                <span class="title">
+                  <i class="fa-solid fa-truck-fast"></i>
+                  <div>Title One</div>
+                </span>
+            </span>
+          </button>
+          <button id="panel-1669842" role="tab" type="button" aria-label="tab navigation" class="tab-btn" aria-controls="tab-1669842" tabindex="-1">
+            <span class="tab-title">
+                <i class="fa-solid fa-gift"></i>
+                  <div>Title Two</div>
+            </span>
+          </button>
+          <button id="panel-1669850" role="tab" type="button" aria-label="tab navigation" class="tab-btn" aria-controls="tab-1669850" tabindex="-1">
+            <span class="tab-title">
+                <i class="fa-solid fa-paperclip"></i>
+                  <div>Title Three</div>
+            </span>
+          </button>
+        </div>
+
+        <div id="tab-1669841" role="tabpanel" class="tab-panel active" aria-labelledby="panel-1669841" tabindex="0">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+
+          <ul>
+            <li>
+              <strong>UPDATED</strong>&nbsp;
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </li>
+            <li>
+              <strong>UPDATED&nbsp;</strong>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              &nbsp;<strong>CLOSED</strong>
+            </li>
+          </ul>
+        </div>
+        <div id="tab-1669842" role="tabpanel" class="tab-panel" aria-labelledby="panel-1669842" tabindex="0" hidden="">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit:</p>
+
+          <ul>
+            <li>
+              <strong>UPDATED</strong>&nbsp;
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </li>
+            <li>
+              <strong>UPDATED&nbsp;</strong>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              &nbsp;<strong>CLOSED</strong>
+            </li>
+          </ul>
+        </div>
+        <div id="tab-1669850" role="tabpanel" class="tab-panel" aria-labelledby="panel-1669850" tabindex="0" hidden="">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+          </p>
+
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet, consectetur adipiscing
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet, consectetur adipiscing
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!--  SECTION - GOODFIT  -->
+    <section id="section-goodfit"
+             class="grid-container full-width usa-section section-goodfit"
+             style="background: #212121 url('https://t4.ftcdn.net/jpg/05/54/46/89/360_F_554468927_iwU3VYIjsaeopAb0WPYxVf21TloEhTEj.jpg');"
+    >
+      <div class="usa-grid over-image">
+        <div class="usa-content">
+          <h2 class="font-heading-xl">
+            Section Library - Goodfit Card
+          </h2>
+          <p class="text-large">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+          </p>
+          <p>
+            - An Important Person
+          </p>
+          <hr class="divider divider-left" />
+          <p>
+            <strong>Lorem ipsum dolor sit amet</strong><br />
+            Lorem ipsum dolor sit amet<br />
+            Lorem ipsum dolor sit amet
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="darkblue usa-footer">
   <section id="footer-section-01" class="grid-container grid-row full-width">
-    <div id="footer-block-rtt" class="grid-col-12">
+    <div id="footer-block-rtt" class="grid-col-12 hovershakeX">
       <a href="#">Return to top</a>
     </div>
   </section>
@@ -1099,10 +1478,33 @@
 </footer>
 
 </body>
-<script src="assets/uswds/js/uswds.min.js"></script>
+<script src="dist/js/uswds.min.js"></script>
+<script src="dist/js/uswds-init.min.js"></script>
 <script src="assets/js/main.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
+    // ANIMATE CARD SECTION
+    const section4 = document.getElementById('section-cards');
+    const mediaBlocks4 = document.querySelectorAll('.usa-card');
+
+    const observer4 = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          mediaBlocks4.forEach((block, index) => {
+            setTimeout(() => {
+              block.classList.add('animate__animated', 'animate__slideInUp');
+            }, index * 300); // Adds a 300ms delay for each block
+          });
+        }
+      });
+    });
+
+    if (section4) {
+      observer4.observe(section4);
+    } else {
+      console.error('Section not found: section-bubblecards');
+    }
+
     // ANIMATE BUBBLE CARD SECTION
     const section2 = document.getElementById('section-bubblecards');
     const mediaBlocks = document.querySelectorAll('.usa-media-block');
@@ -1156,11 +1558,11 @@
         if (entry.isIntersecting) {
           targets.forEach(target => {
             // Remove animation classes to reset the animation
-            target.classList.remove('animate__animated', 'animate__flipInX');
+            target.classList.remove('animate__animated', 'animate__slideInUp');
 
             // Use a timeout to allow the class removal to take effect
             setTimeout(() => {
-              target.classList.add('animate__animated', 'animate__flipInX');
+              target.classList.add('animate__animated', 'animate__slideInUp');
             }, 10); // Small delay ensures the animation restarts
           });
         }
@@ -1172,6 +1574,103 @@
     } else {
       console.error('Section not found: section-clickablecard');
     }
+  });
+
+  // SLIDER
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+
+  // TAB PANEL
+  $('.custom-tab').each(function () {
+    const tabbed = $(this);
+    const tablist = tabbed.find('.tab-list');
+    const tabs = tablist.find('[role="tab"]');
+    const panels = tabbed.find('[role="tabpanel"]');
+
+    // The tab switching function
+    const switchTab = (oldTab, newTab) => {
+      newTab.focus();
+      // Make the active tab focusable by the user (Tab key)
+      // newTab.removeAttr('tabindex');
+
+      // Set the selected state
+      newTab.attr('aria-selected', 'true');
+      oldTab.removeAttr('aria-selected');
+      oldTab.attr('tabindex', '-1');
+
+      // tab panels to show and hide
+      const index = tabs.index(newTab);
+      const oldIndex = tabs.index(oldTab);
+      panels.eq(oldIndex).prop('hidden', true);
+      panels.eq(index).prop('hidden', false);
+    };
+
+    tabs.each((i, tab) => {
+      $(tab).attr('tabindex', '-1');
+
+      // Handle clicking of tabs for mouse users
+
+      $(tab).on('click', e => {
+        e.preventDefault();
+        const currentTab = tablist.find('[aria-selected="true"]');
+        if (e.currentTarget !== currentTab[0]) {
+          switchTab(currentTab, $(tab));
+        }
+      });
+
+      // Handle keydown events for keyboard users
+
+      $(tab).on('keydown', e => {
+        const index = tabs.index(tab);
+
+        const dir = e.which === 37 ? index - 1 : e.which === 39 ? index + 1 : e.which === 40 ? 'down' : null;
+        if (dir !== null) {
+          if (dir === 'down') {
+            panels.eq(index).find(':focusable').first().focus();
+          } else if (tabs.eq(dir)) {
+            switchTab($(tab), tabs.eq(dir));
+          }
+        }
+        if (e.which === 13) { setTimeout(() => { $("span.tab-title.active").focus(); }, 200); }
+      });
+    });
+
+    // Add tab panel semantics and hide them all
+    panels.each((i, panel) => {
+      $(panel).prop('hidden', true);
+      $(panel).attr('tabindex', "0");
+    });
+
+    // Initially activate the first tab and reveal the first tab panel
+    // tabs.eq(0).removeAttr('tabindex');
+    tabs.eq(0).attr('aria-selected', 'true');
+    panels.eq(0).prop('hidden', false);
   });
 </script>
 </html>

@@ -1,0 +1,10 @@
+// Clearfix
+//================================
+
+@mixin custom-clearfix() {
+  &:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}

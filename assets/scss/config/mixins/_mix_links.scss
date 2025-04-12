@@ -1,0 +1,90 @@
+@use "../../config/mixins/breakpoint" as * ;
+@use "../../config/variables/var_colors" as * ;
+
+
+// Buttons and Links
+//===============================================
+@mixin h2-title {
+  font-size: 18px;
+  line-height: 20px;
+  padding-bottom: 5px;
+
+  @include breakpoint($break-desktop) {
+    font-size: 23px;
+    line-height: 25px;
+    margin: 20px 0;
+  }
+}
+
+@mixin title-link {
+  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@mixin link-color($link-color, $link-color-hover, $link-color-visited, $link-color-active, $link-color-focus) {
+  color: $link-color;
+  &:hover {
+    color: $link-color-hover;
+  }
+  &:visited {
+    color: $link-color-visited;
+  }
+  &:active {
+    color: $link-color-active;
+  }
+  &:focus {
+    color: $link-color-focus;
+  }
+}
+
+@mixin hover-unstyled-link {
+  &:link {
+    text-decoration: underline;
+  }
+  &:hover,
+  &:active,
+  &:focus ,
+  &:visited {
+    text-decoration: underline;
+  }
+}
+
+@mixin uswds-link-overwrite {
+  &:link {
+    color: $sapphire;
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: $barney; 
+    text-decoration: underline;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $royalblue;
+    // text-decoration: underline;
+  }
+}
+
+@mixin uswds-link-white-overwrite {
+  // a {
+    &:link {
+      color: $white;
+      text-decoration: underline;
+    }
+
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited {
+      color: $white;
+      text-decoration: none;
+    }
+  // }
+}
+
+

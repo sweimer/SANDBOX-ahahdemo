@@ -6,10 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Example Project</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="assets/uswds/dist/js/uswds-init.min.js"></script>
-  <link rel="stylesheet" href="assets/uswds/css/uswds.min.css">
+  <link rel="stylesheet" href="dist/css/uswds.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <style>
+    /* Override animation duration */
+    .animate__animated {
+      animation-duration: 2s; /* Makes the animation slower */
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -252,9 +258,14 @@
   </header>
 
   <main id="main-content">
-    <section class="grid-container full-width usa-hero" aria-label="Introduction">
+    <section
+      class="grid-container full-width usa-section usa-hero"
+      style="background-image: url('https://iso.500px.com/wp-content/uploads/2017/07/stock-photo-219973977-960x1000.jpg');"
+    >
         <div class="usa-hero__callout">
-          <h1 class="usa-hero__heading"><span class="usa-hero__heading--alt">Hero callout:</span>Bring attention to a project priority</h1>
+          <h1 class="usa-hero__heading">
+            <span class="usa-hero__heading--alt">Hero callout:</span>Bring attention to a project priority
+          </h1>
           <p>
             Support the callout with some short explanatory text. You don’t need more than a couple of sentences.
           </p>
@@ -404,6 +415,32 @@
         </ul>
       </div>
     </section>
+
+    <section
+      class="grid-container full-width usa-section section-goodfit"
+      style="background: #212121 url('https://t4.ftcdn.net/jpg/05/54/46/89/360_F_554468927_iwU3VYIjsaeopAb0WPYxVf21TloEhTEj.jpg');"
+    >
+      <div class="usa-grid">
+        <div class="usa-content">
+          <p class="text-large">
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+          </p>
+          <hr class="divider divider-left" />
+
+          <p>
+            <strong>Lorem ipsum dolor sit amet</strong><br />
+            Lorem ipsum dolor sit amet<br />
+            Lorem ipsum dolor sit amet
+          </p>
+        </div>
+      </div>
+      <small>
+        <div class="usa-grid">
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+        </div>
+      </small>
+    </section>
+
   </main>
 
   <footer class="darkblue usa-footer">
@@ -980,6 +1017,7 @@
     </section>
   </footer>
 </body>
-<script src="assets/uswds/js/uswds.min.js"></script>
+<script src="dist/js/uswds.min.js"></script>
+<script src="dist/js/uswds-init.min.js"></script>
 <script src="assets/js/main.js"></script>
 </html>
