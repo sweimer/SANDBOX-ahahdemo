@@ -375,9 +375,10 @@ h2 + .section-hovercards .grc-list {
   left: -150px;
   width: 30%;
   height: 100%;
-  background: rgba(22, 46, 81, 0.9);
+  background: rgb(22, 46, 81);
   border-radius: 0 50% 50% 0;
   box-shadow: 5px 5px 5px;
+  z-index: 1;
 }
 .section-spotlight img {
   cursor: pointer;

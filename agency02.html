@@ -10,68 +10,63 @@
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-  <style>
-    .animate__animated {
-      animation-duration: 4s;
-    }
-  </style>
 </head>
 <body>
 
   <header>
-  <a class="usa-skipnav" href="#main-content">Skip to main content</a>
-  <section class="usa-banner grid-container full-width" aria-label="Official government website">
-    <div class="usa-accordion">
-      <div class="usa-banner__inner full-width">
-        <div class="grid-col-auto">
-          <img class="usa-banner__header-flag" src="assets/img/us_flag_small.gif" alt="U.S. flag" />
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+    <section class="usa-banner grid-container full-width" aria-label="Official government website">
+      <div class="usa-accordion">
+        <div class="usa-banner__inner full-width">
+          <div class="grid-col-auto">
+            <img class="usa-banner__header-flag" src="assets/img/us_flag_small.gif" alt="U.S. flag" />
+          </div>
+          <div class="grid-col-fill tablet---grid-col-auto">
+            <p class="usa-banner__header-text">An official website of the United States government</p>
+            <p class="usa-banner__header-action" aria-hidden="true">Here’s how you know</p>
+          </div>
+          <button class="usa-accordion__button usa-banner__button" aria-expanded="false" aria-controls="gov-banner">
+            <span class="usa-banner__button-text">Here’s how you know</span>
+          </button>
         </div>
-        <div class="grid-col-fill tablet---grid-col-auto">
-          <p class="usa-banner__header-text">An official website of the United States government</p>
-          <p class="usa-banner__header-action" aria-hidden="true">Here’s how you know</p>
-        </div>
-        <button class="usa-accordion__button usa-banner__button" aria-expanded="false" aria-controls="gov-banner">
-          <span class="usa-banner__button-text">Here’s how you know</span>
-        </button>
-      </div>
-      <div class="usa-banner__content usa-accordion__content" id="gov-banner" hidden="">
-        <div class="grid-row grid-gap-lg">
-          <div class="usa-banner__guidance tablet---grid-col-6">
-            <img class="usa-banner__icon usa-media-block__img" src="/themes/custom/hhs_uswds/images/icon-dot-gov.svg" alt="Dot gov" />
-            <div class="usa-media-block__body">
-              <p>
-                <strong>Official websites use .gov</strong>
-                <br />
-                A <strong>.gov</strong> website belongs to an official government organization in the United States.
-              </p>
+        <div class="usa-banner__content usa-accordion__content" id="gov-banner" hidden="">
+          <div class="grid-row grid-gap-lg">
+            <div class="usa-banner__guidance tablet---grid-col-6">
+              <img class="usa-banner__icon usa-media-block__img" src="/themes/custom/hhs_uswds/images/icon-dot-gov.svg" alt="Dot gov" />
+              <div class="usa-media-block__body">
+                <p>
+                  <strong>Official websites use .gov</strong>
+                  <br />
+                  A <strong>.gov</strong> website belongs to an official government organization in the United States.
+                </p>
+              </div>
+            </div>
+            <div class="usa-banner__guidance tablet---grid-col-6">
+              <img class="usa-banner__icon usa-media-block__img" src="/themes/custom/hhs_uswds/images/icon-https.svg" alt="HTTPS" />
+              <div class="usa-media-block__body">
+                <p>
+                  <strong>Secure .gov websites use HTTPS</strong>
+                  <br />
+                  A <strong>lock</strong> (
+                  <span class="icon-lock">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 52 64" class="usa-banner__lock-image" role="img" aria-labelledby="banner-lock-title banner-lock-description">
+                                      <title id="banner-lock-title">Lock</title>
+                                      <desc id="banner-lock-description">A locked padlock</desc>
+                                      <path
+                                        fill="#000000"
+                                        fill-rule="evenodd"
+                                        d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z"
+                                      ></path>
+                                  </svg>
+                              </span>
+                  ) or <strong>https://</strong> means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="usa-banner__guidance tablet---grid-col-6">
-            <img class="usa-banner__icon usa-media-block__img" src="/themes/custom/hhs_uswds/images/icon-https.svg" alt="HTTPS" />
-            <div class="usa-media-block__body">
-              <p>
-                <strong>Secure .gov websites use HTTPS</strong>
-                <br />
-                A <strong>lock</strong> (
-                <span class="icon-lock">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 52 64" class="usa-banner__lock-image" role="img" aria-labelledby="banner-lock-title banner-lock-description">
-                                    <title id="banner-lock-title">Lock</title>
-                                    <desc id="banner-lock-description">A locked padlock</desc>
-                                    <path
-                                      fill="#000000"
-                                      fill-rule="evenodd"
-                                      d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z"
-                                    ></path>
-                                </svg>
-                            </span>
-                ) or <strong>https://</strong> means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.
-              </p>
-            </div>
-          </div>
         </div>
-      </div>
-  </section>
-</header>
+    </section>
+  </header>
 
   <main>
     <!-- SECTION - PARALLAX - MISSION  -->
@@ -218,8 +213,11 @@
 
     <!--  SECTION - PARALLAX - CARDS  -->
     <section id="section-cards"
-               class="grid-container full-width usa-section section-cards parallax"
-               style="background-image: url('https://iso.500px.com/wp-content/uploads/2017/07/stock-photo-219973977-960x1000.jpg');"
+             class="grid-container full-width usa-section section-cards parallax"
+             data-blockSelector=".usa-card"
+             data-animationName="animate__slideInUp"
+             data-animationDuration="500"
+             style="background-image: url('https://iso.500px.com/wp-content/uploads/2017/07/stock-photo-219973977-960x1000.jpg');"
       >
         <h2 class="font-heading-xl" style="color:white;">
           Find The Help You Need
@@ -375,6 +373,9 @@
     <!--  SECTION - CALENDAR COLLECTIONS  -->
     <section id="section-collectioncards"
              class="grid-container usa-section section-collectioncards section-paintstroke"
+             data-blockSelector=".usa-collection__item"
+             data-animationName="animate__slideInUp"
+             data-animationDuration="500"
     >
       <div class="tablet:grid-col-12">
         <h2 class="font-heading-xl">
@@ -473,9 +474,12 @@
 
     <!-- SECTION - SPOTLIGHT  -->
     <section id="section-spotlight"
-             class="grid-container usa-section section-spotlight"
+             class="grid-container usa-section section-spotlight animate_spotlight_target"
+             data-blockSelector=".section-spotlight-item"
+             data-animationName="animate__slideInLeft"
+             data-animationDuration="400"
     >
-      <div class="grid-row grid-gap">
+      <div class="section-spotlight-item grid-row grid-gap">
         <div class="grid-offset-2 grid-col-4">
           <h2 class="font-heading-xl margin-top-0 tablet:margin-bottom-0">
             Spotlight
@@ -518,6 +522,9 @@
     <!--  SECTION - BUBBLE CARDS  -->
     <section id="section-bubblecards"
              class="grid-container full-width darkblue usa-graphic-list usa-section section-bubblecards"
+             data-blockSelector=".usa-media-block"
+             data-animationName="animate__zoomIn"
+             data-animationDuration="500"
     >
       <h2 class="font-heading-xl" style="color:white;">
         Section Library - Bubble/Flag Cards
@@ -659,11 +666,14 @@
     <!--  SECTION - CLICKABLE CARDS  -->
     <section id="section-clickablecard"
              class="grid-container usa-section animate-trigger section-clickablecard section-paintstroke"
+             data-blockSelector=".clickable-card"
+             data-animationName="animate__slideInUp"
+             data-animationDuration="500"
     >
       <h2 class="font-heading-xl">
         Section Library - Clickable Card
       </h2>
-      <div class="grid-row grid-gap animate_clickablecard_target">
+      <div class="grid-row grid-gap section-clickablecard-item">
         <div class="tablet:grid-col-6 mobile-lg:grid-col-12 clickable-card-component hoverpulse" style="padding-bottom: 50px;">
           <a href="/simple-styleguide#Standards-ClickableCard" class="usa-card clickable-card-links" tabindex="0" aria-label="More about Donc consectetur quiche interduo elit er">
             <div class="usa-card__container clickable-card">
@@ -1483,97 +1493,51 @@
 <script src="assets/js/main.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
-    // ANIMATE CARD SECTION
-    const section4 = document.getElementById('section-cards');
-    const mediaBlocks4 = document.querySelectorAll('.usa-card');
+    function animateSectionsFromData(sectionId) {
+      const section = document.getElementById(sectionId);
 
-    const observer4 = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          mediaBlocks4.forEach((block, index) => {
-            setTimeout(() => {
-              block.classList.add('animate__animated', 'animate__slideInUp');
-            }, index * 300); // Adds a 300ms delay for each block
+      if (section) {
+        // Retrieve data attributes
+        const blockSelector = section.getAttribute('data-blockSelector');
+        const animationName = section.getAttribute('data-animationName');
+        const animationDuration = parseInt(section.getAttribute('data-animationDuration'), 10) || 300; // Default delay
+
+        const mediaBlocks = document.querySelectorAll(blockSelector);
+
+        // Add initial hidden state to all blocks
+        mediaBlocks.forEach(block => {
+          block.style.opacity = 0; // Make the element invisible initially
+          block.style.transform = 'translateY(20px)'; // Optional: Start slightly "below" for sliding effect
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              // Animate blocks when the section is in the viewport
+              mediaBlocks.forEach((block, index) => {
+                if (!block.classList.contains('animate__animated')) { // Prevent re-triggering
+                  setTimeout(() => {
+                    block.classList.add('animate__animated', animationName);
+                    block.style.opacity = 1; // Reveal the block
+                    block.style.transform = 'translateY(0)'; // Reset transform
+                  }, index * animationDuration); // Staggered delay
+                }
+              });
+            }
           });
-        }
-      });
-    });
+        });
 
-    if (section4) {
-      observer4.observe(section4);
-    } else {
-      console.error('Section not found: section-bubblecards');
+        mediaBlocks.forEach(block => {
+          observer.observe(block); // Observe each individual block
+        });
+      } else {
+        console.error(`Section not found: ${sectionId}`);
+      }
     }
 
-    // ANIMATE BUBBLE CARD SECTION
-    const section2 = document.getElementById('section-bubblecards');
-    const mediaBlocks = document.querySelectorAll('.usa-media-block');
-
-    const observer2 = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          mediaBlocks.forEach((block, index) => {
-            setTimeout(() => {
-              block.classList.add('animate__animated', 'animate__fadeIn');
-            }, index * 300); // Adds a 300ms delay for each block
-          });
-        }
-      });
+    ['section-bubblecards', 'section-cards', 'section-clickablecard', 'section-collectioncards', 'section-spotlight'].forEach(id => {
+      animateSectionsFromData(id);
     });
-
-    if (section2) {
-      observer2.observe(section2);
-    } else {
-      console.error('Section not found: section-bubblecards');
-    }
-
-    // ANIMATE COLLECTION CARD SECTION
-    const section3 = document.getElementById('section-collectioncards');
-    const mediaBlocks3 = document.querySelectorAll('.usa-collection__item');
-
-    const observer3 = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          mediaBlocks3.forEach((block, index) => {
-            setTimeout(() => {
-              block.classList.add('animate__animated', 'animate__slideInUp');
-            }, index * 300); // Adds a 300ms delay for each block
-          });
-        }
-      });
-    });
-
-    if (section3) {
-      observer3.observe(section3);
-    } else {
-      console.error('Section not found: section-bubblecards');
-    }
-
-    // ANIMATE CLICKABLE CARD SECTION
-    const section = document.getElementById('section-clickablecard');
-    const targets = document.querySelectorAll('.animate_clickablecard_target');
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          targets.forEach(target => {
-            // Remove animation classes to reset the animation
-            target.classList.remove('animate__animated', 'animate__slideInUp');
-
-            // Use a timeout to allow the class removal to take effect
-            setTimeout(() => {
-              target.classList.add('animate__animated', 'animate__slideInUp');
-            }, 10); // Small delay ensures the animation restarts
-          });
-        }
-      });
-    });
-
-    if (section) {
-      observer.observe(section);
-    } else {
-      console.error('Section not found: section-clickablecard');
-    }
   });
 
   // SLIDER
