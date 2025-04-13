@@ -18,21 +18,9 @@
   animation: shakeX 1s; /* The heartBeat animation */
 }
 
-.usa-collection__item.full-width {
+.usa-collection__item.width-full,
+.usa-banner__inner.width-full {
   max-width: 100% !important;
-}
-
-.usa-banner__inner.full-width {
-  max-width: 100% !important;
-}
-
-.usa-grid.over-image {
-  background-color: rgba(22, 46, 81, 0.7);
-  border-radius: 5px 5px 5px 5px;
-  color: #fff;
-  padding: 20px;
-  margin: 0 auto;
-  max-width: 1024px;
 }
 
 .fake-logo {
@@ -94,32 +82,68 @@
   left: 0;
 }
 
-.grid-container.full-width {
+.grid-container.width-full {
   max-width: 100% !important;
 }
-.grid-container.darkblue {
+.grid-container.bg-black {
+  background-color: 0;
+  color: #fff;
+}
+.grid-container.bg-black a {
+  color: #fff;
+}
+.grid-container.bg-black a:hover {
+  color: #eee;
+}
+.grid-container.bg-dark {
   background-color: #162e51;
   color: #fff;
 }
-.grid-container.darkblue a {
+.grid-container.bg-dark a {
   color: #fff;
 }
-.grid-container.darkblue a:hover {
+.grid-container.bg-dark a:hover {
   color: #eee;
 }
-.grid-container.lightblue {
+.grid-container.bg-light {
   background-color: #00bde3;
   color: #fff;
 }
-.grid-container.lightblue a {
+.grid-container.bg-light a {
   color: #fff;
 }
-.grid-container.lightblue a:hover {
+.grid-container.bg-light a:hover {
   color: #eee;
 }
+.grid-container .accent-paintstroke {
+  background-position: -30px 0;
+  background-repeat: no-repeat;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPfTy6yxB5MVV8IyoHJ9nm_AhiWyqvVbrWAA&s");
+}
 
-section {
-  box-sizing: border-box;
+.usa-grid.width-trim {
+  max-width: 1024px !important;
+}
+.usa-grid.bg-black {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px 5px 5px 5px;
+  color: #fff;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+.usa-grid.bg-dark {
+  background-color: rgba(22, 46, 81, 0.7);
+  border-radius: 5px 5px 5px 5px;
+  color: #fff;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.section-clickablecard .clickable-card-component .clickable-card-links .usa-card__container .usa-card__header h2.usa-card__heading {
+  color: #1A6986 !important;
+  text-decoration: none !important;
 }
 
 .section-goodfit {
@@ -275,12 +299,6 @@ h2 + .section-hovercards .grc-list {
 }
 .section-hovercards .grc-list .grc-txt-grid-item a .fa-external-link {
   font-size: 13px;
-}
-
-.section-paintstroke {
-  background-position: -30px 0;
-  background-repeat: no-repeat;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPfTy6yxB5MVV8IyoHJ9nm_AhiWyqvVbrWAA&s");
 }
 
 .section-slider {
@@ -503,19 +521,14 @@ h2 + .section-hovercards .grc-list {
   }
 }
 
-.clickable-card-component .clickable-card-links .usa-card__container .usa-card__header h2.usa-card__heading {
-  color: #1A6986 !important;
-  text-decoration: none !important;
-}
-
-footer.darkblue {
+footer.bg-dark {
   background-color: #162e51;
   color: #fff;
 }
-footer.darkblue a {
+footer.bg-dark a {
   color: #fff;
 }
-footer.darkblue a:hover {
+footer.bg-dark a:hover {
   color: #eee;
 }
 

@@ -15,9 +15,9 @@
 
   <header>
     <a class="usa-skipnav" href="#main-content">Skip to main content</a>
-    <section class="usa-banner grid-container full-width" aria-label="Official government website">
+    <section class="usa-banner grid-container width-full" aria-label="Official government website">
       <div class="usa-accordion">
-        <div class="usa-banner__inner full-width">
+        <div class="usa-banner__inner width-full">
           <div class="grid-col-auto">
             <img class="usa-banner__header-flag" src="assets/img/us_flag_small.gif" alt="U.S. flag" />
           </div>
@@ -69,11 +69,12 @@
   </header>
 
   <main>
-    <!-- SECTION - PARALLAX - MISSION  -->
-    <section id="section-header"
-             class="grid-container full-width parallax section-header"
+    <!-- SECTION - PARALLAX - TOP/MISSION  -->
+    <section id="section-top"
+             class="section-top usa-section grid-container width-full parallax"
              style="background-image: url('https://cdn.makezine.com/uploads/2011/06/main_large_cin1.gif');"
     >
+      <!--  TOP LEFT  -->
       <div class="fake-logo">
         <img src="assets/img/logo-transparent-svg.svg" alt="Logo" />
       </div>
@@ -101,6 +102,7 @@
             </li>
           </ul>
         </div>
+      <!--  TOP RIGHT  -->
       <div class="nav-block">
         <div class="nav-block-menu">
           <button class="c-hamburger c-hamburger--htx animate__animated animate__heartBeat">
@@ -168,7 +170,8 @@
           </div>
         </div>
       </div>
-      <div class="mission-block grid-row grid-gap usa-grid over-image">
+      <!--  TOP MAIN  -->
+      <div class="mission-block usa-grid bg-dark grid-row grid-gap">
         <div class="tablet:grid-col-6">
           <h2 class="font-heading-xl margin-top-0 tablet:margin-bottom-0">
             Our Mission
@@ -210,8 +213,8 @@
 
     <!--  SECTION - PARALLAX - CARDS  -->
     <section id="section-cards"
-             class="grid-container full-width usa-section section-cards parallax"
-             data-animationTrigger="#section-cards .animationTrigger"
+             class="section-cards usa-section grid-container width-full parallax"
+             data-animationTrigger=".animationTrigger"
              data-animationName="animate__slideInUp"
              data-animationDuration="2s"
              style="background-image: url('https://iso.500px.com/wp-content/uploads/2017/07/stock-photo-219973977-960x1000.jpg');"
@@ -369,8 +372,8 @@
 
     <!--  SECTION - CALENDAR COLLECTIONS  -->
     <section id="section-collectioncards"
-             class="grid-container usa-section section-collectioncards section-paintstroke"
-             data-animationTrigger="#section-collectioncards .animationTrigger"
+             class="section-collectioncards usa-section grid-container accent-paintstrokentstroke"
+             data-animationTrigger=".animationTrigger"
              data-animationName="animate__slideInUp"
              data-animationDuration="2s"
     >
@@ -379,7 +382,7 @@
           News and Announcements
         </h2>
         <ul class="usa-collection">
-          <li class="usa-collection__item full-width animationTrigger">
+          <li class="usa-collection__item width-full animationTrigger">
             <div class="usa-collection__calendar-date">
               <time datetime="2020-09-30T12:00:00+01:00"><span class="usa-collection__calendar-date-month">SEP</span> <span class="usa-collection__calendar-date-day">30</span></time>
             </div>
@@ -392,7 +395,7 @@
               </p>
             </div>
           </li>
-          <li class="usa-collection__item full-width animationTrigger">
+          <li class="usa-collection__item width-full animationTrigger">
             <div class="usa-collection__calendar-date">
               <time datetime="2020-09-30T12:00:00+01:00"><span class="usa-collection__calendar-date-month">SEP</span> <span class="usa-collection__calendar-date-day">30</span></time>
             </div>
@@ -405,7 +408,7 @@
               </p>
             </div>
           </li>
-          <li class="usa-collection__item full-width animationTrigger">
+          <li class="usa-collection__item width-full animationTrigger">
             <div class="usa-collection__calendar-date">
               <time datetime="2020-09-17T12:00:00+01:00"><span class="usa-collection__calendar-date-month">SEP</span> <span class="usa-collection__calendar-date-day">17</span></time>
             </div>
@@ -424,13 +427,13 @@
 
     <!--  SECTION - PARALLAX - HOVER CARDS  -->
     <section id="section-hovercards"
-             class="grid-container full-width usa-section parallax section-hovercards"
-             data-animationTrigger="#section-hovercards .animationTrigger"
+             class="section-hovercards usa-section grid-container width-full parallax"
+             data-animationTrigger=".animationTrigger"
              data-animationName="animate__slideInUp"
              data-animationDuration="2s"
              style="background-image: url('https://images.unsplash.com/photo-1474291102916-622af5ff18bb?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"
     >
-      <div class="usa-grid over-image">
+      <div class="usa-grid bg-dark">
         <h2 class="font-heading-xl" style="color:white;">
           Resources
         </h2>
@@ -488,8 +491,8 @@
 
     <!-- SECTION - SPOTLIGHT  -->
     <section id="section-spotlight"
-             class="grid-container usa-section section-spotlight animate_spotlight_target"
-             data-animationTrigger="#section-spotlight .animationTrigger"
+             class="section-spotlight usa-section grid-container"
+             data-animationTrigger=".animationTrigger"
              data-animationName="animate__slideInLeft"
              data-animationDuration="3s"
     >
@@ -520,13 +523,13 @@
 
     <!--  SECTION - PARALLAX - VIDEO CARDS  -->
     <section id="section-videocard"
-             class="grid-container full-width usa-section parallax section-videocard"
-             data-animationTrigger="#section-videocard .animationTrigger"
+             class="section-videocard usa-section grid-container width-full parallax"
+             data-animationTrigger=".animationTrigger"
              data-animationName="animate__slideInUp"
              data-animationDuration="2s"
              style="background-image: url('https://images.unsplash.com/photo-1525715843408-5c6ec44503b1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHdvbWFuJTIwcmVhZGluZ3xlbnwwfHwwfHx8MA%3D%3D');"
     >
-      <div class="usa-grid over-image">
+      <div class="usa-grid bg-dark">
         <h2 class="font-heading-xl">Section Library - Video Card</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -550,8 +553,8 @@
 
     <!--  SECTION - BUBBLE CARDS  -->
     <section id="section-bubblecards"
-             class="grid-container full-width darkblue usa-graphic-list usa-section section-bubblecards"
-             data-animationTrigger="#section-bubblecards .animationTrigger"
+             class="section-bubblecards usa-section grid-container width-full bg-dark usa-graphic-list"
+             data-animationTrigger=".animationTrigger"
              data-animationName="animate__zoomIn"
              data-animationDuration="2s"
     >
@@ -634,13 +637,13 @@
 
     <!--  SECTION - PARALLAX - SLIDER  -->
     <section id="section-slider"
-             class="grid-container full-width usa-section parallax section-slider"
-             data-animationTrigger="#section-slider .animationTrigger"
+             class="section-slider usa-section grid-container width-full parallax"
+             data-animationTrigger=".animationTrigger"
              data-animationName="animate__slideInUp"
              data-animationDuration="2s"
              style="background-image: url('https://st2.depositphotos.com/37999710/47984/i/450/depositphotos_479846822-stock-photo-young-woman-dreadlocks-bright-clothes.jpg');"
     >
-      <div class="usa-grid over-image">
+      <div class="usa-grid bg-dark">
         <h2 class="font-heading-xl">Section Library - Slider Card</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -697,8 +700,8 @@
 
     <!--  SECTION - CLICKABLE CARDS  -->
     <section id="section-clickablecard"
-             class="grid-container usa-section animate-trigger section-clickablecard section-paintstroke"
-             data-animationTrigger="#section-clickablecard .animationTrigger"
+             class="section-clickablecard usa-section grid-container accent-paintstrokentstroke"
+             data-animationTrigger=".animationTrigger"
              data-animationName="animate__slideInUp"
              data-animationDuration="2s"
     >
@@ -826,13 +829,13 @@
 
     <!--  SECTION - PARALLAX - TAB PANEL  -->
     <section id="section-tabpanel"
-             class="grid-container full-width usa-section parallax section-tabpanel"
-             data-animationTrigger="#section-tabpanel .animationTrigger"
+             class="section-tabpanel usa-section grid-container width-full parallax"
+             data-animationTrigger=".animationTrigger"
              data-animationName="animate__lightSpeedInLeft"
              data-animationDuration="2s"
              style="background-image: url('https://st2.depositphotos.com/2612745/7245/i/600/depositphotos_72451479-stock-photo-woman-reading-a-book.jpg');"
     >
-      <div class="usa-grid over-image custom-tab">
+      <div class="usa-grid bg-dark custom-tab">
         <h2 class="font-heading-xl">Section Library - Tab Panel</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -943,8 +946,8 @@
 
     <!-- SECTION - ACCORDIONS  -->
     <section id="section-accordions"
-             class="grid-container usa-section section-accordions section-paintstroke"
-             data-animationTrigger="#section-accordions .animationTrigger"
+             class="section-accordions usa-section grid-container accent-paintstrokentstroke"
+             data-animationTrigger=".animationTrigger"
              data-animationName="animate__slideInUp"
              data-animationDuration="2s"
     >
@@ -1009,13 +1012,13 @@
 
     <!--  SECTION - GOODFIT  -->
     <section id="section-goodfit"
-             class="grid-container full-width usa-section section-goodfit"
-             data-animationTrigger="#section-goodfit .animationTrigger"
+             class="section-goodfit usa-section grid-container width-full"
+             data-animationTrigger=".animationTrigger"
              data-animationName="animate__zoomIn"
              data-animationDuration="2s"
              style="background: url('https://st2.depositphotos.com/4678277/46476/i/600/depositphotos_464768804-stock-photo-photo-of-young-attractive-girl.jpg');"
     >
-      <div class="usa-grid over-image animationTrigger">
+      <div class="usa-grid bg-dark animationTrigger">
         <div class="usa-content">
           <h2 class="font-heading-xl">
             Section Library - Goodfit Card
@@ -1032,13 +1035,13 @@
     </section>
   </main>
 
-  <footer class="darkblue usa-footer">
-  <section id="footer-section-01" class="grid-container grid-row full-width">
+  <footer class="usa-footer bg-dark">
+  <section id="footer-section-01" class="grid-container grid-row width-full">
     <div id="footer-block-rtt" class="grid-col-12 hovershakeX">
       <a href="#">Return to top</a>
     </div>
   </section>
-  <section id="footer-section-02" class="grid-container grid-row full-width">
+  <section id="footer-section-02" class="grid-container grid-row width-full">
     <div id="footer-block-nav" class="grid-col-12">
       <div class="footer-menu grid-row">
         <div class="footer_menu_block grid-col-12 desktop:grid-col-3">
@@ -1114,7 +1117,7 @@
       </div>
     </div>
   </section>
-  <section id="footer-section-03" class="grid-container grid-row full-width">
+  <section id="footer-section-03" class="grid-container grid-row width-full">
     <div id="footer-block-logo" class="grid-col-12 desktop:grid-col-6">
       <div class="logo-samhsa">
         <a href="/" title="SAMHSA.gov">
@@ -1611,11 +1614,20 @@
 <script src="dist/js/uswds-init.min.js"></script>
 <script src="assets/js/main.js"></script>
 <script>
+  // ANIMATION
   document.addEventListener('DOMContentLoaded', () => {
     function animateSectionsFromData(section) {
       if (section) {
-        // Retrieve data attributes
-        const animationTriggers = Array.from(document.querySelectorAll(section.getAttribute('data-animationTrigger')));
+        // Retrieve section ID
+        const sectionId = section.id;
+        if (!sectionId) {
+          console.error('Section does not have an ID.');
+          return;
+        }
+
+        // Build prefixed selector with section ID
+        const animationTriggerSelector = `#${sectionId} ${section.getAttribute('data-animationTrigger')}`;
+        const animationTriggers = Array.from(document.querySelectorAll(animationTriggerSelector));
         const animationName = section.getAttribute('data-animationName');
         const animationDuration = section.getAttribute('data-animationDuration');
 
@@ -1642,7 +1654,7 @@
                   }, cumulativeDelay);
 
                   // Increment cumulativeDelay for the next trigger
-                  const durationInMs = parseFloat(animationDuration) * 200; // Convert '2s' to 2000ms
+                  const durationInMs = parseFloat(animationDuration) * 200; // Adjust multiplier for delay
                   cumulativeDelay += durationInMs;
                 }
               });
@@ -1658,6 +1670,7 @@
         console.error(`Section not found.`);
       }
     }
+
 
     // Dynamically find all sections with the "data-animationTrigger" attribute
     document.querySelectorAll('[data-animationTrigger]').forEach((section) => {
