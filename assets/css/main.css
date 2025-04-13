@@ -393,6 +393,12 @@ h2 + .section-hovercards .grc-list {
 }
 .section-tabpanel .custom-tab > .tab-list button {
   padding: 14px 30px;
+  background: transparent;
+  border-radius: 10px 10px 0 0;
+}
+.section-tabpanel .custom-tab > .tab-list button[aria-selected=true] {
+  border-bottom: 5px solid rgb(255, 0, 0);
+  background: rgba(255, 255, 255, 0.7);
 }
 .section-tabpanel .custom-tab > .tab-list button i {
   font-size: 40px;
@@ -643,7 +649,7 @@ footer section#footer-section-03 {
   width: 300px;
   height: 300px;
   margin-top: -25px;
-  background: rgba(255, 0, 0, 0.4);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .sub-search.open form {
