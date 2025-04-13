@@ -117,6 +117,9 @@
 }
 
 // SECTIONS
+section {
+  box-sizing: border-box;
+}
 .section-goodfit {
   background-position: center !important;
   background-size: cover !important;
@@ -427,11 +430,13 @@
   .custom-tab > .tab-list {
     margin: 8px 0;
     button {
+      cursor: pointer;
       padding: 14px 30px;
       background: transparent;
       border-radius: 10px 10px 0 0;
 
-      &[aria-selected="true"] {
+      &[aria-selected="true"],
+      &:hover{
         border-bottom: 5px solid rgb(255, 0, 0);
         background: rgb(255, 255, 255, 0.7);
       }

@@ -118,6 +118,10 @@
   color: #eee;
 }
 
+section {
+  box-sizing: border-box;
+}
+
 .section-goodfit {
   background-position: center !important;
   background-size: cover !important;
@@ -398,11 +402,12 @@ h2 + .section-hovercards .grc-list {
   margin: 8px 0;
 }
 .section-tabpanel .custom-tab > .tab-list button {
+  cursor: pointer;
   padding: 14px 30px;
   background: transparent;
   border-radius: 10px 10px 0 0;
 }
-.section-tabpanel .custom-tab > .tab-list button[aria-selected=true] {
+.section-tabpanel .custom-tab > .tab-list button[aria-selected=true], .section-tabpanel .custom-tab > .tab-list button:hover {
   border-bottom: 5px solid rgb(255, 0, 0);
   background: rgba(255, 255, 255, 0.7);
 }
