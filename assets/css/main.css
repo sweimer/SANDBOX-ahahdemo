@@ -298,6 +298,12 @@ h2 + .section-hovercards .grc-list {
 .section-slider .mySlides {
   display: none;
 }
+.section-slider .mySlides img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
 .section-slider .prev, .section-slider .next {
   cursor: pointer;
   position: absolute;
