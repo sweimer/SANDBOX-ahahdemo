@@ -1,6 +1,16 @@
 @charset "UTF-8";
 /* Right Sidebar -- Recent Posts */
 /* 508 - Focus Colors */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif !important;
+}
+
 .u-visually-hidden, .usa-sr-only, .visually-hidden {
   clip: rect(1px, 1px, 1px, 1px) !important;
   height: 1px !important;
@@ -8,6 +18,16 @@
   position: absolute !important;
   width: 1px !important;
   word-wrap: normal !important;
+}
+
+.parallax {
+  /* Set a specific height */
+  min-height: 600px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hoverpulse:hover {
@@ -70,13 +90,17 @@
 }
 
 .mission-block {
-  background-color: rgba(22, 46, 81, 0.7) !important;
+  background-color: rgba(30, 44, 56, 0.7) !important;
   position: absolute;
   bottom: 10%;
-  max-width: 1024px !important;
-  left: 10%;
+  left: 20%;
 }
 
+.grid-container.accent-paintstroke {
+  background-position: -50px 0;
+  background-repeat: no-repeat;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPfTy6yxB5MVV8IyoHJ9nm_AhiWyqvVbrWAA&s");
+}
 .grid-container.width-full {
   max-width: 100% !important;
 }
@@ -91,7 +115,7 @@
   color: #eee;
 }
 .grid-container.bg-dark {
-  background-color: #162e51;
+  background-color: #1E2C38;
   color: #fff;
 }
 .grid-container.bg-dark a {
@@ -110,11 +134,6 @@
 .grid-container.bg-light a:hover {
   color: #eee;
 }
-.grid-container .accent-paintstroke {
-  background-position: -30px 0;
-  background-repeat: no-repeat;
-  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPfTy6yxB5MVV8IyoHJ9nm_AhiWyqvVbrWAA&s");
-}
 
 .usa-grid.width-trim {
   max-width: 1024px !important;
@@ -128,7 +147,7 @@
   max-width: 1024px;
 }
 .usa-grid.bg-dark {
-  background-color: rgba(22, 46, 81, 0.7);
+  background-color: rgba(30, 44, 56, 0.7);
   border-radius: 5px 5px 5px 5px;
   color: #fff;
   padding: 20px;
@@ -142,7 +161,7 @@
 }
 
 .section-clickablecard .clickable-card-component .clickable-card-links .usa-card__container .usa-card__header h2.usa-card__heading {
-  color: #1A6986 !important;
+  color: #1E2C38 !important;
   text-decoration: none !important;
 }
 .section-clickablecard .clickable-card-component.thehuda {
@@ -317,7 +336,7 @@
   margin-top: 3rem;
 }
 .section-goodfit small {
-  background-color: rgba(22, 46, 81, 0.7);
+  background-color: rgba(30, 44, 56, 0.7);
   border-radius: 5px 5px 5px 5px;
   display: block;
   margin: 3px auto -3px auto;
@@ -383,7 +402,7 @@ h2 + .section-hovercards .grc-list {
   font-size: 18px;
   font-weight: bold;
   text-align: center;
-  background-color: rgba(22, 46, 81, 0.7);
+  background-color: rgba(30, 44, 56, 0.7);
 }
 .section-hovercards .grc-list .grc-grid-item-label .fa-file-pdf-o {
   font-size: 15px;
@@ -397,7 +416,7 @@ h2 + .section-hovercards .grc-list {
   right: 0px;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: rgba(22, 46, 81, 0.7);
+  background-color: rgba(30, 44, 56, 0.7);
 }
 .section-hovercards .grc-list .grc-grid-item-overlay:hover {
   opacity: 100;
@@ -441,6 +460,35 @@ h2 + .section-hovercards .grc-list {
 }
 .section-hovercards .grc-list .grc-txt-grid-item a .fa-external-link {
   font-size: 13px;
+}
+
+.section-left-flags .usa-card__container {
+  border: none;
+}
+.section-left-flags .usa-card__container .usa-card__media {
+  box-shadow: 0 2px 2px 0 black;
+  width: 200px;
+}
+.section-left-flags .usa-card__container .usa-card__header {
+  position: absolute;
+  margin: 0;
+  background: #1E2C38;
+  border-radius: 5px 5px 5px 5px;
+  color: white;
+  padding: 14px;
+  top: 5%;
+  left: 175px;
+  height: 90%;
+  width: calc(100% - 185px);
+  z-index: 1;
+}
+.section-left-flags .usa-card__container .usa-card__body {
+  margin: 6% 20px 20px 200px;
+  color: white;
+  z-index: 1;
+}
+.section-left-flags .usa-card__container .usa-card__footer {
+  display: none;
 }
 
 .section-slider {
@@ -500,7 +548,7 @@ h2 + .section-hovercards .grc-list {
   right: 50px;
   padding: 20px;
   max-height: 90%;
-  background: rgba(22, 46, 81, 0.7);
+  background: rgba(30, 44, 56, 0.7);
 }
 .section-slider .numbertext {
   color: #f2f2f2;
@@ -545,9 +593,9 @@ h2 + .section-hovercards .grc-list {
   left: -150px;
   width: 30%;
   height: 100%;
-  background: rgb(22, 46, 81);
+  background: #ffffff;
   border-radius: 0 50% 50% 0;
-  box-shadow: 5px 5px 5px;
+  box-shadow: 5px 5px 5px #1E2C38;
   z-index: 1;
 }
 .section-spotlight img {
@@ -663,8 +711,13 @@ h2 + .section-hovercards .grc-list {
   }
 }
 
+.section-top {
+  height: 100vh;
+  position: relative;
+}
+
 footer.bg-dark {
-  background-color: #162e51;
+  background-color: rgb(30, 44, 56);
   color: #fff;
 }
 footer.bg-dark a {
@@ -763,7 +816,7 @@ footer section#footer-section-03 {
   width: 0;
   position: fixed;
   margin: 0;
-  background-color: rgba(22, 46, 81, 0.9);
+  background-color: rgba(30, 44, 56, 0.9);
   border-radius: 0;
   z-index: 1;
   overflow: hidden;
@@ -1091,116 +1144,4 @@ footer section#footer-section-03 {
 }
 .clickable-card-component a {
   text-decoration: none;
-}
-
-.parallax {
-  /* Set a specific height */
-  min-height: 500px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.clickable-card-component {
-  padding: 0 0 24px 0;
-}
-.clickable-card-component .usa-card:hover .usa-card__container {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  transition: box-shadow 0.3s ease-in-out;
-}
-.clickable-card-component .usa-card__container {
-  transition: box-shadow 0.3s ease-in-out;
-  border: 1px solid #D6D7D9;
-  border-radius: 4px;
-}
-.clickable-card-component .clickable-card-links {
-  text-decoration: none !important;
-}
-.clickable-card-component .clickable-card-links h1, .clickable-card-component .clickable-card-links h2, .clickable-card-component .clickable-card-links h3, .clickable-card-component .clickable-card-links h4, .clickable-card-component .clickable-card-links h5, .clickable-card-component .clickable-card-links h6 {
-  color: #1F419A;
-  text-decoration: underline;
-}
-.clickable-card-component .clickable-card-links h1:hover, .clickable-card-component .clickable-card-links h2:hover, .clickable-card-component .clickable-card-links h3:hover, .clickable-card-component .clickable-card-links h4:hover, .clickable-card-component .clickable-card-links h5:hover, .clickable-card-component .clickable-card-links h6:hover {
-  color: #005EA2;
-}
-.clickable-card-component .clickable-card-links h1 .icon-wrapper svg, .clickable-card-component .clickable-card-links h2 .icon-wrapper svg, .clickable-card-component .clickable-card-links h3 .icon-wrapper svg, .clickable-card-component .clickable-card-links h4 .icon-wrapper svg, .clickable-card-component .clickable-card-links h5 .icon-wrapper svg, .clickable-card-component .clickable-card-links h6 .icon-wrapper svg {
-  color: #1A6986 !important;
-}
-.clickable-card-component .clickable-card-links .usa-card__container {
-  border: 2px solid #EEEEEE;
-  border-radius: 8px;
-}
-.clickable-card-component .clickable-card-links:hover .usa-card__container {
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.07) !important;
-}
-.clickable-card-component .clickable-card-links:hover .usa-card__heading {
-  text-decoration: underline;
-}
-.clickable-card-component .clickable-card-links:focus .usa-card__container {
-  outline: 2px solid #2491FF;
-}
-.clickable-card-component .clickable-card-links .usa-card__body {
-  padding-left: 16px;
-  padding-right: 16px;
-}
-.clickable-card-component .clickable-card-links .usa-card__container {
-  border: 2px solid #EEEEEE;
-  background-color: #FFFFFF;
-  border-radius: 8px;
-}
-.clickable-card-component .clickable-card-links .usa-card__container .usa-card__footer {
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 16px;
-}
-.clickable-card-component .clickable-card-links .usa-card__container .usa-card__header {
-  border-bottom: none;
-}
-.clickable-card-component .clickable-card-links .usa-card__container .usa-card__header h2.usa-card__heading {
-  font-size: 20.5px;
-  line-height: 1.3;
-  font-weight: 600;
-  color: #1F419A;
-  max-width: 450px;
-  word-wrap: break-word;
-  word-break: break-word;
-  text-decoration: underline;
-}
-.clickable-card-component .clickable-card-links .usa-card__container .usa-card__header h2.usa-card__heading:hover {
-  color: #005EA2;
-}
-.clickable-card-component .clickable-card-links .usa-card__container .usa-card__header h2.usa-card__heading .icon-wrapper svg {
-  color: #1A6986 !important;
-}
-@media (min-width: 320px) {
-  .clickable-card-component .clickable-card-links .usa-card__header {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 16px;
-    padding-bottom: 0;
-  }
-  .clickable-card-component .clickable-card-links .usa-card__heading {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .clickable-card-component .clickable-card-links .usa-card__heading svg {
-    padding-right: 0.625rem;
-  }
-}
-.clickable-card-component a {
-  text-decoration: none;
-}
-
-.parallax {
-  /* Set a specific height */
-  min-height: 600px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }

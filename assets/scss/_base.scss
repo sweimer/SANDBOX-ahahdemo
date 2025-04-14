@@ -1,4 +1,13 @@
 // CUSTOM STYLES
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif !important;
+}
 .u-visually-hidden,.usa-sr-only,.visually-hidden {
   clip: rect(1px,1px,1px,1px)!important;
   height: 1px!important;
@@ -6,6 +15,18 @@
   position: absolute!important;
   width: 1px!important;
   word-wrap: normal!important
+}
+
+// PARALLAX
+.parallax {
+  /* Set a specific height */
+  min-height: 600px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 // ANIMATIONS
@@ -70,15 +91,19 @@
   }
 }
 .mission-block {
-  background-color: rgb(22, 46, 81, 0.7) !important;
+  background-color: rgba(30, 44, 56, 0.7) !important;
   position: absolute;
   bottom: 10%;
-  max-width: 1024px !important;
-  left: 10%;
+  left: 20%;
 }
 
 // SECTION/GRID CONTAINER
 .grid-container {
+  &.accent-paintstroke {
+    background-position: -50px 0;
+    background-repeat: no-repeat;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPfTy6yxB5MVV8IyoHJ9nm_AhiWyqvVbrWAA&s');
+  }
   &.width-full {
     max-width: 100% !important;
   }
@@ -93,7 +118,7 @@
     }
   }
   &.bg-dark {
-    background-color: #162e51;
+    background-color: #1E2C38;
     color: #fff;
     a {
       color: #fff;
@@ -112,11 +137,6 @@
       }
     }
   }
-  .accent-paintstroke {
-    background-position: -30px 0;
-    background-repeat: no-repeat;
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPfTy6yxB5MVV8IyoHJ9nm_AhiWyqvVbrWAA&s');
-  }
 }
 .usa-grid {
   &.width-trim {
@@ -131,7 +151,7 @@
     max-width: 1024px;
   }
   &.bg-dark  {
-    background-color: rgba(22, 46, 81, 0.7);
+    background-color: rgba(30,44,56, 0.7);
     border-radius: 5px 5px 5px 5px;
     color: #fff;
     padding: 20px;
@@ -151,7 +171,7 @@
       .usa-card__container {
         .usa-card__header {
           h2.usa-card__heading {
-            color: #1A6986 !important;
+            color: #1E2C38 !important;
             text-decoration: none !important;
           }
         }
@@ -344,7 +364,7 @@
   }
 
   small {
-    background-color: rgba(22, 46, 81, 0.7);
+    background-color: rgba(30,44,56,0.7);
     border-radius: 5px 5px 5px 5px;
     display: block;
     margin: 3px auto -3px auto;
@@ -416,7 +436,7 @@
       font-size: 18px;
       font-weight: bold;
       text-align: center;
-      background-color: rgba(22, 46, 81, 0.7);
+      background-color: rgba(30,44,56,0.7);
       .fa-file-pdf-o {
         font-size: 15px;
         margin-left: 5px;
@@ -431,7 +451,7 @@
       right: 0px;
       opacity: 0;
       transition: .5s ease;
-      background-color: rgba(22, 46, 81, 0.7);
+      background-color: rgba(30,44,56,0.7);
       &:hover {
         opacity: 100;
       }
@@ -486,6 +506,37 @@
           font-size: 13px;
         }
       }
+    }
+  }
+}
+.section-left-flags {
+  .usa-card__container {
+    border: none;
+
+    .usa-card__media {
+      box-shadow: 0 2px 2px 0 black;
+      width: 200px;
+    }
+    .usa-card__header {
+      position: absolute;
+      margin: 0;
+      background: #1E2C38;
+      border-radius: 5px 5px 5px 5px;
+      color: white;
+      padding: 14px;
+      top: 5%;
+      left: 175px;
+      height: calc(100% - 10%);
+      width: calc(100% - 185px);
+      z-index: 1;
+    }
+    .usa-card__body {
+      margin: 6% 20px 20px 200px;
+      color: white;
+      z-index: 1;
+    }
+    .usa-card__footer {
+      display: none;
     }
   }
 }
@@ -549,7 +600,7 @@
     right: 50px;
     padding: 20px;
     max-height: 90%;
-    background: rgba(22, 46, 81, 0.7);
+    background: rgba(30,44,56, 0.7);
   }
 
   /* Number text (1/3 etc) */
@@ -598,9 +649,9 @@
     left: -150px;
     width: 30%;
     height: 100%;
-    background: rgba(22, 46, 81);
+    background: #ffffff;
     border-radius: 0 50% 50% 0;
-    box-shadow: 5px 5px 5px;
+    box-shadow: 5px 5px 5px #1E2C38;;
     z-index: 1;
   }
 
@@ -741,11 +792,15 @@
     }
   }
 }
+.section-top {
+  height: 100vh;
+  position: relative;
+}
 
 //FOOTER
 footer {
   &.bg-dark {
-    background-color: #162e51;
+    background-color: rgba(30,44,56);
     color: #fff;
 
     a {

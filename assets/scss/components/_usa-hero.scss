@@ -116,15 +116,3 @@
     text-decoration: none;
   }
 }
-
-// PARALLAX COMPONENT
-.parallax {
-  /* Set a specific height */
-  min-height: 600px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
