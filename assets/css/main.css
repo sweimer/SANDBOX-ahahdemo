@@ -18,11 +18,6 @@
   animation: shakeX 1s; /* The heartBeat animation */
 }
 
-.usa-collection__item.width-full,
-.usa-banner__inner.width-full {
-  max-width: 100% !important;
-}
-
 .fake-logo {
   height: 300px;
   width: 300px;
@@ -75,11 +70,11 @@
 }
 
 .mission-block {
-  background-color: rgba(22, 46, 81, 0.9) !important;
+  background-color: rgba(22, 46, 81, 0.7) !important;
   position: absolute;
-  bottom: 0;
-  max-width: 100% !important;
-  left: 0;
+  bottom: 10%;
+  max-width: 1024px !important;
+  left: 10%;
 }
 
 .grid-container.width-full {
@@ -141,9 +136,154 @@
   max-width: 1024px;
 }
 
+.usa-collection__item.width-full,
+.usa-banner__inner.width-full {
+  max-width: 100% !important;
+}
+
 .section-clickablecard .clickable-card-component .clickable-card-links .usa-card__container .usa-card__header h2.usa-card__heading {
   color: #1A6986 !important;
   text-decoration: none !important;
+}
+.section-clickablecard .clickable-card-component.thehuda {
+  cursor: crosshair;
+}
+.section-clickablecard .clickable-card-component.thehuda img {
+  display: none;
+}
+.section-clickablecard .clickable-card-component.thehuda i {
+  display: block;
+}
+.section-clickablecard .clickable-card-component.thehuda img.clickCard-longArrow {
+  display: none;
+  position: absolute;
+  bottom: 28px;
+  right: 15px;
+}
+.section-clickablecard .clickable-card-component.thehuda h2 {
+  display: flex;
+}
+.section-clickablecard .clickable-card-component.thehuda h2.thehuda {
+  display: none;
+}
+.section-clickablecard .clickable-card-component.thehuda:hover img {
+  display: block;
+}
+.section-clickablecard .clickable-card-component.thehuda:hover img.clickCard-longArrow {
+  display: block;
+  height: 15px;
+}
+.section-clickablecard .clickable-card-component.thehuda:hover i {
+  display: none;
+}
+.section-clickablecard .clickable-card-component.thehuda:hover h2 {
+  display: none;
+}
+.section-clickablecard .clickable-card-component.thehuda:hover h2.thehuda {
+  display: block;
+  color: #152B55;
+  font-family: sans-serif;
+  font-size: 21.1px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 121%; /* 25.531px */
+  text-transform: capitalize;
+}
+.section-clickablecard .clickable-card-component.thebrandon {
+  cursor: crosshair;
+}
+.section-clickablecard .clickable-card-component.thebrandon img {
+  display: none;
+}
+.section-clickablecard .clickable-card-component.thebrandon i {
+  display: block;
+}
+.section-clickablecard .clickable-card-component.thebrandon span.readmore {
+  display: none;
+  position: absolute;
+  bottom: 28px;
+  left: 15px;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+.section-clickablecard .clickable-card-component.thebrandon h2 {
+  display: flex;
+}
+.section-clickablecard .clickable-card-component.thebrandon h2.thebrandon {
+  display: none;
+}
+.section-clickablecard .clickable-card-component.thebrandon:hover {
+  background: linear-gradient(180deg, #001628 10.58%, #575757 100%);
+  border-top: 4px solid #d8d8d8;
+}
+.section-clickablecard .clickable-card-component.thebrandon:hover .clickable-card {
+  background: none;
+  border: none;
+  color: #D2D2D2;
+}
+.section-clickablecard .clickable-card-component.thebrandon:hover .clickable-card img {
+  display: block;
+}
+.section-clickablecard .clickable-card-component.thebrandon:hover .clickable-card span.readmore {
+  color: #f77a7a;
+  display: block;
+}
+.section-clickablecard .clickable-card-component.thebrandon:hover .clickable-card i {
+  display: none;
+}
+.section-clickablecard .clickable-card-component.thebrandon:hover .clickable-card h2 {
+  display: none;
+}
+.section-clickablecard .clickable-card-component.thebrandon:hover .clickable-card h2.thebrandon {
+  display: block;
+  color: #D2D2D2 !important;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.section-drop-cards .usa-card__container {
+  border: none;
+}
+.section-drop-cards .usa-card__container .usa-card__header {
+  display: none;
+}
+.section-drop-cards .usa-card__container .usa-card__media {
+  position: relative;
+  margin-bottom: 60px;
+}
+.section-drop-cards .usa-card__container .usa-card__media .usa-card__img {
+  border-radius: 5px 5px 5px 5px;
+}
+.section-drop-cards .usa-card__container .usa-card__body {
+  border-radius: 8px;
+  background: #1E2C38;
+  color: white;
+  padding: 20px 20px 100px 20px;
+  width: 80%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  text-align: center;
+  height: 200px;
+}
+.section-drop-cards .usa-card__container .usa-card__body p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  line-height: 1.5;
+  max-height: 4.5em;
+}
+.section-drop-cards .usa-card__container .usa-card__footer {
+  padding: 0.5rem 1.5rem 1.5rem;
+  position: absolute;
+  bottom: 0;
+  left: 22%;
+  text-align: center;
 }
 
 .section-goodfit {
@@ -230,6 +370,8 @@ h2 + .section-hovercards .grc-list {
   display: block;
   width: 100%;
   height: auto;
+  border-radius: 0 10px 10px 0;
+  border-left: 8px solid #94BFD1;
 }
 .section-hovercards .grc-list .grc-grid-item-label {
   position: absolute;

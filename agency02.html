@@ -15,63 +15,103 @@
 
   <header>
     <a class="usa-skipnav" href="#main-content">Skip to main content</a>
-    <section class="usa-banner grid-container width-full" aria-label="Official government website">
-      <div class="usa-accordion">
+    <div class="usa-accordion">
+      <header class="usa-banner__header">
         <div class="usa-banner__inner width-full">
           <div class="grid-col-auto">
-            <img class="usa-banner__header-flag" src="assets/img/us_flag_small.gif" alt="U.S. flag" />
+            <img
+              aria-hidden="true"
+              class="usa-banner__header-flag"
+              src="/dist/img/us_flag_small.png"
+              alt=""
+            />
           </div>
-          <div class="grid-col-fill tablet---grid-col-auto">
-            <p class="usa-banner__header-text">An official website of the United States government</p>
-            <p class="usa-banner__header-action" aria-hidden="true">Here’s how you know</p>
+          <div class="grid-col-fill tablet:grid-col-auto" aria-hidden="true">
+            <p class="usa-banner__header-text">
+              An official website of the United States government
+            </p>
+            <p class="usa-banner__header-action">Here’s how you know</p>
           </div>
-          <button class="usa-accordion__button usa-banner__button" aria-expanded="false" aria-controls="gov-banner">
+          <button
+            type="button"
+            class="usa-accordion__button usa-banner__button"
+            aria-expanded="false"
+            aria-controls="gov-banner-default"
+          >
             <span class="usa-banner__button-text">Here’s how you know</span>
           </button>
         </div>
-        <div class="usa-banner__content usa-accordion__content" id="gov-banner" hidden="">
-          <div class="grid-row grid-gap-lg">
-            <div class="usa-banner__guidance tablet---grid-col-6">
-              <img class="usa-banner__icon usa-media-block__img" src="/themes/custom/hhs_uswds/images/icon-dot-gov.svg" alt="Dot gov" />
-              <div class="usa-media-block__body">
-                <p>
-                  <strong>Official websites use .gov</strong>
-                  <br />
-                  A <strong>.gov</strong> website belongs to an official government organization in the United States.
-                </p>
-              </div>
+      </header>
+      <div
+        class="usa-banner__content usa-accordion__content"
+        id="gov-banner-default"
+      >
+        <div class="grid-row grid-gap-lg">
+          <div class="usa-banner__guidance tablet:grid-col-6">
+            <img
+              class="usa-banner__icon usa-media-block__img"
+              src="/assets/img/icon-dot-gov.svg"
+              role="img"
+              alt=""
+              aria-hidden="true"
+            />
+            <div class="usa-media-block__body">
+              <p>
+                <strong>Official websites use .gov</strong><br />A
+                <strong>.gov</strong> website belongs to an official government
+                organization in the United States.
+              </p>
             </div>
-            <div class="usa-banner__guidance tablet---grid-col-6">
-              <img class="usa-banner__icon usa-media-block__img" src="/themes/custom/hhs_uswds/images/icon-https.svg" alt="HTTPS" />
-              <div class="usa-media-block__body">
-                <p>
-                  <strong>Secure .gov websites use HTTPS</strong>
-                  <br />
-                  A <strong>lock</strong> (
-                  <span class="icon-lock">
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="52" height="64" viewBox="0 0 52 64" class="usa-banner__lock-image" role="img" aria-labelledby="banner-lock-title banner-lock-description">
-                                      <title id="banner-lock-title">Lock</title>
-                                      <desc id="banner-lock-description">A locked padlock</desc>
-                                      <path
-                                        fill="#000000"
-                                        fill-rule="evenodd"
-                                        d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z"
-                                      ></path>
-                                  </svg>
-                              </span>
-                  ) or <strong>https://</strong> means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.
-                </p>
-              </div>
+          </div>
+          <div class="usa-banner__guidance tablet:grid-col-6">
+            <img
+              class="usa-banner__icon usa-media-block__img"
+              src="/assets/img/icon-https.svg"
+              role="img"
+              alt=""
+              aria-hidden="true"
+            />
+            <div class="usa-media-block__body">
+              <p>
+                <strong>Secure .gov websites use HTTPS</strong><br />A
+                <strong>lock</strong> (
+                <span class="icon-lock"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="52"
+                  height="64"
+                  viewBox="0 0 52 64"
+                  class="usa-banner__lock-image"
+                  role="img"
+                  aria-labelledby="banner-lock-description-default"
+                  focusable="false"
+                >
+                  <title id="banner-lock-title-default">Lock</title>
+                  <desc id="banner-lock-description-default">Locked padlock icon</desc>
+                  <path
+                    fill="#000000"
+                    fill-rule="evenodd"
+                    d="M26 0c10.493 0 19 8.507 19 19v9h3a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V32a4 4 0 0 1 4-4h3v-9C7 8.507 15.507 0 26 0zm0 8c-5.979 0-10.843 4.77-10.996 10.712L15 19v9h22v-9c0-6.075-4.925-11-11-11z"
+                  />
+                </svg> </span
+                >) or <strong>https://</strong> means you’ve safely connected to
+                the .gov website. Share sensitive information only on official,
+                secure websites.
+              </p>
             </div>
           </div>
         </div>
-    </section>
+      </div>
+    </div>
   </header>
 
   <main>
     <!-- SECTION - PARALLAX - TOP/MISSION  -->
     <section id="section-top"
              class="section-top usa-section grid-container width-full parallax"
+             data-animationTrigger=".animationTrigger"
+             data-animationName="animate__zoomIn"
+             data-animationDuration="2s"
              style="background-image: url('https://cdn.makezine.com/uploads/2011/06/main_large_cin1.gif');"
     >
       <!--  TOP LEFT  -->
@@ -171,7 +211,7 @@
         </div>
       </div>
       <!--  TOP MAIN  -->
-      <div class="mission-block usa-grid bg-dark grid-row grid-gap">
+      <div class="mission-block usa-grid bg-dark grid-row grid-gap animationTrigger">
         <div class="tablet:grid-col-6">
           <h2 class="font-heading-xl margin-top-0 tablet:margin-bottom-0">
             Our Mission
@@ -211,6 +251,38 @@
       </div>
     </section>
 
+    <!-- SECTION - SPOTLIGHT  -->
+    <section id="section-spotlight"
+             class="section-spotlight usa-section grid-container"
+             data-animationTrigger=".animationTrigger"
+             data-animationName="animate__slideInLeft"
+             data-animationDuration="2s"
+    >
+      <div class="grid-row grid-gap animationTrigger">
+        <div class="grid-offset-2 grid-col-4">
+          <h2 class="font-heading-xl margin-top-0 tablet:margin-bottom-0">
+            AHA Spotlight
+          </h2>
+          <div>
+            <img
+              class="hoverpulse"
+              src="assets/img/Spotlight-rfk.png"
+              alt="Spotlight Image"
+              style="margin-top:14px; height:auto;" />
+          </div>
+        </div>
+        <div class="grid-col-4" style="margin-top:30px;">
+          <h3>Robert Francis Kennedy</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <p>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <!--  SECTION - PARALLAX - CARDS  -->
     <section id="section-cards"
              class="section-cards usa-section grid-container width-full parallax"
@@ -243,7 +315,7 @@
                 </p>
               </div>
               <div class="usa-card__footer">
-                <a href="#" class="usa-button">Agency 01</a>
+                <a href="/agency01" class="usa-button">Agency 01</a>
               </div>
             </div>
           </li>
@@ -370,59 +442,158 @@
         </ul>
       </section>
 
-    <!--  SECTION - CALENDAR COLLECTIONS  -->
-    <section id="section-collectioncards"
-             class="section-collectioncards usa-section grid-container accent-paintstrokentstroke"
+    <!-- SECTION - CLICKABLE CARDS - ALT  -->
+    <section id="section-clickablecard-alt"
+             class="section-clickablecard usa-section grid-container"
              data-animationTrigger=".animationTrigger"
              data-animationName="animate__slideInUp"
              data-animationDuration="2s"
     >
-      <div class="tablet:grid-col-12">
-        <h2 class="font-heading-xl">
-          News and Announcements
-        </h2>
-        <ul class="usa-collection">
-          <li class="usa-collection__item width-full animationTrigger">
-            <div class="usa-collection__calendar-date">
-              <time datetime="2020-09-30T12:00:00+01:00"><span class="usa-collection__calendar-date-month">SEP</span> <span class="usa-collection__calendar-date-day">30</span></time>
+      <h2 class="font-heading-xl">
+        Find The Help You Need - Alternative - Clickable Cards
+      </h2>
+      <div class="grid-row grid-gap section-clickablecard-item animationTrigger">
+        <div class="tablet:grid-col-6 mobile-lg:grid-col-12 clickable-card-component thehuda" style="padding-bottom: 50px;">
+          <a href="/agency01" class="usa-card clickable-card-links" tabindex="0" aria-label="More about Donc consectetur quiche interduo elit er">
+            <div class="usa-card__container clickable-card animationTrigger">
+              <img
+                src="assets/img/ClickCard-TheHuda.png"
+                alt="A placeholder image"
+              />
+              <header class="usa-card__header">
+                <h2 class="usa-card__heading">
+                  <i class="fa-regular fa-comments" style="font-size: 50px; color: #1A6986; padding-right: 10px;"></i>
+                  Agency 01
+                </h2>
+                <h2 class="thehuda usa-card__heading">
+                  The Huda
+                </h2>
+              </header>
+              <div class="usa-card__body">
+                <p>Sed id interdum elit. Quisque sagittis erat eu dolor ornare, blandit sagittis augue suscipit. Fusce tempor a massa sit amet suscipit.</p>
+              </div>
+              <div class="usa-card__footer" style="text-align: right;">
+                <i class="fa-solid fa-arrow-right-long"></i>
+                <img
+                  class="clickCard-longArrow"
+                  src="assets/img/ClickCard-LongArrow.png"
+                  alt="A placeholder image"
+                />
+              </div>
             </div>
-            <div class="usa-collection__body">
-              <h4 class="usa-collection__heading">
-                <a class="usa-link" href="https://trumpadministration.archives.performance.gov/presidents-winners-press-release/">Gears of Government President’s Award winners</a>
-              </h4>
-              <p class="usa-collection__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
+          </a>
+        </div>
+
+        <div class="tablet:grid-col-6 mobile-lg:grid-col-12 clickable-card-component thebrandon" style="padding-bottom: 50px;">
+          <a href="/agency01" class="usa-card clickable-card-links" tabindex="0" aria-label="More about Donc consectetur quiche interduo elit er">
+            <div class="usa-card__container clickable-card animationTrigger">
+              <header class="usa-card__header">
+                <h2 class="usa-card__heading">
+                  <i class="fa-regular fa-comments" style="font-size: 50px; color: #1A6986; padding-right: 10px;"></i>
+                  Agency 02
+                </h2>
+                <h2 class="thebrandon usa-card__heading">
+                  The Brandon
+                </h2>
+              </header>
+              <div class="usa-card__body">
+                <p>Sed id interdum elit. Quisque sagittis erat eu dolor ornare, blandit sagittis augue suscipit. Fusce tempor a massa sit amet suscipit.</p>
+              </div>
+              <div class="usa-card__footer" style="text-align: right;">
+                <span class="readmore">Read more></span>
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </div>
             </div>
-          </li>
-          <li class="usa-collection__item width-full animationTrigger">
-            <div class="usa-collection__calendar-date">
-              <time datetime="2020-09-30T12:00:00+01:00"><span class="usa-collection__calendar-date-month">SEP</span> <span class="usa-collection__calendar-date-day">30</span></time>
-            </div>
-            <div class="usa-collection__body">
-              <h4 class="usa-collection__heading">
-                <a class="usa-link" href="https://trumpadministration.archives.performance.gov/sba-wosb-dashboard/">Women-owned small business dashboard</a>
-              </h4>
-              <p class="usa-collection__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div>
-          </li>
-          <li class="usa-collection__item width-full animationTrigger">
-            <div class="usa-collection__calendar-date">
-              <time datetime="2020-09-17T12:00:00+01:00"><span class="usa-collection__calendar-date-month">SEP</span> <span class="usa-collection__calendar-date-day">17</span></time>
-            </div>
-            <div class="usa-collection__body">
-              <h4 class="usa-collection__heading">
-                <a class="usa-link" href="https://trumpadministration.archives.performance.gov/September-2020-Updates-Show-Progress/">September 2020 updates show progress on cross-agency and agency priority goals</a>
-              </h4>
-              <p class="usa-collection__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div>
-          </li>
-        </ul>
+          </a>
+        </div>
       </div>
+    </section>
+
+    <!--  SECTION - Drop Cards -->
+    <section id="section-drop-cards"
+             class="section-drop-cards usa-section grid-container"
+             data-animationTrigger=".animationTrigger"
+             data-animationName="animate__slideInUp"
+             data-animationDuration="2s"
+             style="margin-top: -150px;"
+    >
+      <h2 class="font-heading-xl">
+        Find The Help You Need - Alternative - Drop Cards
+      </h2>
+      <ul class="usa-card-group drop-cards grid-row grid-gap">
+        <li class="usa-card grid-col-12 desktop:grid-col-4 animationTrigger">
+          <div class="usa-card__container">
+            <div class="usa-card__header">
+              <h4 class="usa-card__heading">Agency 01</h4>
+            </div>
+            <div class="usa-card__media">
+              <div class="usa-card__img">
+                <img
+                  src="https://iso.500px.com/wp-content/uploads/2017/07/stock-photo-219973977-960x1000.jpg"
+                  alt="A placeholder image"
+                />
+              </div>
+            </div>
+            <div class="usa-card__body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum
+                tenetur quo cupiditate, eaque qui officia recusandae.
+              </p>
+            </div>
+            <div class="usa-card__footer">
+              <a href="/agency01" class="usa-button">Agency 01</a>
+            </div>
+          </div>
+        </li>
+        <li class="usa-card grid-col-12 desktop:grid-col-4 animationTrigger">
+          <div class="usa-card__container">
+            <div class="usa-card__header">
+              <h4 class="usa-card__heading">Agency 02</h4>
+            </div>
+            <div class="usa-card__media">
+              <div class="usa-card__img">
+                <img
+                  src="https://iso.500px.com/wp-content/uploads/2017/07/stock-photo-219973977-960x1000.jpg"
+                  alt="A placeholder image"
+                />
+              </div>
+            </div>
+            <div class="usa-card__body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum
+                tenetur quo cupiditate, eaque qui officia recusandae.
+              </p>
+            </div>
+            <div class="usa-card__footer">
+              <a href="/agency01" class="usa-button">Agency 02</a>
+            </div>
+          </div>
+        </li>
+        <li class="usa-card grid-col-12 desktop:grid-col-4 animationTrigger">
+          <div class="usa-card__container">
+            <div class="usa-card__header">
+              <h4 class="usa-card__heading">Agency 02</h4>
+            </div>
+            <div class="usa-card__media">
+              <div class="usa-card__img">
+                <img
+                  src="https://iso.500px.com/wp-content/uploads/2017/07/stock-photo-219973977-960x1000.jpg"
+                  alt="A placeholder image"
+                />
+              </div>
+            </div>
+            <div class="usa-card__body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis earum
+                tenetur quo cupiditate, eaque qui officia recusandae.
+              </p>
+            </div>
+            <div class="usa-card__footer">
+              <a href="/agency01" class="usa-button">Agency 03</a>
+            </div>
+          </div>
+        </li>
+      </ul>
     </section>
 
     <!--  SECTION - PARALLAX - HOVER CARDS  -->
@@ -489,35 +660,58 @@
       </div>
     </section>
 
-    <!-- SECTION - SPOTLIGHT  -->
-    <section id="section-spotlight"
-             class="section-spotlight usa-section grid-container"
+    <!--  SECTION - CALENDAR COLLECTIONS  -->
+    <section id="section-collectioncards"
+             class="section-collectioncards usa-section grid-container accent-paintstrokentstroke"
              data-animationTrigger=".animationTrigger"
-             data-animationName="animate__slideInLeft"
-             data-animationDuration="3s"
+             data-animationName="animate__slideInUp"
+             data-animationDuration="2s"
     >
-      <div class="grid-row grid-gap animationTrigger">
-        <div class="grid-offset-2 grid-col-4">
-          <h2 class="font-heading-xl margin-top-0 tablet:margin-bottom-0">
-            Spotlight
-          </h2>
-          <div>
-            <img
-              class="hoverpulse"
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Robert_F._Kennedy_Jr.%2C_official_portrait_%282025%29_%28cropped_3-4%29.jpg/500px-Robert_F._Kennedy_Jr.%2C_official_portrait_%282025%29_%28cropped_3-4%29.jpg"
-              alt="Spotlight Image"
-              style="margin-top:14px; height:auto;" />
-          </div>
-        </div>
-        <div class="grid-col-4" style="margin-top:30px;">
-          <h3>Robert Francis Kennedy</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
-          <p>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
+      <div class="tablet:grid-col-12">
+        <h2 class="font-heading-xl">
+          News and Announcements
+        </h2>
+        <ul class="usa-collection">
+          <li class="usa-collection__item width-full animationTrigger">
+            <div class="usa-collection__calendar-date">
+              <time datetime="2020-09-30T12:00:00+01:00"><span class="usa-collection__calendar-date-month">SEP</span> <span class="usa-collection__calendar-date-day">30</span></time>
+            </div>
+            <div class="usa-collection__body">
+              <h4 class="usa-collection__heading">
+                <a class="usa-link" href="https://trumpadministration.archives.performance.gov/presidents-winners-press-release/">Gears of Government President’s Award winners</a>
+              </h4>
+              <p class="usa-collection__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </li>
+          <li class="usa-collection__item width-full animationTrigger">
+            <div class="usa-collection__calendar-date">
+              <time datetime="2020-09-30T12:00:00+01:00"><span class="usa-collection__calendar-date-month">SEP</span> <span class="usa-collection__calendar-date-day">30</span></time>
+            </div>
+            <div class="usa-collection__body">
+              <h4 class="usa-collection__heading">
+                <a class="usa-link" href="https://trumpadministration.archives.performance.gov/sba-wosb-dashboard/">Women-owned small business dashboard</a>
+              </h4>
+              <p class="usa-collection__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </li>
+          <li class="usa-collection__item width-full animationTrigger">
+            <div class="usa-collection__calendar-date">
+              <time datetime="2020-09-17T12:00:00+01:00"><span class="usa-collection__calendar-date-month">SEP</span> <span class="usa-collection__calendar-date-day">17</span></time>
+            </div>
+            <div class="usa-collection__body">
+              <h4 class="usa-collection__heading">
+                <a class="usa-link" href="https://trumpadministration.archives.performance.gov/September-2020-Updates-Show-Progress/">September 2020 updates show progress on cross-agency and agency priority goals</a>
+              </h4>
+              <p class="usa-collection__description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -698,131 +892,68 @@
       </div>
     </section>
 
-    <!--  SECTION - CLICKABLE CARDS  -->
-    <section id="section-clickablecard"
-             class="section-clickablecard usa-section grid-container accent-paintstrokentstroke"
+    <!-- SECTION - ACCORDIONS  -->
+    <section id="section-accordions"
+             class="section-accordions usa-section grid-container accent-paintstrokentstroke"
              data-animationTrigger=".animationTrigger"
              data-animationName="animate__slideInUp"
              data-animationDuration="2s"
     >
-      <h2 class="font-heading-xl">
-        Section Library - Clickable Card
-      </h2>
-      <div class="grid-row grid-gap section-clickablecard-item">
-        <div class="tablet:grid-col-6 mobile-lg:grid-col-12 clickable-card-component hoverpulse" style="padding-bottom: 50px;">
-          <a href="/simple-styleguide#Standards-ClickableCard" class="usa-card clickable-card-links" tabindex="0" aria-label="More about Donc consectetur quiche interduo elit er">
-            <div class="usa-card__container clickable-card animationTrigger">
-              <header class="usa-card__header">
-                <h2 class="usa-card__heading">
-                  <i class="fa-regular fa-comments" style="font-size: 50px; color: #1A6986; padding-right: 10px;"></i>
-                  Agency 01
-                </h2>
-              </header>
-              <div class="usa-card__body">
-                <p>Sed id interdum elit. Quisque sagittis erat eu dolor ornare, blandit sagittis augue suscipit. Fusce tempor a massa sit amet suscipit.</p>
-              </div>
-              <div class="usa-card__footer" style="text-align: right;">
-                <i class="fas fa-arrow-right" aria-hidden="true" style="color: #4a4a4a; width: 21px;"></i>
-              </div>
+      <div class="grid-row grid-gap">
+        <h2 class="font-heading-xl">Section Library - Accordion Group</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <div class="usa-accordion animationTrigger" aria-multiselectable="true">
+          <div class="usa-accordion_panel_wrapper tablet:grid-col-12">
+            <!-- Use the accurate heading level to maintain the document outline -->
+            <h4 class="usa-accordion__heading">
+              <button class="usa-accordion__button" aria-expanded="true" aria-controls="m-a1"> First Amendment </button>
+            </h4>
+            <div id="m-a1" class="usa-accordion__content">
+              <p> Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances. </p>
             </div>
-          </a>
-        </div>
-
-        <div class="tablet:grid-col-6 mobile-lg:grid-col-12 clickable-card-component hoverpulse" style="padding-bottom: 50px;">
-          <a href="/simple-styleguide#Standards-ClickableCard" class="usa-card clickable-card-links" tabindex="0" aria-label="More about Donc consectetur quiche interduo elit er">
-            <div class="usa-card__container clickable-card animationTrigger">
-              <header class="usa-card__header">
-                <h2 class="usa-card__heading">
-                  <i class="fa-regular fa-snowflake" style="font-size: 50px; color: #1A6986; padding-right: 10px;"></i>
-                  Agency 02
-                </h2>
-              </header>
-              <div class="usa-card__body">
-                <p>Sed id interdum elit. Quisque sagittis erat eu dolor ornare, blandit sagittis augue suscipit. Fusce tempor a massa sit amet suscipit.</p>
-              </div>
-              <div class="usa-card__footer" style="text-align: right;">
-                <i class="fas fa-arrow-right" aria-hidden="true" style="color: #4a4a4a; width: 21px;"></i>
-              </div>
+          </div>
+          <div class="usa-accordion_panel_wrapper tablet:grid-col-12">
+            <!-- Use the accurate heading level to maintain the document outline -->
+            <h4 class="usa-accordion__heading">
+              <button class="usa-accordion__button" aria-expanded="false" aria-controls="m-a2"> Second Amendment </button>
+            </h4>
+            <div id="m-a2" class="usa-accordion__content">
+              <p>A well regulated Militia, being necessary to the security of a free State, the right of the people to keep and bear Arms, shall not be infringed.</p>
+              <ul>
+                <li>This is a list item</li>
+                <li>Another list item</li>
+              </ul>
             </div>
-          </a>
-        </div>
-      </div>
-      <div class="grid-row grid-gap animate_clickablecard_target">
-        <div class="tablet:grid-col-6 mobile-lg:grid-col-12 clickable-card-component hoverpulse" style="padding-bottom: 50px;">
-          <a href="/simple-styleguide#Standards-ClickableCard" class="usa-card clickable-card-links" tabindex="0" aria-label="More about Donc consectetur quiche interduo elit er">
-            <div class="usa-card__container clickable-card animationTrigger">
-              <header class="usa-card__header">
-                <h2 class="usa-card__heading">
-                  <i class="fa-regular fa-paper-plane" style="font-size: 50px; color: #1A6986; padding-right: 10px;"></i>
-                  Agency 03
-                </h2>
-              </header>
-              <div class="usa-card__body">
-                <p>Sed id interdum elit. Quisque sagittis erat eu dolor ornare, blandit sagittis augue suscipit. Fusce tempor a massa sit amet suscipit.</p>
-              </div>
-              <div class="usa-card__footer" style="text-align: right;">
-                <i class="fas fa-arrow-right" aria-hidden="true" style="color: #4a4a4a; width: 21px;"></i>
-              </div>
+          </div>
+          <div class="usa-accordion_panel_wrapper tablet:grid-col-12">
+            <!-- Use the accurate heading level to maintain the document outline -->
+            <h4 class="usa-accordion__heading">
+              <button class="usa-accordion__button" aria-expanded="false" aria-controls="m-a3"> Third Amendment </button>
+            </h4>
+            <div id="m-a3" class="usa-accordion__content">
+              <p>No Soldier shall, in time of peace be quartered in any house, without the consent of the Owner, nor in time of war, but in a manner to be prescribed by law.</p>
             </div>
-          </a>
-        </div>
-
-        <div class="tablet:grid-col-6 mobile-lg:grid-col-12 clickable-card-component hoverpulse" style="padding-bottom: 50px;">
-          <a href="/simple-styleguide#Standards-ClickableCard" class="usa-card clickable-card-links" tabindex="0" aria-label="More about Donc consectetur quiche interduo elit er">
-            <div class="usa-card__container clickable-card animationTrigger">
-              <header class="usa-card__header">
-                <h2 class="usa-card__heading">
-                  <i class="fa-regular fa-heart" style="font-size: 50px; color: #1A6986; padding-right: 10px;"></i>
-                  Agency 04
-                </h2>
-              </header>
-              <div class="usa-card__body">
-                <p>Sed id interdum elit. Quisque sagittis erat eu dolor ornare, blandit sagittis augue suscipit. Fusce tempor a massa sit amet suscipit.</p>
-              </div>
-              <div class="usa-card__footer" style="text-align: right;">
-                <i class="fas fa-arrow-right" aria-hidden="true" style="color: #4a4a4a; width: 21px;"></i>
-              </div>
+          </div>
+          <div class="usa-accordion_panel_wrapper tablet:grid-col-12">
+            <!-- Use the accurate heading level to maintain the document outline -->
+            <h4 class="usa-accordion__heading">
+              <button class="usa-accordion__button" aria-expanded="false" aria-controls="m-a4"> Fourth Amendment </button>
+            </h4>
+            <div id="m-a4" class="usa-accordion__content">
+              <p> The right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated, and no Warrants shall issue, but upon probable cause, supported by Oath or affirmation, and particularly describing the place to be searched, and the persons or things to be seized. </p>
             </div>
-          </a>
-        </div>
-      </div>
-      <div class="grid-row grid-gap animate_clickablecard_target">
-        <div class="tablet:grid-col-6 mobile-lg:grid-col-12 clickable-card-component hoverpulse" style="padding-bottom: 50px;">
-          <a href="/simple-styleguide#Standards-ClickableCard" class="usa-card clickable-card-links" tabindex="0" aria-label="More about Donc consectetur quiche interduo elit er">
-            <div class="usa-card__container clickable-card animationTrigger">
-              <header class="usa-card__header">
-                <h2 class="usa-card__heading">
-                  <i class="fa-regular fa-hand" style="text-decoration:none; font-size: 50px; color: #1A6986; padding-right: 10px;"></i>
-                  Agency 05
-                </h2>
-              </header>
-              <div class="usa-card__body">
-                <p>Sed id interdum elit. Quisque sagittis erat eu dolor ornare, blandit sagittis augue suscipit. Fusce tempor a massa sit amet suscipit.</p>
-              </div>
-              <div class="usa-card__footer" style="text-align: right;">
-                <i class="fas fa-arrow-right" aria-hidden="true" style="color: #4a4a4a; width: 21px;"></i>
-              </div>
+          </div>
+          <div class="usa-accordion_panel_wrapper tablet:grid-col-12">
+            <!-- Use the accurate heading level to maintain the document outline -->
+            <h4 class="usa-accordion__heading">
+              <button class="usa-accordion__button" aria-expanded="false" aria-controls="m-a5"> Fifth Amendment </button>
+            </h4>
+            <div id="m-a5" class="usa-accordion__content">
+              <p> No person shall be held to answer for a capital, or otherwise infamous crime, unless on a presentment or indictment of a Grand Jury, except in cases arising in the land or naval forces, or in the Militia, when in actual service in time of War or public danger; nor shall any person be subject for the same offence to be twice put in jeopardy of life or limb; nor shall be compelled in any criminal case to be a witness against himself, nor be deprived of life, liberty, or property, without due process of law; nor shall private property be taken for public use, without just compensation. </p>
             </div>
-          </a>
-        </div>
-
-        <div class="tablet:grid-col-6 mobile-lg:grid-col-12 clickable-card-component hoverpulse" style="padding-bottom: 50px;">
-          <a href="/simple-styleguide#Standards-ClickableCard" class="usa-card clickable-card-links" tabindex="0" aria-label="More about Donc consectetur quiche interduo elit er">
-            <div class="usa-card__container clickable-card animationTrigger">
-              <header class="usa-card__header">
-                <h2 class="usa-card__heading">
-                  <i class="fa-regular fa-lightbulb" style="font-size: 50px; color: #1A6986; padding-right: 10px;"></i>
-                  Agency 06
-                </h2>
-              </header>
-              <div class="usa-card__body">
-                <p>Sed id interdum elit. Quisque sagittis erat eu dolor ornare, blandit sagittis augue suscipit. Fusce tempor a massa sit amet suscipit.</p>
-              </div>
-              <div class="usa-card__footer" style="text-align: right;">
-                <i class="fas fa-arrow-right" aria-hidden="true" style="color: #4a4a4a; width: 21px;"></i>
-              </div>
-            </div>
-          </a>
+          </div>
         </div>
       </div>
     </section>
@@ -944,68 +1075,40 @@
       </div>
     </section>
 
-    <!-- SECTION - ACCORDIONS  -->
-    <section id="section-accordions"
-             class="section-accordions usa-section grid-container accent-paintstrokentstroke"
+    <!--  SECTION - Drop Cards -->
+    <section id="section-lists"
+             class="section-lists usa-section grid-container"
              data-animationTrigger=".animationTrigger"
              data-animationName="animate__slideInUp"
              data-animationDuration="2s"
     >
+      <h2 class="font-heading-xl">
+        Section Library - Lists
+      </h2>
       <div class="grid-row grid-gap">
-        <h2 class="font-heading-xl">Section Library - Accordion Group</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <div class="usa-accordion animationTrigger" aria-multiselectable="true">
-          <div class="usa-accordion_panel_wrapper tablet:grid-col-12">
-            <!-- Use the accurate heading level to maintain the document outline -->
-            <h4 class="usa-accordion__heading">
-              <button class="usa-accordion__button" aria-expanded="true" aria-controls="m-a1"> First Amendment </button>
-            </h4>
-            <div id="m-a1" class="usa-accordion__content">
-              <p> Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances. </p>
-            </div>
-          </div>
-          <div class="usa-accordion_panel_wrapper tablet:grid-col-12">
-            <!-- Use the accurate heading level to maintain the document outline -->
-            <h4 class="usa-accordion__heading">
-              <button class="usa-accordion__button" aria-expanded="false" aria-controls="m-a2"> Second Amendment </button>
-            </h4>
-            <div id="m-a2" class="usa-accordion__content">
-              <p>A well regulated Militia, being necessary to the security of a free State, the right of the people to keep and bear Arms, shall not be infringed.</p>
-              <ul>
-                <li>This is a list item</li>
-                <li>Another list item</li>
-              </ul>
-            </div>
-          </div>
-          <div class="usa-accordion_panel_wrapper tablet:grid-col-12">
-            <!-- Use the accurate heading level to maintain the document outline -->
-            <h4 class="usa-accordion__heading">
-              <button class="usa-accordion__button" aria-expanded="false" aria-controls="m-a3"> Third Amendment </button>
-            </h4>
-            <div id="m-a3" class="usa-accordion__content">
-              <p>No Soldier shall, in time of peace be quartered in any house, without the consent of the Owner, nor in time of war, but in a manner to be prescribed by law.</p>
-            </div>
-          </div>
-          <div class="usa-accordion_panel_wrapper tablet:grid-col-12">
-            <!-- Use the accurate heading level to maintain the document outline -->
-            <h4 class="usa-accordion__heading">
-              <button class="usa-accordion__button" aria-expanded="false" aria-controls="m-a4"> Fourth Amendment </button>
-            </h4>
-            <div id="m-a4" class="usa-accordion__content">
-              <p> The right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated, and no Warrants shall issue, but upon probable cause, supported by Oath or affirmation, and particularly describing the place to be searched, and the persons or things to be seized. </p>
-            </div>
-          </div>
-          <div class="usa-accordion_panel_wrapper tablet:grid-col-12">
-            <!-- Use the accurate heading level to maintain the document outline -->
-            <h4 class="usa-accordion__heading">
-              <button class="usa-accordion__button" aria-expanded="false" aria-controls="m-a5"> Fifth Amendment </button>
-            </h4>
-            <div id="m-a5" class="usa-accordion__content">
-              <p> No person shall be held to answer for a capital, or otherwise infamous crime, unless on a presentment or indictment of a Grand Jury, except in cases arising in the land or naval forces, or in the Militia, when in actual service in time of War or public danger; nor shall any person be subject for the same offence to be twice put in jeopardy of life or limb; nor shall be compelled in any criminal case to be a witness against himself, nor be deprived of life, liberty, or property, without due process of law; nor shall private property be taken for public use, without just compensation. </p>
-            </div>
-          </div>
+        <div class="mobile-lg:grid-col-3 usa-grid bg-dark animationTrigger">
+          <h3 class="site-preview-heading margin-0">Unordered list</h3>
+          <ul class="usa-list">
+            <li>Unordered list item</li>
+            <li>Unordered list item</li>
+            <li>Unordered list item</li>
+          </ul>
+        </div>
+        <div class="mobile-lg:grid-col-3 usa-grid bg-dark animationTrigger margin-top-4 mobile-lg:margin-top-0">
+          <h3 class="site-preview-heading margin-0">Ordered list</h3>
+          <ol class="usa-list">
+            <li>Ordered list item</li>
+            <li>Ordered list item</li>
+            <li>Ordered list item</li>
+          </ol>
+        </div>
+        <div class="mobile-lg:grid-col-3 usa-grid bg-dark animationTrigger margin-top-4 mobile-lg:margin-top-0">
+          <h3 class="site-preview-heading margin-0">Unstyled list</h3>
+          <ul class="usa-list usa-list--unstyled">
+            <li>Unstyled list item</li>
+            <li>Unstyled list item</li>
+            <li>Unstyled list item</li>
+          </ul>
         </div>
       </div>
     </section>
