@@ -51,7 +51,7 @@
     "config": "src/utils/test/.mocharc.json"
   },
   "scripts": {
-    "build": "npm install && npm start",
+    "build": "npm install && gulp sass && npm start",
     "lint": "npm run lint:js && npm run lint:sass",
     "lint:js": "ESLINT_USE_FLAT_CONFIG=true eslint --config='eslint.config.mjs' packages/**/**/*.js ",
     "lint:sass": "gulp lintSass",
@@ -60,7 +60,7 @@
     "preversion": "npm test",
     "release": "gulp release",
     "federalist": "npm run build && npm run build:storybook",
-    "start": "npx serve . -l ${PORT:-3000}",
+    "start": "npx serve dist -l ${PORT:-3000}",
     "test": "snyk test && npm run lint && gulp typecheck && gulp test",
     "test:ci": "npm run lint && gulp test && npm run test:a11y && npm run build:html",
     "test:a11y": "build-storybook && axe-storybook",
