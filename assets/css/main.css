@@ -20,6 +20,13 @@ h6 {
   word-wrap: normal !important;
 }
 
+.bg-cover {
+  position: relative;
+}
+.bg-cover::before {
+  background-color: rgba(30, 44, 56, 0.7);
+}
+
 .parallax {
   /* Set a specific height */
   min-height: 600px;
@@ -28,6 +35,7 @@ h6 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 
 .hoverpulse:hover {
@@ -813,7 +821,7 @@ header .mission-block {
   background-repeat: no-repeat;
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPfTy6yxB5MVV8IyoHJ9nm_AhiWyqvVbrWAA&s");
 }
-.grid-container.width-full {
+.grid-container.width-full, .grid-container .width-full {
   max-width: 100% !important;
 }
 .grid-container.bg-black {
@@ -870,6 +878,10 @@ header .mission-block {
 .usa-collection__item.width-full,
 .usa-banner__inner.width-full {
   max-width: 100% !important;
+}
+
+section {
+  overflow: hidden;
 }
 
 .section-clickablecard .clickable-card-component .clickable-card-links .usa-card__container .usa-card__header h2.usa-card__heading {
@@ -1596,4 +1608,29 @@ footer section section#footer-section-03 {
   width: 160px;
   color: #FFFFFF;
   text-decoration: none;
+}
+body.thehuda header .section-top {
+  height: 70vh;
+}
+body.thehuda header .section-top .banner {
+  height: 100vh;
+}
+body.thehuda header .section-top .banner img {
+  margin-top: -50px;
+}
+body.thehuda header .section-top .mission-block {
+  background-color: rgb(30, 44, 56) !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  position: relative !important;
+}
+
+body.theniels header .section-top .banner {
+  height: 100vh;
+  margin-top: 0;
+}
+body.theniels header .section-top .banner img {
+  margin-top: 0;
+  width: 100%;
 }
