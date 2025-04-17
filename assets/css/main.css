@@ -1,6 +1,4 @@
 @charset "UTF-8";
-/* Right Sidebar -- Recent Posts */
-/* 508 - Focus Colors */
 body,
 h1,
 h2,
@@ -18,13 +16,6 @@ h6 {
   position: absolute !important;
   width: 1px !important;
   word-wrap: normal !important;
-}
-
-.bg-cover {
-  position: relative;
-}
-.bg-cover::before {
-  background-color: rgba(30, 44, 56, 0.7);
 }
 
 .parallax {
@@ -816,72 +807,59 @@ header .mission-block {
   transform: translate(-50%, -30%) !important;
 }
 
-.grid-container.accent-paintstroke {
+.aha-component {
+  padding: 70px 100px;
+  margin: 0 auto;
+}
+.aha-component.accent-paintstroke {
   background-position: -50px 0;
   background-repeat: no-repeat;
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPfTy6yxB5MVV8IyoHJ9nm_AhiWyqvVbrWAA&s");
 }
-.grid-container.width-full, .grid-container .width-full {
-  max-width: 100% !important;
-}
-.grid-container.bg-black {
-  background-color: 0;
-  color: #FFFFFF;
-}
-.grid-container.bg-black a {
-  color: #FFFFFF;
-}
-.grid-container.bg-black a:hover {
-  color: #eee;
-}
-.grid-container.bg-dark {
-  background-color: #1E2C38;
-  color: #FFFFFF;
-}
-.grid-container.bg-dark a {
-  color: #FFFFFF;
-}
-.grid-container.bg-dark a:hover {
-  color: #eee;
-}
-.grid-container.bg-light {
-  background-color: #00bde3;
-  color: #FFFFFF;
-}
-.grid-container.bg-light a {
-  color: #FFFFFF;
-}
-.grid-container.bg-light a:hover {
-  color: #eee;
-}
-
-.usa-grid.width-trim {
-  max-width: 1024px !important;
-}
-.usa-grid.bg-black {
+.aha-component.bg-black {
   background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 5px 5px 5px 5px;
   color: #FFFFFF;
-  padding: 20px;
-  margin: 0 auto;
-  max-width: 1024px;
 }
-.usa-grid.bg-dark {
+.aha-component.bg-black a {
+  color: #FFFFFF;
+}
+.aha-component.bg-black a:hover {
+  color: #eee;
+}
+.aha-component.bg-dark {
   background-color: rgba(30, 44, 56, 0.7);
-  border-radius: 5px 5px 5px 5px;
   color: #FFFFFF;
-  padding: 20px;
-  margin: 0 auto;
-  max-width: 1024px;
 }
-
-.usa-collection__item.width-full,
-.usa-banner__inner.width-full {
-  max-width: 100% !important;
+.aha-component.bg-dark a {
+  color: #FFFFFF;
+}
+.aha-component.bg-dark a:hover {
+  color: #eee;
+}
+.aha-component.bg-med {
+  background-color: rgba(63, 63, 63, 0.7);
+  color: #FFFFFF;
+}
+.aha-component.bg-med a {
+  color: #FFFFFF;
+}
+.aha-component.bg-med a:hover {
+  color: #eee;
+}
+.aha-component.bg-light {
+  background-color: rgba(245, 252, 255, 0.7);
+  color: #000000;
+}
+.aha-component.bg-light a {
+  color: #000000;
+}
+.aha-component.bg-light a:hover {
+  color: #000000;
 }
 
 section {
   overflow: hidden;
+  max-width: 1400px;
 }
 
 .section-clickablecard .clickable-card-component .clickable-card-links .usa-card__container .usa-card__header h2.usa-card__heading {
@@ -1083,40 +1061,40 @@ section {
   }
 }
 
-.section-hovercards .grc-list {
+.section-hovercards {
   margin-top: 3em;
   clear: both;
 }
-h2 + .section-hovercards .grc-list {
+h2 + .section-hovercards {
   margin-top: 1.5em;
 }
-.section-hovercards .grc-list .clearfix {
+.section-hovercards .clearfix {
   visibility: hidden;
   height: 0;
 }
-.section-hovercards .grc-list .grc-grid-view-links + h2 {
+.section-hovercards .grc-grid-view-links + h2 {
   margin-top: 15px;
 }
-.section-hovercards .grc-list .grc-grid-view-links + h2 .fa {
+.section-hovercards .grc-grid-view-links + h2 .fa {
   margin-right: 3px;
 }
-.section-hovercards .grc-list .grc-grid-item {
+.section-hovercards .grc-grid-item {
   position: relative;
   display: block;
   margin-bottom: 3% !important;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
-.section-hovercards .grc-list .grc-grid-item.usa-external_link::after {
+.section-hovercards .grc-grid-item.usa-external_link::after {
   display: none;
 }
-.section-hovercards .grc-list .grc-grid-item-image {
+.section-hovercards .grc-grid-item-image {
   display: block;
   width: 100%;
   height: auto;
   border-radius: 0 10px 10px 0;
   border-left: 8px solid #94BFD1;
 }
-.section-hovercards .grc-list .grc-grid-item-label {
+.section-hovercards .grc-grid-item-label {
   position: absolute;
   left: 0px;
   right: 0px;
@@ -1128,11 +1106,11 @@ h2 + .section-hovercards .grc-list {
   text-align: center;
   background-color: rgba(30, 44, 56, 0.7);
 }
-.section-hovercards .grc-list .grc-grid-item-label .fa-file-pdf-o {
+.section-hovercards .grc-grid-item-label .fa-file-pdf-o {
   font-size: 15px;
   margin-left: 5px;
 }
-.section-hovercards .grc-list .grc-grid-item-overlay {
+.section-hovercards .grc-grid-item-overlay {
   position: absolute;
   top: 0px;
   bottom: 0px;
@@ -1142,10 +1120,10 @@ h2 + .section-hovercards .grc-list {
   transition: 0.5s ease;
   background-color: rgba(30, 44, 56, 0.7);
 }
-.section-hovercards .grc-list .grc-grid-item-overlay:hover {
+.section-hovercards .grc-grid-item-overlay:hover {
   opacity: 100;
 }
-.section-hovercards .grc-list .grc-grid-item-text {
+.section-hovercards .grc-grid-item-text {
   font-weight: bold;
   color: #FFFFFF;
   font-size: 14px;
@@ -1158,31 +1136,31 @@ h2 + .section-hovercards .grc-list {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
-.section-hovercards .grc-list .grc-left-toggle-link-active {
+.section-hovercards .grc-left-toggle-link-active {
   margin-right: 10px;
   padding-right: 10px;
   border-right: 2px solid black;
   font-weight: bold;
 }
-.section-hovercards .grc-list .grc-right-toggle-link-active {
+.section-hovercards .grc-right-toggle-link-active {
   margin-left: 10px;
   padding-left: 10px;
   border-left: 2px solid black;
   font-weight: bold;
 }
-.section-hovercards .grc-list .grc-grid-link i {
+.section-hovercards .grc-grid-link i {
   margin-right: 5px;
 }
-.section-hovercards .grc-list .grc-txt-grid-item .site-subheading {
+.section-hovercards .grc-txt-grid-item .site-subheading {
   color: #eee;
 }
-.section-hovercards .grc-list .grc-txt-grid-item a {
+.section-hovercards .grc-txt-grid-item a {
   color: black;
 }
-.section-hovercards .grc-list .grc-txt-grid-item a:hover, .section-hovercards .grc-list .grc-txt-grid-item a:active, .section-hovercards .grc-list .grc-txt-grid-item a:visited {
+.section-hovercards .grc-txt-grid-item a:hover, .section-hovercards .grc-txt-grid-item a:active, .section-hovercards .grc-txt-grid-item a:visited {
   color: black;
 }
-.section-hovercards .grc-list .grc-txt-grid-item a .fa-external-link {
+.section-hovercards .grc-txt-grid-item a .fa-external-link {
   font-size: 13px;
 }
 
@@ -1536,6 +1514,16 @@ h2 + .section-hovercards .grc-list {
 footer section {
   padding: 20px 0;
 }
+footer section.bg-black {
+  background-color: rgb(0, 0, 0);
+  color: #FFFFFF;
+}
+footer section.bg-black a {
+  color: #FFFFFF;
+}
+footer section.bg-black a:hover {
+  color: #eee;
+}
 footer section.bg-dark {
   background-color: rgb(30, 44, 56);
   color: #FFFFFF;
@@ -1547,7 +1535,7 @@ footer section.bg-dark a:hover {
   color: #eee;
 }
 footer section.bg-med {
-  background-color: #3f3f3f;
+  background-color: rgb(63, 63, 63);
   color: #FFFFFF;
 }
 footer section.bg-med a {
@@ -1557,14 +1545,14 @@ footer section.bg-med a:hover {
   color: #eee;
 }
 footer section.bg-light {
-  background-color: #4BAAC8;
-  color: #FFFFFF;
+  background-color: rgb(245, 252, 255);
+  color: #000000;
 }
 footer section.bg-light a {
-  color: #FFFFFF;
+  color: #000000;
 }
 footer section.bg-light a:hover {
-  color: #eee;
+  color: #000000;
 }
 footer section ul.footer-menu__list {
   display: grid;
@@ -1601,7 +1589,10 @@ footer section section#footer-section-03 {
 .return-to-top.visible {
   opacity: 1;
 }
-.return-to-top a {
+.return-to-top #footer-block-rtt {
+  padding: 20px 0 20px 20px;
+}
+.return-to-top #footer-block-rtt a {
   background-color: rgb(183, 65, 14);
   border-radius: 5px 0 0 5px;
   padding: 20px;
@@ -1609,23 +1600,6 @@ footer section section#footer-section-03 {
   color: #FFFFFF;
   text-decoration: none;
 }
-body.thehuda header .section-top {
-  height: 70vh;
-}
-body.thehuda header .section-top .banner {
-  height: 100vh;
-}
-body.thehuda header .section-top .banner img {
-  margin-top: -50px;
-}
-body.thehuda header .section-top .mission-block {
-  background-color: rgb(30, 44, 56) !important;
-  max-width: 100% !important;
-  margin: 0 !important;
-  border-radius: 0 !important;
-  position: relative !important;
-}
-
 body.theniels header .section-top .banner {
   height: 100vh;
   margin-top: 0;
@@ -1633,4 +1607,15 @@ body.theniels header .section-top .banner {
 body.theniels header .section-top .banner img {
   margin-top: 0;
   width: 100%;
+}
+
+body.thehuda header .section-top {
+  height: auto;
+}
+body.thehuda header .section-top .mission-block {
+  background-color: rgb(30, 44, 56) !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  position: relative !important;
 }

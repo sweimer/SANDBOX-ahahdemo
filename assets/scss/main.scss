@@ -1,8 +1,12 @@
-@use 'variables';
-@use 'mixins';
+@use 'config';
+
 @use 'base';
 @use 'layout';
 @use 'header';
 @use 'footer';
 @use 'nav';
-@use 'components/components';
+
+@use 'components';
+
+@use 'thehuda';
+@use 'theniels';
