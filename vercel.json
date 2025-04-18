@@ -1,0 +1,6 @@
+{
+  "outputDirectory": ".", // Specify the root directory as the output
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" } // Handle SPA routing (if needed)
+  ]
+}
