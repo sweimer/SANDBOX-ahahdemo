@@ -842,6 +842,375 @@ header .sticky-menu.stuck .header-top-right-block .nav-block .nav-block-search .
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
+header .sticky-menu.sticky.stuck {
+  background-color: #1e2c38;
+  transition: all 2s ease;
+  padding: 3px 100px 13px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+header .sticky-menu.sticky.stuck .logo {
+  padding: 15px 0 0 0;
+}
+header .sticky-menu.sticky.stuck .logo svg {
+  transition: all 2s ease;
+  height: 30px;
+  width: auto;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block {
+  position: relative;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .share-block {
+  transition: all 2s ease;
+  top: 3px;
+  right: 150px;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .share-block ul.share-buttons {
+  list-style: none;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .share-block ul.share-buttons li {
+  float: left;
+  margin-left: 5px;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .share-block ul.share-buttons img {
+  display: block;
+  margin: 0;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .share-block ul.share-buttons span.fa,
+header .sticky-menu.sticky.stuck .header-top-right-block .share-block ul.share-buttons svg.svg-inline--fa {
+  font-size: 26px;
+  color: #FFFFFF;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .share-block ul.share-buttons span.fa:hover,
+header .sticky-menu.sticky.stuck .header-top-right-block .share-block ul.share-buttons svg.svg-inline--fa:hover {
+  color: #B7410E;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .share-block ul.share-buttons .exitDisclaimer {
+  display: none;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .share-block ul.share-buttons svg.mailto {
+  display: none !important;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-menu {
+  transition: all 2s ease;
+  position: absolute;
+  top: 0;
+  right: 80px;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-menu button.c-hamburger {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  padding: 0;
+  width: 36px;
+  height: 36px;
+  z-index: 2;
+  font-size: 0;
+  text-indent: -9999px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-menu button.c-hamburger:focus {
+  outline: none !important;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-menu button.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background-color: #FFFFFF;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-menu button.c-hamburger span:before, header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-menu button.c-hamburger span:after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #FFFFFF;
+  content: "";
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-menu button.c-hamburger span:before {
+  top: -10px;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-menu button.c-hamburger span:after {
+  bottom: -10px;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-menu button.c-hamburger--htx span {
+  -webkit-transition: background 0s 0.3s;
+  transition: background 0s 0.3s;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-menu button.c-hamburger--htx span:before, header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-menu button.c-hamburger--htx span:after {
+  -webkit-transition-duration: 0.3s, 0.3s;
+  transition-duration: 0.3s, 0.3s;
+  -webkit-transition-delay: 0.3s, 0s;
+  transition-delay: 0.3s, 0s;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-menu button.c-hamburger--htx span:before {
+  -webkit-transition-property: top, -webkit-transform;
+  transition-property: top, transform;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-menu button.c-hamburger--htx span:after {
+  -webkit-transition-property: bottom, -webkit-transform;
+  transition-property: bottom, transform;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-menu button.c-hamburger--htx.is-active {
+  color: #FFFFFF;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-menu button.c-hamburger--htx.is-active span {
+  background: transparent;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-menu button.c-hamburger--htx.is-active span:before, header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-menu button.c-hamburger--htx.is-active span:after {
+  background: #FFFFFF;
+  -webkit-transition-delay: 0s, 0.3s;
+  transition-delay: 0s, 0.3s;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-menu button.c-hamburger--htx.is-active span:before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-menu button.c-hamburger--htx.is-active span:after {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-menu nav.sub-menu {
+  padding: 0 0 0 1%;
+  float: right;
+  top: 0;
+  right: -25%;
+  transition: all 0.3s ease;
+  height: 100%;
+  position: fixed;
+  margin: 0;
+  background-color: rgb(30, 44, 56);
+  border-radius: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-menu nav.sub-menu.open {
+  right: 0;
+  width: 50%;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-menu nav.sub-menu .sub-menu-inner {
+  position: relative;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-menu nav.sub-menu .sub-menu-inner img {
+  position: absolute;
+  border-radius: 5px;
+  left: 20px;
+  width: 300px;
+  height: 300px;
+  margin-top: -25px;
+  background: rgba(255, 255, 255, 0.9);
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-menu nav.sub-menu .sub-menu-inner ul {
+  position: absolute;
+  top: 10px;
+  width: calc(100% - 60px);
+  text-align: center;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-menu nav.sub-menu .sub-menu-inner ul li {
+  display: block;
+  list-style: none;
+  height: auto;
+  margin-left: 0;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-menu nav.sub-menu .sub-menu-inner ul li:hover i {
+  color: #B7410E;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-menu nav.sub-menu .sub-menu-inner ul li:first-child {
+  margin-top: 100px;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-menu nav.sub-menu .sub-menu-inner ul li a {
+  color: #FFFFFF;
+  font-size: 35px;
+  line-height: 50px;
+  width: 100%;
+  display: block;
+  float: left;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-search {
+  transition: all 2s ease;
+  top: 3px;
+  right: 20px;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-search .sub-search {
+  padding: 0 0 0 2%;
+  float: right;
+  top: 0;
+  right: -100%;
+  transition: all 0.3s ease;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  margin: 0;
+  background-color: rgb(30, 44, 56);
+  border-radius: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-search .sub-search.open {
+  right: 0;
+  width: 100%;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-search .sub-search ul {
+  margin: 120px 0 0 350px;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-search .sub-search li {
+  display: block;
+  list-style: none;
+  height: auto;
+  margin-left: 0;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-search .sub-search li:first-child {
+  margin-top: 100px;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-search .sub-search li a {
+  color: #FFFFFF;
+  font-size: 16px;
+  width: 100%;
+  display: block;
+  float: left;
+  text-transform: uppercase;
+  line-height: 30px;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-search .sub-search li a:hover {
+  font-weight: bold;
+  text-decoration: none;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-search .sub-search.open form {
+  width: 95%;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-search .sub-search.open form input[type=search] {
+  width: 100%;
+  text-align: center;
+  border: none;
+  background: transparent;
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-search .sub-search.open form input[type=submit] {
+  margin: 0px 0px 0px -5px;
+  border: none;
+  background: transparent;
+  padding: 20px 0;
+  margin-top: 20px;
+  color: #FFFFFF;
+  border-top: 1px solid #FFFFFF;
+  font-size: 25px;
+  cursor: pointer;
+  height: auto;
+  width: 100%;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-search .sub-search.open .search-block-form {
+  position: absolute;
+  top: 300px;
+  width: calc(100% - 80px);
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-search .sub-search.open .search-block-form input[type=search] {
+  color: #FFFFFF;
+  max-width: 100%;
+  font-size: 36px;
+  padding: 40px;
+  border: none;
+  border-bottom: 2px solid #FFFFFF;
+  background: transparent;
+  text-align: center;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-search .sub-search.open .search-block-form input[type=submit] {
+  color: #FFFFFF;
+  max-width: 100%;
+  font-size: 24px;
+  padding: 40px;
+  background: transparent;
+  border: none;
+  text-align: center;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-search .c-hamburger-2 {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  padding: 0;
+  width: 36px;
+  height: 36px;
+  z-index: 2;
+  font-size: 30px;
+  background: transparent;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background 0.3s;
+  transition: background 0.3s;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-search .c-hamburger-2:focus {
+  outline: none !important;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-search .c-hamburger-2 span i {
+  color: #FFFFFF;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-search .c-hamburger--htx-2 span {
+  -webkit-transition: background 0s 0.3s;
+  transition: background 0s 0.3s;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-search .c-hamburger--htx-2 span:before, header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-search .c-hamburger--htx-2 span:after {
+  -webkit-transition-duration: 0.3s, 0.3s;
+  transition-duration: 0.3s, 0.3s;
+  -webkit-transition-delay: 0.3s, 0s;
+  transition-delay: 0.3s, 0s;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-search .c-hamburger--htx-2 span:before {
+  -webkit-transition-property: top, -webkit-transform;
+  transition-property: top, transform;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-search .c-hamburger--htx-2 span:after {
+  -webkit-transition-property: bottom, -webkit-transform;
+  transition-property: bottom, transform;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-search .c-hamburger--htx-2.is-active {
+  color: #FFFFFF;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-search .c-hamburger--htx-2.is-active span {
+  background: transparent;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-search .c-hamburger--htx-2.is-active span:before, header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-search .c-hamburger--htx-2.is-active span:after {
+  background: #FFFFFF;
+  -webkit-transition-delay: 0s, 0.3s;
+  transition-delay: 0s, 0.3s;
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-search .c-hamburger--htx-2.is-active span:before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+header .sticky-menu.sticky.stuck .header-top-right-block .nav-block .nav-block-search .c-hamburger--htx-2.is-active span:after {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
 header .mission-block {
   background-color: #1e2c38;
   position: absolute;
@@ -1739,6 +2108,9 @@ body.theniels .aha-component.aha-bg-light a:hover {
   color: #000000;
 }
 
+body.theniels header .section-top {
+  height: 100%;
+}
 body.theniels header .section-top .banner img {
   width: 100%;
 }
@@ -1757,4 +2129,20 @@ body.theniels footer section.aha-bg-dark {
 }
 body.theniels footer section.aha-bg-med {
   background-color: #00012c;
+}
+
+body.theniels .section-cards .aha-component {
+  background-color: #19132f;
+}
+
+body.theniels .section-mission {
+  height: 100vh;
+}
+body.theniels .section-mission .mission-block {
+  height: 100vh;
+  position: relative;
+}
+body.theniels .section-mission .mission-block .mission-statement {
+  position: absolute;
+  top: 30%;
 }

@@ -1,6 +1,19 @@
-// THE HUDA - SECTION-MISSION OVERWRITES
-body.thehuda {
-  .section-mission {
+@use "../config/variables/var_colors" as colors;
+@use '../config/mixins/mixins' as mixins;
 
+// THE NIELS - SECTION-MISSION OVERWRITES
+body.theniels {
+  .section-mission {
+    height: 100vh;
+
+    .mission-block {
+      height: 100vh;
+      position: relative;
+
+      .mission-statement {
+        position: absolute;
+        top: 30%;
+      }
+    }
   }
 }

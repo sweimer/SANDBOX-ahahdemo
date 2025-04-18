@@ -135,7 +135,7 @@
              data-animationDuration="2s"
     >
       <!--  TOP STICKY MENU -->
-      <div class="sticky-menu grid-row">
+      <div class="sticky-menu stuck grid-row">
         <!--  TOP LEFT  -->
         <div class="logo grid-col-6">
           <svg xmlns="http://www.w3.org/2000/svg" width="163" height="63" viewBox="0 0 163 63" fill="none">
@@ -246,14 +246,21 @@
           </div>
         </div>
       </div>
-      <!--  TOP BACKGROUND MP4 -->
-      <div class="banner aha-bg-med">
-        <img src="assets/img/Header-Runner.webp" alt="Top Background" class="banner-image"/>
-      </div>
+    </section>
+  </header>
 
+  <main>
+    <!--  TOP BACKGROUND/MISSION -->
+    <section id="section-mission"
+             class="section-mission parallax"
+             data-animationTrigger=".animationTrigger"
+             data-animationName="animate__slideInUp"
+             data-animationDuration="2s"
+             style="background-image: url('assets/img/Header-Runner.webp');"
+    >
       <!--  TOP MISSION  -->
-      <div class="aha-component mission-block aha-bg-dark grid-col-12 grid-row grid-gap animationTrigger">
-        <div class="desktop:grid-col-12">
+      <div class="aha-component mission-block grid-row grid-gap aha-bg-med">
+        <div class="mission-statement desktop:grid-col-6">
           <h2 class="font-heading-xl margin-top-0 tablet:margin-bottom-0">
             Administration for a Healthier America
           </h2>
@@ -263,9 +270,7 @@
         </div>
       </div>
     </section>
-  </header>
 
-  <main>
     <!--  SECTION - FIND THE HELP  -->
     <section id="section-findhelp"
              class="section-cards"
