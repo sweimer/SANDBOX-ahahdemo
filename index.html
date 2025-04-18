@@ -19,6 +19,7 @@
   <!-- SKIP TO MAIN -->
   <a class="usa-skipnav" href="#main-content">Skip to main content</a>
   <!-- 988 BANNER -->
+  <button id="toggleClassButton">Light/Dark</button>
   <div id="block-headercallout" class="block-headercallout">
     <span class="visually-hidden" aria-hidden="true">Header - Callout</span>
 
@@ -2146,8 +2147,17 @@
     }).mount();
   });
 
+  // TOGGLE LIGHT/DARK MODE
+  // Select the toggle button
+  const toggleButton = document.getElementById('toggleClassButton');
 
-// SLIDER
+  // Add an event listener to toggle a class
+  toggleButton.addEventListener('click', function () {
+    document.body.classList.toggle('theniels'); // Replace 'custom-class' with your desired class name
+  });
+
+
+  // SLIDER
   function controlSlides(action, n) {
     let i;
     let slides = document.getElementsByClassName("mySlides");
