@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 </head>
 <body class="thehuda">
 
@@ -17,6 +18,26 @@
 <header>
   <!-- SKIP TO MAIN -->
   <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+  <!-- 988 BANNER -->
+  <div id="block-headercallout" class="block-headercallout">
+    <span class="visually-hidden" aria-hidden="true">Header - Callout</span>
+
+    <div class="block-content">
+      <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item">
+        <div class="usa-alert usa-alert--slim callout">
+          <div class="usa-alert__body">
+            <p class="usa-alert__text">
+              <a aria-label="In Crisis? Call or Text 988" class="usa-link" href="https://www.samhsa.gov/find-support/in-crisis">
+
+                In Crisis? Call or Text 988
+
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- USA BANNER -->
   <div class="usa-accordion">
     <header class="usa-banner__header">
@@ -232,32 +253,28 @@
            class="section-flagright"
   >
     <!--  FLAG - RIGHT  -->
-    SECTION-SPOTLIGHT OVERWRITES
-      <div class="usa-card usa-card--flag usa-card--media-right"
-           style="margin-bottom: 0;"
-      >
-        <div class="usa-card__container"
-             style="border:none;"
-        >
-            <header class="usa-card__header">
-              <h2 class="usa-card__heading">Flag Left - No Border</h2>
-            </header>
-            <div class="usa-card__media">
-              <div class="usa-card__img">
-                <img
-                  src="assets/img/Header-MotherAndChild.webp"
-                  alt="Mother and Child"
-                />
-              </div>
+      <div class="aha-component grid-row">
+        <div class="flagright-details grid-col-6">
+          <header class="flagright-header">
+            <h2 class="usa-card__heading">Flag Left - No Border</h2>
+          </header>
+          <div class="flagright-body">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="flagright-footer">
+            <a href="#" class="usa-button usa-button--outline" style="color:black;">Learn more</a>
+          </div>
+        </div>
+          <div class="flagright-media grid-col-6">
+            <div class="flagright-img">
+              <img
+                src="assets/img/Header-MotherAndChild.webp"
+                alt="Mother and Child"
+              />
             </div>
-            <div class="usa-card__body">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </div>
-            <div class="usa-card__footer">
-              <a href="#" class="usa-button usa-button--outline" style="color:black;">Learn more</a>
-            </div>
+          </div>
           </div>
       </div>
     </div>
@@ -273,12 +290,12 @@
            data-animationDuration="2s"
            style="background: url('assets/img/Background-GreenLeaves.webp');"
   >
-    <div class="aha-component grid-row grid-gap bg-dark">
+    <div class="aha-component grid-row aha-bg-dark">
       <div class="grid-col-12">
-        <h2 class="font-heading-xl">
+        <h2 class="section-mission-header">
           Our mission is to make an impact across the nation
         </h2>
-        <p>
+        <p class="section-mission-details">
           Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod ut labore et dolore magna aliqua. Ut enim ad minim veniam.
         </p>
       </div>
@@ -454,7 +471,7 @@
            data-animationDuration="2s"
            style="background-image: url('assets/img/Background-GreenLeaves.webp');"
   >
-    <div class="aha-component grid-row grid-gap bg-dark">
+    <div class="aha-component grid-row grid-gap aha-bg-dark">
       <h2 class="font-heading-xl" style="color: #fff;">
         Helplines
       </h2>
@@ -563,32 +580,24 @@
 
   <!-- SECTION -  SPOTLIGHT  -->
   <section id="section-spotlight"
-           class="section-spotlight"
+           class="section-splider"
            data-animationTrigger=".animationTrigger"
-           data-animationName="animate__slideInLeft"
+           data-animationName="animate__slideInUp"
            data-animationDuration="2s"
   >
-    <div class="aha-component grid-row grid-gap bg-light">
-      <h2 class="font-heading-xl grid-offset-3 grid-col-9">
-        AHA Spotlight
-      </h2>
-      <div class="grid-offset-3 grid-col-9 desktop:grid-col-2">
-        <div>
-          <img
-            class="hoverpulse"
-            src="assets/img/Spotlight-RFK.webp"
-            alt="Spotlight Image"
-            style="margin-top:14px; height:auto;" />
+    <div class="aha-component grid-row">
+      <h2 class="grid-col-12">Spotlight</h2>
+      <p class="grid-col-12">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <div class="splide grid-col-12" id="my-slider">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">Slide 1 - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatu</li>
+            <li class="splide__slide">Slide 2 - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatu</li>
+            <li class="splide__slide">Slide 3 - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatu</li>
+          </ul>
         </div>
-      </div>
-      <div class="grid-offset-3 grid-col-9 desktop:grid-offset-none desktop:grid-col-6">
-        <h3>Robert Francis Kennedy</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-        <p>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
       </div>
     </div>
   </section>
@@ -600,7 +609,7 @@
            data-animationName="animate__slideInUp"
            data-animationDuration="2s"
   >
-    <div class="aha-component grid-row grid-gap bg-med">
+    <div class="aha-component grid-row grid-gap">
       <h2 class="font-heading-xl">
         Resources
       </h2>
@@ -673,7 +682,7 @@
            data-animationDuration="2s"
            style="background: url('assets/img/Background-TwoGirls.webp');"
   >
-    <div class="aha-component grid-row grid-gap bg-dark">
+    <div class="aha-component grid-row aha-bg-dark">
       <div class="usa-content">
         <h2 class="font-heading-xl">
           Explore More:
@@ -696,7 +705,7 @@
       <h2 class="font-heading-xl grid-col-12">
         News and Announcements
       </h2>
-      <ul class="usa-collection grid-row grid-gap">
+      <ul class="usa-collection grid-col-12 grid-row grid-gap">
         <li class="usa-collection__item grid-col-6">
           <div class="usa-collection__calendar-date">
             <time datetime="2020-09-30T12:00:00+01:00"><span class="usa-collection__calendar-date-month">SEP</span> <span class="usa-collection__calendar-date-day">30</span></time>
@@ -782,9 +791,9 @@
 
 <footer class="usa-footer">
   <section id="footer-section-01"
-           class="bg-dark"
+           class="aha-bg-dark"
   >
-    <div class="aha-component grid-row grid-gap">
+    <div class="aha-component bottom40 grid-row grid-gap">
       <div class="footer_menu_block grid-col-6 desktop:grid-col-2">
         <ul class="footer-menu__list">
           <li class="footer-menu__link">
@@ -1165,14 +1174,14 @@
       <div class="grid-col-12"
            style="border-top: 1px solid #ffffff; margin-top: 20px; padding-top: 20px;"
       >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
     </div>
   </section>
   <section id="footer-section-02"
-           class="bg-med"
+           class="aha-bg-med"
   >
-    <div class="aha-component grid-row grid-gap">
+    <div class="aha-component top40 grid-row grid-gap">
       <div id="footer-block-logo" class="logo grid-col-12 desktop:grid-col-6">
         <svg xmlns="http://www.w3.org/2000/svg" width="163" height="63" viewBox="0 0 163 63" fill="none">
           <g clip-path="url(#clip0_14348_971)">
@@ -1296,9 +1305,11 @@
 
 </body>
 
-
 <script src="dist/js/uswds.min.js"></script>
 <script src="dist/js/uswds-init.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <script src="assets/js/main.js"></script>
 <script>
   // ANIMATION
@@ -1364,23 +1375,27 @@
       animateSectionsFromData(section);
     });
   });
+
   // ADD STUCK CLASS TO TOP STICKY SECTION
-  document.addEventListener('scroll', function () {
+  document.addEventListener('DOMContentLoaded', function () {
     const stickyMenu = document.querySelector('.sticky-menu');
     const stickyMenuOriginalPosition = stickyMenu.offsetTop; // Original position relative to the document
 
-    // Check current scroll position
-    const currentScrollPosition = window.scrollY;
+    document.addEventListener('scroll', function () {
+      // Check current scroll position
+      const currentScrollPosition = window.scrollY;
 
-    if (currentScrollPosition >= stickyMenuOriginalPosition) {
-      // Add the "stuck" class when scrolled past the original position
-      stickyMenu.classList.add('stuck');
-    } else {
-      // Remove the "stuck" class when scrolled back above the original position
-      stickyMenu.classList.remove('stuck');
-    }
+      if (currentScrollPosition >= stickyMenuOriginalPosition) {
+        // Add the "stuck" class when scrolled past the original position
+        stickyMenu.classList.add('stuck');
+      } else {
+        // Remove the "stuck" class when scrolled back above the original position
+        stickyMenu.classList.remove('stuck');
+      }
+    });
   });
-  // ADD STUCK CLASS TO TOP STICKY SECTION
+
+  // REMOVE OPACITY 0 FROM RTT ON SCROLL
   document.addEventListener('scroll', function () {
     const hiddenSection = document.querySelector('.return-to-top');
     const scrollPosition = window.scrollY; // Current scroll position
@@ -1395,7 +1410,38 @@
     }
   });
 
+  // NUMBERCARDS
+  var statisticCounts = document.getElementsByClassName("statistic-count");
+  Array.prototype.forEach.call(statisticCounts, function (el, index, array) {
+    var waypoint = new Waypoint({
+      element: el,
+      handler: function (direction) {
+        var $this = $(el);
+        var counterStart = $this.data("start");
+        var counterEnd = $this.data("end");
+        jQuery({ Counter: counterStart }).animate(
+          { Counter: counterEnd },
+          {
+            duration: 9000,
+            easing: "easeOutExpo",
+            step: function () {
+              $this.text(Math.ceil(this.Counter).toLocaleString());
+            }
+          }
+        );
+      },
+      offset: "bottom-in-view"
+    });
+  });
 
+  // SPLIDE
+  document.addEventListener('DOMContentLoaded', function () {
+    new Splide('#my-slider', {
+      type   : 'loop',
+      perPage: 3,
+      perMove: 1,
+    }).mount();
+  });
 
 
   // SLIDER
@@ -1435,14 +1481,12 @@
   function plusSlides(n) {
     controlSlides("plus", n);
   }
-
   // Go to a specific slide
   function currentSlide(n) {
     controlSlides("current", n);
   }
 
-
-  // TAB PANEL
+  // CUSTOM TAB PANEL
   $('.custom-tab').each(function () {
     const tabbed = $(this);
     const tablist = tabbed.find('.tab-list');

@@ -1,0 +1,9 @@
+@use "../config/variables/var_colors" as colors;
+@use '../config/mixins/mixins' as mixins;
+
+// THE HUDA - SECTION-COLLECTIONCARDS OVERWRITES
+body.thehuda {
+  .section-collectioncards {
+
+  }
+}

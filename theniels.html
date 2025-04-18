@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 </head>
 <body class="theniels">
 
@@ -17,6 +18,26 @@
   <header>
     <!-- SKIP TO MAIN -->
     <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+    <!-- 988 BANNER -->
+    <div id="block-headercallout" class="block-headercallout">
+      <span class="visually-hidden" aria-hidden="true">Header - Callout</span>
+
+      <div class="block-content">
+        <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item">
+          <div class="usa-alert usa-alert--slim callout">
+            <div class="usa-alert__body">
+              <p class="usa-alert__text">
+                <a aria-label="In Crisis? Call or Text 988" class="usa-link" href="https://www.samhsa.gov/find-support/in-crisis">
+
+                  In Crisis? Call or Text 988
+
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- USA BANNER -->
     <div class="usa-accordion">
       <header class="usa-banner__header">
@@ -226,12 +247,12 @@
         </div>
       </div>
       <!--  TOP BACKGROUND MP4 -->
-      <div class="banner">
+      <div class="banner aha-bg-med">
         <img src="assets/img/Header-Runner.webp" alt="Top Background" class="banner-image"/>
       </div>
 
       <!--  TOP MISSION  -->
-      <div class="mission-block usa-grid bg-dark grid-col-12 grid-row grid-gap animationTrigger">
+      <div class="aha-component mission-block aha-bg-dark grid-col-12 grid-row grid-gap animationTrigger">
         <div class="desktop:grid-col-12">
           <h2 class="font-heading-xl margin-top-0 tablet:margin-bottom-0">
             Administration for a Healthier America
@@ -252,7 +273,7 @@
              data-animationName="animate__slideInUp"
              data-animationDuration="2s"
     >
-      <div class="aha-component grid-row grid-gap bg-dark">
+      <div class="aha-component grid-row grid-gap aha-bg-med">
         <h2 class="font-heading-xl grid-col-12" style="color:white;">
         Find The Help You Need
       </h2>
@@ -405,9 +426,9 @@
              data-animationTrigger=".animationTrigger"
              data-animationName="animate__slideInUp"
              data-animationDuration="2s"
-             style="    background-color: rgba(30, 44, 56);"
+             style="background-color: rgba(30, 44, 56);"
     >
-      <div class="aha-component grid-row grid-gap bg-dark">
+      <div class="aha-component grid-row grid-gap aha-bg-dark">
         <h2 class="font-heading-xl" style="color:white;">
           The Time For A Healthier America Is Now
         </h2>
@@ -535,7 +556,7 @@
              data-animationDuration="2s"
              style="background: url('assets/img/Background-GreenLeaves.webp');"
     >
-      <div class="aha-component grid-row grid-gap bg-dark">
+      <div class="aha-component grid-row grid-gap aha-bg-dark">
         <div class="grid-col-12">
           <h2 class="font-heading-xl">
             Our mission is to make an impact across the nation
@@ -644,9 +665,9 @@
 
   <footer class="usa-footer">
     <section id="footer-section-01"
-             class="bg-dark"
+             class="aha-bg-med"
     >
-      <div class="aha-component grid-row grid-gap">
+      <div class="aha-component bottom40 grid-row grid-gap">
         <div class="footer_menu_block grid-col-6 desktop:grid-col-2">
           <ul class="footer-menu__list">
             <li class="footer-menu__link">
@@ -1032,9 +1053,9 @@
       </div>
     </section>
     <section id="footer-section-02"
-             class="bg-med"
+             class="aha-bg-med"
     >
-      <div class="aha-component grid-row grid-gap">
+      <div class="aha-component top40 grid-row grid-gap">
         <div id="footer-block-logo" class="logo grid-col-12 desktop:grid-col-6">
           <svg xmlns="http://www.w3.org/2000/svg" width="163" height="63" viewBox="0 0 163 63" fill="none">
             <g clip-path="url(#clip0_14348_971)">
@@ -1158,9 +1179,11 @@
 
 </body>
 
-
 <script src="dist/js/uswds.min.js"></script>
 <script src="dist/js/uswds-init.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <script src="assets/js/main.js"></script>
 <script>
   // ANIMATION
@@ -1226,23 +1249,27 @@
       animateSectionsFromData(section);
     });
   });
+
   // ADD STUCK CLASS TO TOP STICKY SECTION
-  document.addEventListener('scroll', function () {
+  document.addEventListener('DOMContentLoaded', function () {
     const stickyMenu = document.querySelector('.sticky-menu');
     const stickyMenuOriginalPosition = stickyMenu.offsetTop; // Original position relative to the document
 
-    // Check current scroll position
-    const currentScrollPosition = window.scrollY;
+    document.addEventListener('scroll', function () {
+      // Check current scroll position
+      const currentScrollPosition = window.scrollY;
 
-    if (currentScrollPosition >= stickyMenuOriginalPosition) {
-      // Add the "stuck" class when scrolled past the original position
-      stickyMenu.classList.add('stuck');
-    } else {
-      // Remove the "stuck" class when scrolled back above the original position
-      stickyMenu.classList.remove('stuck');
-    }
+      if (currentScrollPosition >= stickyMenuOriginalPosition) {
+        // Add the "stuck" class when scrolled past the original position
+        stickyMenu.classList.add('stuck');
+      } else {
+        // Remove the "stuck" class when scrolled back above the original position
+        stickyMenu.classList.remove('stuck');
+      }
+    });
   });
-  // ADD STUCK CLASS TO TOP STICKY SECTION
+
+  // REMOVE OPACITY 0 FROM RTT ON SCROLL
   document.addEventListener('scroll', function () {
     const hiddenSection = document.querySelector('.return-to-top');
     const scrollPosition = window.scrollY; // Current scroll position
@@ -1257,7 +1284,38 @@
     }
   });
 
+  // NUMBERCARDS
+  var statisticCounts = document.getElementsByClassName("statistic-count");
+  Array.prototype.forEach.call(statisticCounts, function (el, index, array) {
+    var waypoint = new Waypoint({
+      element: el,
+      handler: function (direction) {
+        var $this = $(el);
+        var counterStart = $this.data("start");
+        var counterEnd = $this.data("end");
+        jQuery({ Counter: counterStart }).animate(
+          { Counter: counterEnd },
+          {
+            duration: 9000,
+            easing: "easeOutExpo",
+            step: function () {
+              $this.text(Math.ceil(this.Counter).toLocaleString());
+            }
+          }
+        );
+      },
+      offset: "bottom-in-view"
+    });
+  });
 
+  // SPLIDE
+  document.addEventListener('DOMContentLoaded', function () {
+    new Splide('#my-slider', {
+      type   : 'loop',
+      perPage: 3,
+      perMove: 1,
+    }).mount();
+  });
 
 
   // SLIDER
@@ -1297,14 +1355,12 @@
   function plusSlides(n) {
     controlSlides("plus", n);
   }
-
   // Go to a specific slide
   function currentSlide(n) {
     controlSlides("current", n);
   }
 
-
-  // TAB PANEL
+  // CUSTOM TAB PANEL
   $('.custom-tab').each(function () {
     const tabbed = $(this);
     const tablist = tabbed.find('.tab-list');

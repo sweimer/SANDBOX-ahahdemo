@@ -1,5 +1,23 @@
-// Standardized colors as defined in the styleguide: https://hhs.github.io/samhsa-pattern-library/colors/
-// [OCWT-10777] - Organized colors alphabetically for easier reference.
+$aha-font-color:    #4A4A4A;
+$aha-font-family:   "Source Sans Pro", sans-serif;
+$aha-bg-color-black: rgba(0, 0, 0);
+$aha-bg-color-white: rgba(255, 255, 255);
+
+$aha-bg-color-dark: rgba(30, 44, 56);
+$aha-bg-color-med: rgba(72, 74, 89);
+$aha-bg-color-light: rgba(192, 194, 207);
+$aha-bg-color-overlay: rgba(31, 35, 44);
+
+$thehuda-bg-color-dark: rgb(14, 45, 80);
+$thehuda-bg-color-med: rgba(72, 74, 89);
+$thehuda-bg-color-light: rgba(245, 252, 255);
+$thehuda-bg-color-overlay: rgb(31, 35, 44);
+
+$theniels-bg-color-dark: rgb(25, 19, 47);
+$theniels-bg-color-med: rgba(0, 1, 44);
+$theniels-bg-color-light: rgba(245, 252, 255);
+$theniels-bg-color-overlay: rgb(31, 35, 44);
+
 $barney:        #54278F;
 $black:         #000000;
 $blueice:       #EDF3F5;
@@ -56,6 +74,3 @@ $teal:          #1A6986;
 $topaz:         #5CC0D0;
 $vivid-blue:    #2491FF;
 $white:         #FFFFFF;
-
-$aha-bg-color-dark: rgba(30, 44, 56);
-$aha-bg-color-dark-opacity: rgba(30, 44, 56, 0.7);

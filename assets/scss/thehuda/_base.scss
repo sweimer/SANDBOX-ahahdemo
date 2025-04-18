@@ -1,0 +1,58 @@
+@use "../config/variables/var_colors" as colors;
+@use '../config/mixins/mixins' as mixins;
+
+// THE HUDA - BASE OVERWRITES
+body.thehuda {
+  // SECTION/GRID CONTAINER
+  .aha-component  {
+    &.aha-bg-black {
+      @include mixins.aha-bg-color-black-opacity(0.6, thehuda);
+      color: colors.$white;
+      a {
+        color: colors.$white;
+        &:hover {
+          color: #eeeeee;
+        }
+      }
+      h1,h2,h3,h4,h5,h6 {
+        color: colors.$white;
+      }
+    }
+    &.aha-bg-dark {
+      @include mixins.aha-bg-color-dark-opacity(0.6, thehuda);
+      color: colors.$white;
+      a {
+        color: colors.$white;
+        &:hover {
+          color: #eeeeee;
+        }
+      }
+      h1,h2,h3,h4,h5,h6 {
+        color: colors.$white;
+      }
+    }
+    &.aha-bg-med {
+      @include mixins.aha-bg-color-med-opacity(0.6, thehuda);
+      color: colors.$white;
+      a {
+        color: colors.$white;
+        &:hover {
+          color: #eeeeee;
+        }
+      }
+      h1,h2,h3,h4,h5,h6 {
+        color: colors.$white;
+      }
+    }
+    &.aha-bg-light {
+      @include mixins.aha-bg-color-light-opacity(1, thehuda);
+      color: colors.$black;
+      a {
+        color: colors.$black;
+        &:hover {
+          color: colors.$black;
+        }
+      }
+    }
+  }
+}

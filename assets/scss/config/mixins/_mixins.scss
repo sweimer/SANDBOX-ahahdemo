@@ -1,0 +1,47 @@
+@use "config/variables/var_colors" as colors;
+
+@mixin aha-bg-color-black-opacity($opacity, $theme) {
+  @if $theme == 'thehuda' {
+    background-color: rgba(colors.$aha-bg-color-black, $opacity);
+  } @else if $theme == 'theniels' {
+    background-color: rgba(colors.$aha-bg-color-black, $opacity);
+  } @else {
+    background-color: rgba(colors.$aha-bg-color-black, $opacity);
+  }
+}
+@mixin aha-bg-color-dark-opacity($opacity, $theme) {
+  @if $theme == 'thehuda' {
+    background-color: rgba(colors.$thehuda-bg-color-dark, $opacity);
+  } @else if $theme == 'theniels' {
+    background-color: rgba(colors.$theniels-bg-color-dark, $opacity);
+  } @else {
+    background-color: rgba(colors.$aha-bg-color-dark, $opacity);
+  }
+}
+@mixin aha-bg-color-med-opacity($opacity, $theme) {
+  @if $theme == 'thehuda' {
+    background-color: rgba(colors.$thehuda-bg-color-med, $opacity);
+  } @else if $theme == 'theniels' {
+    background-color: rgba(colors.$theniels-bg-color-med, $opacity);
+  } @else {
+    background-color: rgba(colors.$aha-bg-color-med, $opacity);
+  }
+}
+@mixin aha-bg-color-light-opacity($opacity, $theme) {
+  @if $theme == 'thehuda' {
+    background-color: rgba(colors.$thehuda-bg-color-light, $opacity);
+  } @else if $theme == 'theniels' {
+    background-color: rgba(colors.$theniels-bg-color-light, $opacity);
+  } @else {
+    background-color: rgba(colors.$aha-bg-color-light, $opacity);
+  }
+}
+@mixin aha-bg-color-overlay-opacity($opacity, $theme) {
+  @if $theme == 'thehuda' {
+    background-color: rgba(colors.$thehuda-bg-color-overlay, $opacity);
+  } @else if $theme == theniels {
+    background-color: rgba(colors.$theniels-bg-color-overlay, $opacity);
+  } @else {
+    background-color: rgba(colors.$aha-bg-color-overlay, $opacity);
+  }
+}

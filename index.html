@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
 </head>
 <body>
 
@@ -17,6 +18,26 @@
 <header>
   <!-- SKIP TO MAIN -->
   <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+  <!-- 988 BANNER -->
+  <div id="block-headercallout" class="block-headercallout">
+    <span class="visually-hidden" aria-hidden="true">Header - Callout</span>
+
+    <div class="block-content">
+      <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item">
+        <div class="usa-alert usa-alert--slim callout">
+          <div class="usa-alert__body">
+            <p class="usa-alert__text">
+              <a aria-label="In Crisis? Call or Text 988" class="usa-link" href="https://www.samhsa.gov/find-support/in-crisis">
+
+                In Crisis? Call or Text 988
+
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- USA BANNER -->
   <div class="usa-accordion">
     <header class="usa-banner__header">
@@ -217,7 +238,7 @@
                   data-dashlane-rid="c6eff06867732c2a"
                 />
 
-                <input class="btn samhsasearchbutton topsearchbutton" data-disable-with="Search" name="commit" style="margin: 0px 0px 0px -5px;" type="submit" value="Press Enter to Search" data-dashlane-rid="814d9a8204854c87">
+                <input class="btn samhsasearchbutton topsearchbutton" data-disable-with="Search" name="commit" type="submit" value="Press Enter to Search" data-dashlane-rid="814d9a8204854c87">
 
               </form>
             </div>
@@ -233,16 +254,16 @@
     </div>
 
     <!--  TOP MISSION  -->
-    <div class="mission-block usa-grid bg-dark grid-col-12 grid-row grid-gap animationTrigger">
-      <div class="desktop:grid-col-6">
-        <h2 class="font-heading-xl margin-top-0 tablet:margin-bottom-0">
-          Our Mission
-        </h2>
-        <p>
+    <div class="mission-block aha-bg-dark grid-col-12 grid-row grid-gap animationTrigger">
+      <h2 class="grid-col-12">
+        Our Mission
+      </h2>
+      <div class="grid-row grid-gap">
+        <p class="grid-col-12 desktop:grid-col-6">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
-      </div>
-      <div class="desktop:grid-col-6">
+
+        <div class="grid-col-12 desktop:grid-col-6">
         <ul class="grid-row grid-gap" style="list-style: none; padding: 0;">
           <li class="grid-col-6 grid-row" style="margin-bottom:14px;">
             <div class="grid-col-2">
@@ -270,6 +291,7 @@
           </li>
         </ul>
       </div>
+      </div>
     </div>
   </section>
 </header>
@@ -277,13 +299,13 @@
 <main>
   <!-- SECTION - SPOTLIGHT  -->
   <section id="section-spotlight"
-           class="section-spotlight"
+           class="section-spotlight overflow-show"
            data-animationTrigger=".animationTrigger"
            data-animationName="animate__slideInLeft"
            data-animationDuration="2s"
   >
     <div class="aha-component grid-row grid-gap animationTrigger">
-      <h2 class="font-heading-xl grid-offset-3 grid-col-9">
+      <h2 class="grid-offset-3 grid-col-9">
         AHA Spotlight
       </h2>
       <div class="grid-offset-3 grid-col-9 desktop:grid-col-2">
@@ -315,8 +337,8 @@
            data-animationDuration="2s"
            style="background-image: url('assets/img/Parallax-Greengirl.webp');"
   >
-    <div class="aha-component grid-row grid-gap bg-dark">
-      <h2 class="font-heading-xl" style="color:white;">
+    <div class="aha-component grid-row grid-gap aha-bg-dark">
+      <h2 style="color:white;">
       Find The Help You Need
     </h2>
       <ul class="usa-card-group grid-row grid-gap">
@@ -476,27 +498,17 @@
            data-animationDuration="2s"
   >
     <div class="aha-component grid-row grid-gap">
-      <h2 class="font-heading-xl grid-col-12">
+      <h2 class="grid-col-12">
       Find The Help You Need - Alternatives
     </h2>
-      <h3 class="grid-col-12">
-        Clickable Cards
-      </h3>
       <div class="grid-row grid-gap section-clickablecard-item animationTrigger">
-      <div class="tablet:grid-col-6 mobile-lg:grid-col-12 clickable-card-component thehuda" style="padding-bottom: 50px;">
+        <div class="tablet:grid-col-6 mobile-lg:grid-col-12 clickable-card-component" style="padding-bottom: 50px;">
         <a href="/agency01" class="usa-card clickable-card-links" tabindex="0" aria-label="More about Donc consectetur quiche interduo elit er">
           <div class="usa-card__container clickable-card animationTrigger">
-            <img
-              src="assets/img/ClickCard-TheHuda.png"
-              alt="A placeholder image"
-            />
             <header class="usa-card__header">
               <h2 class="usa-card__heading">
                 <i class="fa-regular fa-comments" style="font-size: 50px; color: #1A6986; padding-right: 10px;"></i>
                 Agency 01
-              </h2>
-              <h2 class="thehuda usa-card__heading">
-                The Huda
               </h2>
             </header>
             <div class="usa-card__body">
@@ -504,17 +516,12 @@
             </div>
             <div class="usa-card__footer" style="text-align: right;">
               <i class="fa-solid fa-arrow-right-long"></i>
-              <img
-                class="clickCard-longArrow"
-                src="assets/img/ClickCard-LongArrow.png"
-                alt="A placeholder image"
-              />
             </div>
           </div>
         </a>
       </div>
 
-      <div class="tablet:grid-col-6 mobile-lg:grid-col-12 clickable-card-component thebrandon" style="padding-bottom: 50px;">
+        <div class="tablet:grid-col-6 mobile-lg:grid-col-12 clickable-card-component" style="padding-bottom: 50px;">
         <a href="/agency01" class="usa-card clickable-card-links" tabindex="0" aria-label="More about Donc consectetur quiche interduo elit er">
           <div class="usa-card__container clickable-card animationTrigger">
             <header class="usa-card__header">
@@ -522,21 +529,17 @@
                 <i class="fa-regular fa-comments" style="font-size: 50px; color: #1A6986; padding-right: 10px;"></i>
                 Agency 02
               </h2>
-              <h2 class="thebrandon usa-card__heading">
-                The Brandon
-              </h2>
             </header>
             <div class="usa-card__body">
               <p>Sed id interdum elit. Quisque sagittis erat eu dolor ornare, blandit sagittis augue suscipit. Fusce tempor a massa sit amet suscipit.</p>
             </div>
             <div class="usa-card__footer" style="text-align: right;">
-              <span class="readmore">Read more></span>
               <i class="fa-solid fa-arrow-right-long"></i>
             </div>
           </div>
         </a>
       </div>
-    </div>
+      </div>
     </div>
   </section>
 
@@ -546,14 +549,13 @@
            data-animationTrigger=".animationTrigger"
            data-animationName="animate__slideInUp"
            data-animationDuration="2s"
-           style="margin-top: -150px;"
   >
-    <div class="aha-component grid-row grid-gap bg-dark">
-      <h3>
-      Drop Cards
-    </h3>
+    <div class="aha-component grid-row grid-gap aha-bg-dark">
+      <h2>
+        Drop Cards
+      </h2>
       <ul class="usa-card-group drop-cards grid-row grid-gap">
-      <li class="usa-card grid-col-12 desktop:grid-col-4 animationTrigger">
+      <li class="usa-card grid-col-12 desktop:grid-col-4">
         <div class="usa-card__container">
           <div class="usa-card__header">
             <h4 class="usa-card__heading">Agency 01</h4>
@@ -577,7 +579,7 @@
           </div>
         </div>
       </li>
-      <li class="usa-card grid-col-12 desktop:grid-col-4 animationTrigger">
+      <li class="usa-card grid-col-12 desktop:grid-col-4">
         <div class="usa-card__container">
           <div class="usa-card__header">
             <h4 class="usa-card__heading">Agency 02</h4>
@@ -601,7 +603,7 @@
           </div>
         </div>
       </li>
-      <li class="usa-card grid-col-12 desktop:grid-col-4 animationTrigger">
+      <li class="usa-card grid-col-12 desktop:grid-col-4">
         <div class="usa-card__container">
           <div class="usa-card__header">
             <h4 class="usa-card__heading">Agency 02</h4>
@@ -629,22 +631,101 @@
     </div>
   </section>
 
+  <!-- SECTION - NUMBER CARDS  -->
+  <section id="section-healthier-america"
+           class="section-numbercards"
+           data-animationTrigger=".animationTrigger"
+           data-animationName="animate__slideInUp"
+           data-animationDuration="2s"
+  >
+    <div class="aha-component grid-row grid-gap">
+      <h2 class="grid-col-12">
+        The Time For a Healthier America is Now
+      </h2>
+      <div class="grid-col-12">
+        Because of you, Make America Healthy Again is the most dynamic and powerful movement in history. Together, we will create lasting reforms to public health policy and ensure that Americans are once again the healthiest people on Earth.
+      </div>
+      <div class="numbercards grid-col-12 grid-row">
+        <div class="numbercard-item grid-col-6 grid-row">
+          <div class="grid-col-12">
+        <div class="container">
+          <h2><sup class="dollar"></sup><span class="statistic-count" data-start="0" data-end="59">59</span><sup class="plus">%</sup></h2>
+        </div>
+      </div>
+          <div class="grid-col-12">
+            Children who suffer from at least one chronic health disease
+          </div>
+        </div>
+        <div class="numbercard-item grid-col-6 grid-row grid-gap">
+          <div class="grid-col-12">
+            <div class="container">
+              <h2><sup class="dollar"></sup><span class="statistic-count" data-start="0" data-end="59">59</span><sup class="plus">%</sup></h2>
+            </div>
+          </div>
+          <div class="grid-col-12">
+            Children who suffer from at least one chronic health disease
+          </div>
+        </div>
+        <div class="numbercard-item grid-col-6 grid-row">
+          <div class="grid-col-12">
+            <div class="container">
+              <h2><sup class="dollar"></sup><span class="statistic-count" data-start="0" data-end="59">59</span><sup class="plus">%</sup></h2>
+            </div>
+          </div>
+          <div class="grid-col-12">
+            Children who suffer from at least one chronic health disease
+          </div>
+        </div>
+        <div class="numbercard-item grid-col-6 grid-row grid-gap">
+          <div class="grid-col-12">
+            <div class="container">
+              <h2><sup class="dollar"></sup><span class="statistic-count" data-start="0" data-end="59">59</span><sup class="plus">%</sup></h2>
+            </div>
+          </div>
+          <div class="grid-col-12">
+            Children who suffer from at least one chronic health disease
+          </div>
+        </div>
+        <div class="numbercard-item grid-col-6 grid-row">
+          <div class="grid-col-12">
+            <div class="container">
+              <h2><sup class="dollar"></sup><span class="statistic-count" data-start="0" data-end="59">59</span><sup class="plus">%</sup></h2>
+            </div>
+          </div>
+          <div class="grid-col-12">
+            Children who suffer from at least one chronic health disease
+          </div>
+        </div>
+        <div class="numbercard-item grid-col-6 grid-row grid-gap">
+          <div class="grid-col-12">
+            <div class="container">
+              <h2><sup class="dollar"></sup><span class="statistic-count" data-start="0" data-end="59">59</span><sup class="plus">%</sup></h2>
+            </div>
+          </div>
+          <div class="grid-col-12">
+            Children who suffer from at least one chronic health disease
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!--  SECTION - PARALLAX - HOVER CARDS  -->
   <section id="section-hovercards"
            class="section-hovercards parallax"
            data-animationTrigger=".animationTrigger"
-           data-animationName="animate__slideInUp"
+           data-animationName="animate__zoomIn"
            data-animationDuration="2s"
            style="background-image: url('https://images.unsplash.com/photo-1474291102916-622af5ff18bb?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"
   >
-    <div class="aha-component grid-row grid-gap bg-dark">
-      <h2 class="font-heading-xl grid-col-12" style="color:white;">
+    <div class="aha-component grid-row grid-gap aha-bg-dark animationTrigger">
+      <h2 class="grid-col-12" style="color:white;">
         Resources
       </h2>
       <p class="grid-col-12">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </p>
-      <div class="grc-list usa-grid grid-row grid-gap">
+      <div class="grc-list grid-col-12 grid-row grid-gap">
         <a rel="external noopener noreferrer"
            target="_blank"
            title=""
@@ -701,7 +782,7 @@
            data-animationDuration="2s"
   >
     <div class="aha-component grid-row grid-gap">
-      <h2 class="font-heading-xl grid-col-12">
+      <h2 class="grid-col-12">
         News and Announcements
       </h2>
       <ul class="usa-collection grid-row grid-gap">
@@ -791,16 +872,16 @@
   <section id="section-slider"
            class="section-slider parallax"
            data-animationTrigger=".animationTrigger"
-           data-animationName="animate__slideInUp"
+           data-animationName="animate__zoomIn"
            data-animationDuration="2s"
            style="background-image: url('https://st2.depositphotos.com/37999710/47984/i/450/depositphotos_479846822-stock-photo-young-woman-dreadlocks-bright-clothes.jpg');"
   >
-    <div class="aha-component grid-row grid-gap bg-dark">
-      <h2 class="font-heading-xl">Component Library - Slider Card</h2>
-      <p>
+    <div class="aha-component grid-row grid-gap aha-bg-dark animationTrigger">
+      <h2 class="grid-col-12">Component Library - Slider Card</h2>
+      <p class="grid-col-12">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </p>
-      <div class="slideshow-container animationTrigger">
+      <div class="grid-col-12 slideshow-container animationTrigger">
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
           <div class="numbertext">1 / 3</div>
@@ -839,13 +920,36 @@
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
-      <br>
 
       <!-- The dots/circles -->
-      <div style="text-align:center">
+      <div class="grid-col-12" style="text-align:center">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION - SPLIDER  -->
+  <section id="section-splider"
+           class="section-splider"
+           data-animationTrigger=".animationTrigger"
+           data-animationName="animate__slideInUp"
+           data-animationDuration="2s"
+  >
+    <div class="aha-component grid-row">
+      <h2 class="grid-col-12">Component Library - Splider</h2>
+      <p class="grid-col-12">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      </p>
+      <div class="splide grid-col-12" id="my-slider">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">Slide 1 - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatu</li>
+            <li class="splide__slide">Slide 2 - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatu</li>
+            <li class="splide__slide">Slide 3 - Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatu</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -857,8 +961,8 @@
            data-animationName="animate__zoomIn"
            data-animationDuration="2s"
   >
-    <div class="aha-component grid-row grid-gap bg-dark">
-      <h2 class="font-heading-xl" style="color:white;">
+    <div class="aha-component grid-row grid-gap aha-bg-dark">
+      <h2 style="color:white;">
       Component Library - Bubble/Flag Cards
     </h2>
       <div class="usa-graphic-list__row grid-row grid-gap">
@@ -940,16 +1044,16 @@
   <section id="section-videocard"
            class="section-videocard parallax"
            data-animationTrigger=".animationTrigger"
-           data-animationName="animate__slideInUp"
+           data-animationName="animate__zoomIn"
            data-animationDuration="2s"
            style="background-image: url('https://images.unsplash.com/photo-1525715843408-5c6ec44503b1?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHdvbWFuJTIwcmVhZGluZ3xlbnwwfHwwfHx8MA%3D%3D');"
   >
-    <div class="aha-component grid-row grid-gap bg-dark">
-      <h2 class="font-heading-xl">Component Library - Video Card</h2>
-      <p>
+    <div class="aha-component grid-row grid-gap aha-bg-dark animationTrigger">
+      <h2 class="grid-col-12">Component Library - Video Card</h2>
+      <p class="grid-col-12">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </p>
-      <div class="animationTrigger"
+      <div class="grid-col-12 animationTrigger"
            style="margin-bottom: 20px;text-align: center;"
       >
         <iframe style="box-shadow: 5px 5px 5px black;"
@@ -974,11 +1078,11 @@
            data-animationDuration="2s"
   >
     <div class="aha-component grid-row grid-gap">
-      <h2 class="font-heading-xl">Component Library - Accordion Group</h2>
-      <p>
+      <h2 class="grid-col-12">Component Library - Accordion Group</h2>
+      <p class="grid-col-12">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </p>
-      <div class="usa-accordion animationTrigger" aria-multiselectable="true">
+      <div class="usa-accordion grid-row animationTrigger" aria-multiselectable="true">
         <div class="usa-accordion_panel_wrapper tablet:grid-col-12">
           <!-- Use the accurate heading level to maintain the document outline -->
           <h4 class="usa-accordion__heading">
@@ -1036,16 +1140,16 @@
   <section id="section-tabpanel"
            class="section-tabpanel parallax"
            data-animationTrigger=".animationTrigger"
-           data-animationName="animate__lightSpeedInLeft"
+           data-animationName="animate__zoomIn"
            data-animationDuration="2s"
            style="background-image: url('https://st2.depositphotos.com/2612745/7245/i/600/depositphotos_72451479-stock-photo-woman-reading-a-book.jpg');"
   >
-    <div class="aha-component grid-row grid-gap custom-tab bg-dark">
-      <h2 class="font-heading-xl">Component Library - Tab Panel</h2>
-      <p>
+    <div class="aha-component grid-row grid-gap custom-tab aha-bg-dark animationTrigger">
+      <h2 class="grid-col-12">Component Library - Tab Panel</h2>
+      <p class="grid-col-12">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </p>
-      <div class="tab-list" role="tablist" aria-label="tab navigation">
+      <div class="tab-list grid-col-12" role="tablist" aria-label="tab navigation">
         <button id="panel-1669841"
                 role="tab"
                 type="button"
@@ -1157,7 +1261,7 @@
            data-animationDuration="2s"
   >
     <div class="aha-component grid-row grid-gap">
-      <h2 class="font-heading-xl">
+      <h2>
       Component Library - Flags
     </h2>
       <ul class="usa-card-group">
@@ -1316,9 +1420,9 @@
            data-animationDuration="2s"
            style="background: url('https://st2.depositphotos.com/4678277/46476/i/600/depositphotos_464768804-stock-photo-photo-of-young-attractive-girl.jpg');"
   >
-    <div class="aha-component grid-row grid-gap bg-dark animationTrigger">
+    <div class="aha-component grid-row grid-gap aha-bg-dark animationTrigger">
       <div class="usa-content">
-        <h2 class="font-heading-xl">
+        <h2>
           Component Library - Goodfit Card
         </h2>
         <p class="text-large">
@@ -1335,9 +1439,9 @@
 
 <footer class="usa-footer">
   <section id="footer-section-01"
-           class="bg-dark"
+           class="aha-bg-dark"
   >
-    <div class="aha-component grid-row grid-gap">
+    <div class="aha-component bottom40 grid-row grid-gap">
       <div class="footer_menu_block grid-col-6 desktop:grid-col-2">
         <ul class="footer-menu__list">
           <li class="footer-menu__link">
@@ -1723,9 +1827,9 @@
     </div>
   </section>
   <section id="footer-section-02"
-           class="bg-med"
+           class="aha-bg-med"
   >
-    <div class="aha-component grid-row grid-gap">
+    <div class="aha-component top40 grid-row grid-gap">
       <div id="footer-block-logo" class="logo grid-col-12 desktop:grid-col-6">
         <svg xmlns="http://www.w3.org/2000/svg" width="163" height="63" viewBox="0 0 163 63" fill="none">
           <g clip-path="url(#clip0_14348_971)">
@@ -1849,9 +1953,11 @@
 
 </body>
 
-
 <script src="dist/js/uswds.min.js"></script>
 <script src="dist/js/uswds-init.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
 <script src="assets/js/main.js"></script>
 <script>
   // ANIMATION
@@ -1917,23 +2023,27 @@
       animateSectionsFromData(section);
     });
   });
+
   // ADD STUCK CLASS TO TOP STICKY SECTION
-  document.addEventListener('scroll', function () {
+  document.addEventListener('DOMContentLoaded', function () {
     const stickyMenu = document.querySelector('.sticky-menu');
     const stickyMenuOriginalPosition = stickyMenu.offsetTop; // Original position relative to the document
 
-    // Check current scroll position
-    const currentScrollPosition = window.scrollY;
+    document.addEventListener('scroll', function () {
+      // Check current scroll position
+      const currentScrollPosition = window.scrollY;
 
-    if (currentScrollPosition >= stickyMenuOriginalPosition) {
-      // Add the "stuck" class when scrolled past the original position
-      stickyMenu.classList.add('stuck');
-    } else {
-      // Remove the "stuck" class when scrolled back above the original position
-      stickyMenu.classList.remove('stuck');
-    }
+      if (currentScrollPosition >= stickyMenuOriginalPosition) {
+        // Add the "stuck" class when scrolled past the original position
+        stickyMenu.classList.add('stuck');
+      } else {
+        // Remove the "stuck" class when scrolled back above the original position
+        stickyMenu.classList.remove('stuck');
+      }
+    });
   });
-  // ADD STUCK CLASS TO TOP STICKY SECTION
+
+  // REMOVE OPACITY 0 FROM RTT ON SCROLL
   document.addEventListener('scroll', function () {
     const hiddenSection = document.querySelector('.return-to-top');
     const scrollPosition = window.scrollY; // Current scroll position
@@ -1948,10 +2058,41 @@
     }
   });
 
+  // NUMBERCARDS
+  var statisticCounts = document.getElementsByClassName("statistic-count");
+  Array.prototype.forEach.call(statisticCounts, function (el, index, array) {
+    var waypoint = new Waypoint({
+      element: el,
+      handler: function (direction) {
+        var $this = $(el);
+        var counterStart = $this.data("start");
+        var counterEnd = $this.data("end");
+        jQuery({ Counter: counterStart }).animate(
+          { Counter: counterEnd },
+          {
+            duration: 9000,
+            easing: "easeOutExpo",
+            step: function () {
+              $this.text(Math.ceil(this.Counter).toLocaleString());
+            }
+          }
+        );
+      },
+      offset: "bottom-in-view"
+    });
+  });
+
+  // SPLIDE
+  document.addEventListener('DOMContentLoaded', function () {
+    new Splide('#my-slider', {
+      type   : 'loop',
+      perPage: 3,
+      perMove: 1,
+    }).mount();
+  });
 
 
-
-  // SLIDER
+// SLIDER
   function controlSlides(action, n) {
     let i;
     let slides = document.getElementsByClassName("mySlides");
@@ -1988,14 +2129,12 @@
   function plusSlides(n) {
     controlSlides("plus", n);
   }
-
   // Go to a specific slide
   function currentSlide(n) {
     controlSlides("current", n);
   }
 
-
-  // TAB PANEL
+  // CUSTOM TAB PANEL
   $('.custom-tab').each(function () {
     const tabbed = $(this);
     const tablist = tabbed.find('.tab-list');

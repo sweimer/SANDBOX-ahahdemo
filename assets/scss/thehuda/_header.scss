@@ -1,0 +1,26 @@
+@use "../config/variables/var_colors" as colors;
+@use '../config/mixins/mixins' as mixins;
+
+// THE HUDA - HEADER OVERWRITES
+body.thehuda {
+  header {
+    .section-top {
+      height: 100%;
+      .banner {
+        height: 100vh;
+        margin-top: 0;
+
+        img {
+          margin-top: 0;
+          width: 100%;
+        }
+      }
+    }
+    .sticky-menu {
+      @include mixins.aha-bg-color-dark-opacity(1, thehuda);
+      &.stuck {
+        @include mixins.aha-bg-color-dark-opacity(1, thehuda);
+      }
+    }
+  }
+}

@@ -1,6 +1,14 @@
-// THE HUDA - FOOTER OVERWRITES
-body.thehuda {
-  footer {
+@use "../config/variables/var_colors" as colors;
+@use '../config/mixins/mixins' as mixins;
 
+// THE NIELS - FOOTER OVERWRITES
+body.theniels {
+  footer {
+    section.aha-bg-dark {
+      @include mixins.aha-bg-color-dark-opacity(1, theniels);
+    }
+    section.aha-bg-med {
+      @include mixins.aha-bg-color-med-opacity(1, theniels);
+    }
   }
 }

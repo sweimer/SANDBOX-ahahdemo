@@ -1,4 +1,5 @@
 @use "config/variables/var_colors" as colors;
+@use 'config/mixins/mixins' as mixins;
 
 // CUSTOM STYLES
 body,
@@ -8,7 +9,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif !important;
+  color: colors.$aha-font-color;
+  font-family: colors.$aha-font-family;
 }
 .u-visually-hidden,.usa-sr-only,.visually-hidden {
   clip: rect(1px,1px,1px,1px)!important;
@@ -19,10 +21,19 @@ h6 {
   word-wrap: normal!important
 }
 
+.grid-row {
+  &.grid-gap>*:first-child {
+    padding-left: 0;
+  }
+  &.grid-gap>*:last-child {
+    padding-right: 0;
+  }
+}
+
 // PARALLAX
 .parallax {
   /* Set a specific height */
-  min-height: 600px;
+  min-height: 400px;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -65,6 +76,7 @@ header {
     height: 100vh;
     margin-top: -120px;
     overflow: hidden;
+
     video {
       position: absolute;
       top: 30%;
@@ -78,22 +90,50 @@ header {
   .usa-banner__inner {
     padding-bottom: .25rem;
     padding-top: .25rem;
-
-    .usa-banner__header-text {
-
+    max-width: 100%;
+  }
+  .block-headercallout {
+    width: 350px;
+    height: 45px;
+    background: #001a4e;
+    color: #fff;
+    border-left: 0.5rem solid #d6097a;
+    font-weight: bold;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    padding: 2px 10px 10px 10px;
+    text-align: center;
+    position: fixed;
+    right: -4px;
+    top: 0;
+    z-index: 10;
+    border-radius: 5px 5px 5px 5px;
+    .usa-alert {
+      background-color: transparent;
+      border-left: none;
+      color: colors.$white;
+      a {
+        color: colors.$white;
+        text-decoration: none;
+        &:hover {
+          color: colors.$white;
+        }
+      }
+      .usa-alert__body {
+        background-color: transparent;
+      }
     }
   }
   .sticky-menu {
-    background-color: colors.$aha-bg-color-dark-opacity;
-    padding: 10px 20px;
-    height: 120px;
+    @include mixins.aha-bg-color-dark-opacity(0.3, standard);
+
+    padding: 23px 100px;
     width: 100%;
     position: sticky;
     top: 0;
     z-index: 10;
 
     .logo {
-      padding: 20px 0 0 20px;
+      padding: 10px 0 0 0;
     }
     .header-top-right-block {
       position: relative;
@@ -489,17 +529,19 @@ header {
     }
 
     &.stuck {
+      @include mixins.aha-bg-color-dark-opacity(1, standard); // background-color: rgba(30, 44, 56, 1);
       transition: all 2s ease;
-      background-color: rgba(30, 44, 56);
-      height: 80px;
+      padding: 3px 100px 13px;
       position: fixed;
       top: 0;
       z-index: 10;
 
       .logo {
+        padding: 15px 0 0 0;
         svg {
           transition: all 2s ease;
           height: 30px;
+          width: auto;
         }
       }
 
@@ -900,11 +942,19 @@ header {
     }
   }
   .mission-block {
-    background-color: rgba(30, 44, 56) !important;
+    @include mixins.aha-bg-color-dark-opacity(1, standard);
     position: absolute;
-    top: 70%;
+    top: 71%;
     left: 50%;
-    transform: translate(-50%, -30%) !important;
+    transform: translate(-50%, -29%) !important;
+    margin: 0 !important;
+    color: #FFFFFF;
+    padding: 70px 100px;
+    width: 100%;
+
+    h2 {
+      color: colors.$white;
+    }
   }
 }
 
@@ -913,48 +963,64 @@ header {
   padding: 70px 100px;
   margin: 0 auto;
 
-  &.accent-paintstroke {
+  &.bottom40 {
+    padding-bottom: 40px;
+  }
+  &.top40 {
+    padding-top: 40px;
+  }
+
+  &.aha-accent-paintstroke {
     background-position: -50px 0;
     background-repeat: no-repeat;
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPfTy6yxB5MVV8IyoHJ9nm_AhiWyqvVbrWAA&s');
   }
-  &.bg-black {
-    background-color: rgba(0, 0, 0, 0.7);
+  &.aha-bg-black {
+    @include mixins.aha-bg-color-black-opacity(0.6, standard);
     color: colors.$white;
     a {
       color: colors.$white;
       &:hover {
-        color: #eee;
+        color: #eeeeee;
       }
     }
+    h1,h2,h3,h4,h5,h6 {
+      color: colors.$white;
+    }
   }
-  &.bg-dark {
-    background-color: rgba(30,44,56, 0.7);
+  &.aha-bg-dark {
+    @include mixins.aha-bg-color-dark-opacity(0.6, standard);
     color: colors.$white;
     a {
       color: colors.$white;
       &:hover {
-        color: #eee;
+        color: #eeeeee;
       }
     }
+    h1,h2,h3,h4,h5,h6 {
+      color: colors.$white;
+    }
   }
-  &.bg-med {
-    background-color: rgba(63, 63, 63, 0.7);
+  &.aha-bg-med {
+    @include mixins.aha-bg-color-med-opacity(0.6, standard);
     color: colors.$white;
     a {
       color: colors.$white;
       &:hover {
-        color: #eee;
+        color: #eeeeee;
       }
     }
+    h1,h2,h3,h4,h5,h6 {
+      color: colors.$white;
+    }
   }
-  &.bg-light {
-    background-color: rgba(245, 252, 255, 0.7);
-    color: #000000;
+  &.aha-bg-light {
+    @include mixins.aha-bg-color-light-opacity(0.6, standard);
+    color: colors.$black;
     a {
-      color: #000000;
+      color: colors.$black;
       &:hover {
-        color: #000000;
+        color: colors.$black;
       }
     }
   }
@@ -963,7 +1029,9 @@ header {
 // SECTION-COMPONENTS
 section {
   overflow: hidden;
-  max-width: 1400px;
+  &.overflow-show {
+    overflow: visible;
+  }
 }
 .section-clickablecard {
   .clickable-card-component {
@@ -977,111 +1045,12 @@ section {
         }
       }
     }
-
-    &.thehuda {
-      cursor: crosshair;
-
-      img {
-        display: none;
-      }
-      i {
-        display: block;
-      }
-      img.clickCard-longArrow {
-        display: none;
-        position: absolute;
-        bottom: 28px;
-        right: 15px;
-      }
-      h2 {
-        display: flex;
-        &.thehuda {
-          display: none;
-        }
-      }
-      &:hover {
-        img {
-          display: block;
-        }
-        img.clickCard-longArrow {
-          display: block;
-          height: 15px;
-        }
-        i {
-          display: none;
-        }
-        h2 {
-          display: none;
-          &.thehuda {
-            display: block;
-            color: #152B55;
-            font-family: sans-serif;
-            font-size: 21.1px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 121%; /* 25.531px */
-            text-transform: capitalize;
-          }
-        }
-      }
-    }
-    &.thebrandon {
-      cursor: crosshair;
-
-      img {
-        display: none;
-      }
-      i {
-        display: block;
-      }
-      span.readmore {
-        display: none;
-        position: absolute;
-        bottom: 28px;
-        left: 15px;
-        font-size: 22px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 28px;
-      }
-      h2 {
-        display: flex;
-        &.thebrandon {
-          display: none;
-        }
-      }
-      &:hover {
-        background: linear-gradient(180deg, #001628 10.58%, #575757 100%);
-        border-top: 4px solid #d8d8d8;
-
-        .clickable-card {
-          background: transparent;
-          border:none;
-          color: #D2D2D2;
-
-          img {
-            display: block;
-          }
-          span.readmore {
-            color: #f77a7a;
-            display: block;
-          }
-          i {
-            display: none;
-          }
-          h2 {
-            display: none;
-            &.thebrandon {
-              display: block;
-              color: #D2D2D2 !important;
-              font-size: 32px;
-              font-weight: 600;
-              line-height: 36px;
-            }
-          }
-        }
-      }
-    }
+  }
+}
+.section-collectioncards {
+  .usa-collection__item {
+    border-top: 0;
+    max-width: 100%;
   }
 }
 .section-drop-cards {
@@ -1190,14 +1159,8 @@ section {
   }
 }
 .section-hovercards {
-  margin-top: 3em;
-  clear: both;
   h2 + & {
     margin-top: 1.5em;
-  }
-  .clearfix {
-    visibility: hidden;
-    height: 0;
   }
 
   .grc-grid-view-links + h2 {
@@ -1708,44 +1671,52 @@ section {
 //FOOTER
 footer {
   section {
-    padding: 20px 0;
-    &.bg-black {
-      background-color: rgba(0, 0, 0);
+    &.aha-bg-black {
+      @include mixins.aha-bg-color-black-opacity(1, standard);
       color: colors.$white;
       a {
         color: colors.$white;
         &:hover {
-          color: #eee;
+          color: #eeeeee;
         }
       }
+      h1,h2,h3,h4,h5,h6 {
+        color: colors.$white;
+      }
     }
-    &.bg-dark {
-      background-color: rgba(30,44,56);
+    &.aha-bg-dark {
+      @include mixins.aha-bg-color-dark-opacity(1, standard);
       color: colors.$white;
       a {
         color: colors.$white;
         &:hover {
-          color: #eee;
+          color: #eeeeee;
         }
       }
+      h1,h2,h3,h4,h5,h6 {
+        color: colors.$white;
+      }
     }
-    &.bg-med {
-      background-color: rgba(63, 63, 63);
+    &.aha-bg-med {
+      @include mixins.aha-bg-color-med-opacity(1, standard);
       color: colors.$white;
       a {
         color: colors.$white;
         &:hover {
-          color: #eee;
+          color: #eeeeee;
         }
       }
+      h1,h2,h3,h4,h5,h6 {
+        color: colors.$white;
+      }
     }
-    &.bg-light {
-      background-color: rgba(245, 252, 255);
-      color: #000000;
+    &.aha-bg-light {
+      @include mixins.aha-bg-color-light-opacity(1, standard);
+      color: colors.$black;
       a {
-        color: #000000;
+        color: colors.$black;
         &:hover {
-          color: #000000;
+          color: colors.$black;
         }
       }
     }

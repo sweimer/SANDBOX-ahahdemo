@@ -1,0 +1,28 @@
+@use "../config/variables/var_colors" as colors;
+@use '../config/mixins/mixins' as mixins;
+
+// THE HUDA - SECTION-MISSION OVERWRITES
+body.thehuda {
+  .section-mission {
+    .aha-component {
+      text-align: center;
+
+      h2.section-mission-header {
+        color: colors.$white;
+        font-size: 40px;
+        font-style: normal;
+        font-family: colors.$aha-font-family;
+        font-weight: 600;
+        line-height: 105%;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+      }
+      .section-mission-details {
+        font-size: 30px;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 150%
+      }
+    }
+  }
+}

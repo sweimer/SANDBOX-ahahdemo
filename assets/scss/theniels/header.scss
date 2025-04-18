@@ -1,16 +1,24 @@
-// THE HUDA - HEADER OVERWRITES
-body.thehuda {
+@use "../config/variables/var_colors" as colors;
+@use '../config/mixins/mixins' as mixins;
+
+// THE NIELS - HEADER OVERWRITES
+body.theniels {
   header {
     .section-top {
-      height: auto;
-
-      .mission-block {
-        background-color: rgb(30, 44, 56) !important;
-        max-width: 100% !important;
-        margin: 0 !important;
-        border-radius: 0 !important;
-        position: relative !important;
+      .banner {
+        img {
+          width: 100%;
+        }
       }
+    }
+    .sticky-menu {
+      @include mixins.aha-bg-color-dark-opacity(0.6, theniels);
+      &.stuck {
+        @include mixins.aha-bg-color-dark-opacity(1, theniels);
+      }
+    }
+    .mission-block {
+      @include mixins.aha-bg-color-dark-opacity(1, theniels);
     }
   }
 }

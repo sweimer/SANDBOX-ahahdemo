@@ -1,5 +1,4 @@
-// Config: Load libraries, variables and other initializing partials
-//==========================================================================
-@forward "./variables/var_colors";
+@forward "./variables";
+@forward "./mixins";
 
 

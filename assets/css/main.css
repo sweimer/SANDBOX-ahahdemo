@@ -6,7 +6,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Source Sans Pro Web, Helvetica Neue, Helvetica, Roboto, Arial, sans-serif !important;
+  color: #4A4A4A;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .u-visually-hidden, .usa-sr-only, .visually-hidden {
@@ -18,9 +19,16 @@ h6 {
   word-wrap: normal !important;
 }
 
+.grid-row.grid-gap > *:first-child {
+  padding-left: 0;
+}
+.grid-row.grid-gap > *:last-child {
+  padding-right: 0;
+}
+
 .parallax {
   /* Set a specific height */
-  min-height: 600px;
+  min-height: 400px;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -69,18 +77,49 @@ header .banner video {
 header .usa-banner__inner {
   padding-bottom: 0.25rem;
   padding-top: 0.25rem;
+  max-width: 100%;
+}
+header .block-headercallout {
+  width: 350px;
+  height: 45px;
+  background: #001a4e;
+  color: #fff;
+  border-left: 0.5rem solid #d6097a;
+  font-weight: bold;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  padding: 2px 10px 10px 10px;
+  text-align: center;
+  position: fixed;
+  right: -4px;
+  top: 0;
+  z-index: 10;
+  border-radius: 5px 5px 5px 5px;
+}
+header .block-headercallout .usa-alert {
+  background-color: transparent;
+  border-left: none;
+  color: #FFFFFF;
+}
+header .block-headercallout .usa-alert a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+header .block-headercallout .usa-alert a:hover {
+  color: #FFFFFF;
+}
+header .block-headercallout .usa-alert .usa-alert__body {
+  background-color: transparent;
 }
 header .sticky-menu {
-  background-color: rgba(30, 44, 56, 0.7);
-  padding: 10px 20px;
-  height: 120px;
+  background-color: rgba(30, 44, 56, 0.3);
+  padding: 23px 100px;
   width: 100%;
   position: sticky;
   top: 0;
   z-index: 10;
 }
 header .sticky-menu .logo {
-  padding: 20px 0 0 20px;
+  padding: 10px 0 0 0;
 }
 header .sticky-menu .header-top-right-block {
   position: relative;
@@ -435,16 +474,20 @@ header .sticky-menu .header-top-right-block .nav-block .nav-block-search .c-hamb
   transform: rotate(-45deg);
 }
 header .sticky-menu.stuck {
+  background-color: #1e2c38;
   transition: all 2s ease;
-  background-color: rgb(30, 44, 56);
-  height: 80px;
+  padding: 3px 100px 13px;
   position: fixed;
   top: 0;
   z-index: 10;
 }
+header .sticky-menu.stuck .logo {
+  padding: 15px 0 0 0;
+}
 header .sticky-menu.stuck .logo svg {
   transition: all 2s ease;
   height: 30px;
+  width: auto;
 }
 header .sticky-menu.stuck .header-top-right-block {
   position: relative;
@@ -800,169 +843,100 @@ header .sticky-menu.stuck .header-top-right-block .nav-block .nav-block-search .
   transform: rotate(-45deg);
 }
 header .mission-block {
-  background-color: rgb(30, 44, 56) !important;
+  background-color: #1e2c38;
   position: absolute;
-  top: 70%;
+  top: 71%;
   left: 50%;
-  transform: translate(-50%, -30%) !important;
+  transform: translate(-50%, -29%) !important;
+  margin: 0 !important;
+  color: #FFFFFF;
+  padding: 70px 100px;
+  width: 100%;
+}
+header .mission-block h2 {
+  color: #FFFFFF;
 }
 
 .aha-component {
   padding: 70px 100px;
   margin: 0 auto;
 }
-.aha-component.accent-paintstroke {
+.aha-component.bottom40 {
+  padding-bottom: 40px;
+}
+.aha-component.top40 {
+  padding-top: 40px;
+}
+.aha-component.aha-accent-paintstroke {
   background-position: -50px 0;
   background-repeat: no-repeat;
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPfTy6yxB5MVV8IyoHJ9nm_AhiWyqvVbrWAA&s");
 }
-.aha-component.bg-black {
-  background-color: rgba(0, 0, 0, 0.7);
+.aha-component.aha-bg-black {
+  background-color: rgba(0, 0, 0, 0.6);
   color: #FFFFFF;
 }
-.aha-component.bg-black a {
+.aha-component.aha-bg-black a {
   color: #FFFFFF;
 }
-.aha-component.bg-black a:hover {
-  color: #eee;
+.aha-component.aha-bg-black a:hover {
+  color: #eeeeee;
 }
-.aha-component.bg-dark {
-  background-color: rgba(30, 44, 56, 0.7);
+.aha-component.aha-bg-black h1, .aha-component.aha-bg-black h2, .aha-component.aha-bg-black h3, .aha-component.aha-bg-black h4, .aha-component.aha-bg-black h5, .aha-component.aha-bg-black h6 {
   color: #FFFFFF;
 }
-.aha-component.bg-dark a {
+.aha-component.aha-bg-dark {
+  background-color: rgba(30, 44, 56, 0.6);
   color: #FFFFFF;
 }
-.aha-component.bg-dark a:hover {
-  color: #eee;
-}
-.aha-component.bg-med {
-  background-color: rgba(63, 63, 63, 0.7);
+.aha-component.aha-bg-dark a {
   color: #FFFFFF;
 }
-.aha-component.bg-med a {
+.aha-component.aha-bg-dark a:hover {
+  color: #eeeeee;
+}
+.aha-component.aha-bg-dark h1, .aha-component.aha-bg-dark h2, .aha-component.aha-bg-dark h3, .aha-component.aha-bg-dark h4, .aha-component.aha-bg-dark h5, .aha-component.aha-bg-dark h6 {
   color: #FFFFFF;
 }
-.aha-component.bg-med a:hover {
-  color: #eee;
+.aha-component.aha-bg-med {
+  background-color: rgba(72, 74, 89, 0.6);
+  color: #FFFFFF;
 }
-.aha-component.bg-light {
-  background-color: rgba(245, 252, 255, 0.7);
+.aha-component.aha-bg-med a {
+  color: #FFFFFF;
+}
+.aha-component.aha-bg-med a:hover {
+  color: #eeeeee;
+}
+.aha-component.aha-bg-med h1, .aha-component.aha-bg-med h2, .aha-component.aha-bg-med h3, .aha-component.aha-bg-med h4, .aha-component.aha-bg-med h5, .aha-component.aha-bg-med h6 {
+  color: #FFFFFF;
+}
+.aha-component.aha-bg-light {
+  background-color: rgba(192, 194, 207, 0.6);
   color: #000000;
 }
-.aha-component.bg-light a {
+.aha-component.aha-bg-light a {
   color: #000000;
 }
-.aha-component.bg-light a:hover {
+.aha-component.aha-bg-light a:hover {
   color: #000000;
 }
 
 section {
   overflow: hidden;
-  max-width: 1400px;
+}
+section.overflow-show {
+  overflow: visible;
 }
 
 .section-clickablecard .clickable-card-component .clickable-card-links .usa-card__container .usa-card__header h2.usa-card__heading {
   color: #1E2C38 !important;
   text-decoration: none !important;
 }
-.section-clickablecard .clickable-card-component.thehuda {
-  cursor: crosshair;
-}
-.section-clickablecard .clickable-card-component.thehuda img {
-  display: none;
-}
-.section-clickablecard .clickable-card-component.thehuda i {
-  display: block;
-}
-.section-clickablecard .clickable-card-component.thehuda img.clickCard-longArrow {
-  display: none;
-  position: absolute;
-  bottom: 28px;
-  right: 15px;
-}
-.section-clickablecard .clickable-card-component.thehuda h2 {
-  display: flex;
-}
-.section-clickablecard .clickable-card-component.thehuda h2.thehuda {
-  display: none;
-}
-.section-clickablecard .clickable-card-component.thehuda:hover img {
-  display: block;
-}
-.section-clickablecard .clickable-card-component.thehuda:hover img.clickCard-longArrow {
-  display: block;
-  height: 15px;
-}
-.section-clickablecard .clickable-card-component.thehuda:hover i {
-  display: none;
-}
-.section-clickablecard .clickable-card-component.thehuda:hover h2 {
-  display: none;
-}
-.section-clickablecard .clickable-card-component.thehuda:hover h2.thehuda {
-  display: block;
-  color: #152B55;
-  font-family: sans-serif;
-  font-size: 21.1px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 121%; /* 25.531px */
-  text-transform: capitalize;
-}
-.section-clickablecard .clickable-card-component.thebrandon {
-  cursor: crosshair;
-}
-.section-clickablecard .clickable-card-component.thebrandon img {
-  display: none;
-}
-.section-clickablecard .clickable-card-component.thebrandon i {
-  display: block;
-}
-.section-clickablecard .clickable-card-component.thebrandon span.readmore {
-  display: none;
-  position: absolute;
-  bottom: 28px;
-  left: 15px;
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 28px;
-}
-.section-clickablecard .clickable-card-component.thebrandon h2 {
-  display: flex;
-}
-.section-clickablecard .clickable-card-component.thebrandon h2.thebrandon {
-  display: none;
-}
-.section-clickablecard .clickable-card-component.thebrandon:hover {
-  background: linear-gradient(180deg, #001628 10.58%, #575757 100%);
-  border-top: 4px solid #d8d8d8;
-}
-.section-clickablecard .clickable-card-component.thebrandon:hover .clickable-card {
-  background: transparent;
-  border: none;
-  color: #D2D2D2;
-}
-.section-clickablecard .clickable-card-component.thebrandon:hover .clickable-card img {
-  display: block;
-}
-.section-clickablecard .clickable-card-component.thebrandon:hover .clickable-card span.readmore {
-  color: #f77a7a;
-  display: block;
-}
-.section-clickablecard .clickable-card-component.thebrandon:hover .clickable-card i {
-  display: none;
-}
-.section-clickablecard .clickable-card-component.thebrandon:hover .clickable-card h2 {
-  display: none;
-}
-.section-clickablecard .clickable-card-component.thebrandon:hover .clickable-card h2.thebrandon {
-  display: block;
-  color: #D2D2D2 !important;
-  font-size: 32px;
-  font-weight: 600;
-  line-height: 36px;
+
+.section-collectioncards .usa-collection__item {
+  border-top: 0;
+  max-width: 100%;
 }
 
 .section-drop-cards .usa-card__container {
@@ -1061,16 +1035,8 @@ section {
   }
 }
 
-.section-hovercards {
-  margin-top: 3em;
-  clear: both;
-}
 h2 + .section-hovercards {
   margin-top: 1.5em;
-}
-.section-hovercards .clearfix {
-  visibility: hidden;
-  height: 0;
 }
 .section-hovercards .grc-grid-view-links + h2 {
   margin-top: 15px;
@@ -1511,47 +1477,53 @@ h2 + .section-hovercards {
   text-decoration: none;
 }
 
-footer section {
-  padding: 20px 0;
-}
-footer section.bg-black {
-  background-color: rgb(0, 0, 0);
+footer section.aha-bg-black {
+  background-color: black;
   color: #FFFFFF;
 }
-footer section.bg-black a {
+footer section.aha-bg-black a {
   color: #FFFFFF;
 }
-footer section.bg-black a:hover {
-  color: #eee;
+footer section.aha-bg-black a:hover {
+  color: #eeeeee;
 }
-footer section.bg-dark {
-  background-color: rgb(30, 44, 56);
+footer section.aha-bg-black h1, footer section.aha-bg-black h2, footer section.aha-bg-black h3, footer section.aha-bg-black h4, footer section.aha-bg-black h5, footer section.aha-bg-black h6 {
   color: #FFFFFF;
 }
-footer section.bg-dark a {
+footer section.aha-bg-dark {
+  background-color: #1e2c38;
   color: #FFFFFF;
 }
-footer section.bg-dark a:hover {
-  color: #eee;
-}
-footer section.bg-med {
-  background-color: rgb(63, 63, 63);
+footer section.aha-bg-dark a {
   color: #FFFFFF;
 }
-footer section.bg-med a {
+footer section.aha-bg-dark a:hover {
+  color: #eeeeee;
+}
+footer section.aha-bg-dark h1, footer section.aha-bg-dark h2, footer section.aha-bg-dark h3, footer section.aha-bg-dark h4, footer section.aha-bg-dark h5, footer section.aha-bg-dark h6 {
   color: #FFFFFF;
 }
-footer section.bg-med a:hover {
-  color: #eee;
+footer section.aha-bg-med {
+  background-color: #484a59;
+  color: #FFFFFF;
 }
-footer section.bg-light {
-  background-color: rgb(245, 252, 255);
+footer section.aha-bg-med a {
+  color: #FFFFFF;
+}
+footer section.aha-bg-med a:hover {
+  color: #eeeeee;
+}
+footer section.aha-bg-med h1, footer section.aha-bg-med h2, footer section.aha-bg-med h3, footer section.aha-bg-med h4, footer section.aha-bg-med h5, footer section.aha-bg-med h6 {
+  color: #FFFFFF;
+}
+footer section.aha-bg-light {
+  background-color: #c0c2cf;
   color: #000000;
 }
-footer section.bg-light a {
+footer section.aha-bg-light a {
   color: #000000;
 }
-footer section.bg-light a:hover {
+footer section.aha-bg-light a:hover {
   color: #000000;
 }
 footer section ul.footer-menu__list {
@@ -1600,22 +1572,189 @@ footer section section#footer-section-03 {
   color: #FFFFFF;
   text-decoration: none;
 }
-body.theniels header .section-top .banner {
-  height: 100vh;
-  margin-top: 0;
+body.thehuda .aha-component.aha-bg-black {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #FFFFFF;
 }
-body.theniels header .section-top .banner img {
-  margin-top: 0;
-  width: 100%;
+body.thehuda .aha-component.aha-bg-black a {
+  color: #FFFFFF;
+}
+body.thehuda .aha-component.aha-bg-black a:hover {
+  color: #eeeeee;
+}
+body.thehuda .aha-component.aha-bg-black h1, body.thehuda .aha-component.aha-bg-black h2, body.thehuda .aha-component.aha-bg-black h3, body.thehuda .aha-component.aha-bg-black h4, body.thehuda .aha-component.aha-bg-black h5, body.thehuda .aha-component.aha-bg-black h6 {
+  color: #FFFFFF;
+}
+body.thehuda .aha-component.aha-bg-dark {
+  background-color: rgba(14, 45, 80, 0.6);
+  color: #FFFFFF;
+}
+body.thehuda .aha-component.aha-bg-dark a {
+  color: #FFFFFF;
+}
+body.thehuda .aha-component.aha-bg-dark a:hover {
+  color: #eeeeee;
+}
+body.thehuda .aha-component.aha-bg-dark h1, body.thehuda .aha-component.aha-bg-dark h2, body.thehuda .aha-component.aha-bg-dark h3, body.thehuda .aha-component.aha-bg-dark h4, body.thehuda .aha-component.aha-bg-dark h5, body.thehuda .aha-component.aha-bg-dark h6 {
+  color: #FFFFFF;
+}
+body.thehuda .aha-component.aha-bg-med {
+  background-color: rgba(72, 74, 89, 0.6);
+  color: #FFFFFF;
+}
+body.thehuda .aha-component.aha-bg-med a {
+  color: #FFFFFF;
+}
+body.thehuda .aha-component.aha-bg-med a:hover {
+  color: #eeeeee;
+}
+body.thehuda .aha-component.aha-bg-med h1, body.thehuda .aha-component.aha-bg-med h2, body.thehuda .aha-component.aha-bg-med h3, body.thehuda .aha-component.aha-bg-med h4, body.thehuda .aha-component.aha-bg-med h5, body.thehuda .aha-component.aha-bg-med h6 {
+  color: #FFFFFF;
+}
+body.thehuda .aha-component.aha-bg-light {
+  background-color: #f5fcff;
+  color: #000000;
+}
+body.thehuda .aha-component.aha-bg-light a {
+  color: #000000;
+}
+body.thehuda .aha-component.aha-bg-light a:hover {
+  color: #000000;
 }
 
 body.thehuda header .section-top {
-  height: auto;
+  height: 100%;
 }
-body.thehuda header .section-top .mission-block {
-  background-color: rgb(30, 44, 56) !important;
-  max-width: 100% !important;
-  margin: 0 !important;
-  border-radius: 0 !important;
-  position: relative !important;
+body.thehuda header .section-top .banner {
+  height: 100vh;
+  margin-top: 0;
+}
+body.thehuda header .section-top .banner img {
+  margin-top: 0;
+  width: 100%;
+}
+body.thehuda header .sticky-menu {
+  background-color: #0e2d50;
+}
+body.thehuda header .sticky-menu.stuck {
+  background-color: #0e2d50;
+}
+
+body.thehuda footer section.bg-dark {
+  background-color: #0e2d50;
+}
+body.thehuda footer section.bg-med {
+  background-color: #484a59;
+}
+
+body.thehuda .section-flagright {
+  background-color: rgb(245, 252, 255);
+}
+body.thehuda .section-flagright .aha-component {
+  margin: 0;
+  padding: 0 0 0 100px;
+}
+body.thehuda .section-flagright .aha-component .flagright-details {
+  padding: 70px 0;
+}
+body.thehuda .section-flagright .aha-component .flagright-media .flagright-img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+body.thehuda .section-flagright .aha-component .flagright-media .flagright-img img {
+  border-radius: 70px 0 0 50px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body.thehuda .section-mission .aha-component {
+  text-align: center;
+}
+body.thehuda .section-mission .aha-component h2.section-mission-header {
+  color: #FFFFFF;
+  font-size: 40px;
+  font-style: normal;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  line-height: 105%;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+body.thehuda .section-mission .aha-component .section-mission-details {
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+body.theniels .aha-component.aha-bg-black {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #FFFFFF;
+}
+body.theniels .aha-component.aha-bg-black a {
+  color: #FFFFFF;
+}
+body.theniels .aha-component.aha-bg-black a:hover {
+  color: #eeeeee;
+}
+body.theniels .aha-component.aha-bg-black h1, body.theniels .aha-component.aha-bg-black h2, body.theniels .aha-component.aha-bg-black h3, body.theniels .aha-component.aha-bg-black h4, body.theniels .aha-component.aha-bg-black h5, body.theniels .aha-component.aha-bg-black h6 {
+  color: #FFFFFF;
+}
+body.theniels .aha-component.aha-bg-dark {
+  background-color: rgba(25, 19, 47, 0.8);
+  color: #FFFFFF;
+}
+body.theniels .aha-component.aha-bg-dark a {
+  color: #FFFFFF;
+}
+body.theniels .aha-component.aha-bg-dark a:hover {
+  color: #eeeeee;
+}
+body.theniels .aha-component.aha-bg-dark h1, body.theniels .aha-component.aha-bg-dark h2, body.theniels .aha-component.aha-bg-dark h3, body.theniels .aha-component.aha-bg-dark h4, body.theniels .aha-component.aha-bg-dark h5, body.theniels .aha-component.aha-bg-dark h6 {
+  color: #FFFFFF;
+}
+body.theniels .aha-component.aha-bg-med {
+  background-color: rgba(0, 1, 44, 0.8);
+  color: #FFFFFF;
+}
+body.theniels .aha-component.aha-bg-med a {
+  color: #FFFFFF;
+}
+body.theniels .aha-component.aha-bg-med a:hover {
+  color: #eeeeee;
+}
+body.theniels .aha-component.aha-bg-med h1, body.theniels .aha-component.aha-bg-med h2, body.theniels .aha-component.aha-bg-med h3, body.theniels .aha-component.aha-bg-med h4, body.theniels .aha-component.aha-bg-med h5, body.theniels .aha-component.aha-bg-med h6 {
+  color: #FFFFFF;
+}
+body.theniels .aha-component.aha-bg-light {
+  background-color: #f5fcff;
+  color: #000000;
+}
+body.theniels .aha-component.aha-bg-light a {
+  color: #000000;
+}
+body.theniels .aha-component.aha-bg-light a:hover {
+  color: #000000;
+}
+
+body.theniels header .section-top .banner img {
+  width: 100%;
+}
+body.theniels header .sticky-menu {
+  background-color: rgba(25, 19, 47, 0.6);
+}
+body.theniels header .sticky-menu.stuck {
+  background-color: #19132f;
+}
+body.theniels header .mission-block {
+  background-color: #19132f;
+}
+
+body.theniels footer section.aha-bg-dark {
+  background-color: #19132f;
+}
+body.theniels footer section.aha-bg-med {
+  background-color: #00012c;
 }
