@@ -2142,6 +2142,17 @@ body.theniels .section-mission .mission-block {
   height: 100vh;
   position: relative;
 }
+body.theniels .section-mission .mission-block::after {
+  content: "";
+  background-color: #19132f;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 50px 50px 0 0;
+  z-index: 15;
+  height: 50px;
+}
 body.theniels .section-mission .mission-block .mission-statement {
   position: absolute;
   top: 30%;
