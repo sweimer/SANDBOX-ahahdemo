@@ -19,8 +19,8 @@
   <!-- SKIP TO MAIN -->
   <a class="usa-skipnav" href="#main-content">Skip to main content</a>
   <!-- 988 BANNER -->
-  <button id="toggleClassButton">Light/Dark</button>
-  <div id="block-headercallout" class="block-headercallout">
+  <button id="toggleClassButton"><i class="fa-solid fa-toggle-off fa-flip-vertical fa-lg"></i></button>
+  <div style="display:none;" id="block-headercallout" class="block-headercallout">
     <span class="visually-hidden" aria-hidden="true">Header - Callout</span>
 
     <div class="block-content">
@@ -40,7 +40,7 @@
     </div>
   </div>
   <!-- USA BANNER -->
-  <div class="usa-accordion">
+  <div style="display:none;" class="usa-accordion">
     <header class="usa-banner__header">
       <div class="usa-banner__inner width-full">
         <div class="grid-col-auto">
@@ -129,8 +129,8 @@
     </div>
   </div>
   <!-- HEADER TOP -->
-  <section id="section-top"
-           class="section-top width-full"
+  <div id="section-header-top"
+           class="section-header-top"
            data-animationTrigger=".animationTrigger"
            data-animationName="animate__zoomIn"
            data-animationDuration="2s"
@@ -155,30 +155,6 @@
       </div>
       <!--  TOP RIGHT  -->
       <div class="header-top-right-block grid-col-6">
-        <div class="share-block">
-          <ul class="share-buttons">
-            <li>
-              <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.samhsa.gov/find-help" title="Share on Facebook" rel="noopener" target="_blank">
-                <span class="fa fa-brands fa-facebook-f animate__animated animate__heartBeat" aria-hidden="true" alt="Share on Facebook"></span>
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/intent/tweet?url=https://www.samhsa.gov/find-help" title="Share on X" rel="noopener" target="_blank">
-                <span class="fa fa-brands fa-square-x-twitter animate__animated animate__heartBeat" aria-hidden="true" alt="Share on X"></span>
-              </a>
-            </li>
-            <li>
-              <a href="mailto:?subject=Check this out from SAMHSA&amp;body=Find Help and Treatment for Mental Health, Drug, Alcohol Issues | SAMHSA - https://www.samhsa.gov/find-help" title="Share via Email" rel="noopener" target="_blank" class="mailto" data-extlink="">
-                <span class="fa fas fa-envelope animate__animated animate__heartBeat" aria-hidden="true" alt="Share via Email"></span>
-              </a><svg focusable="false" class="mailto" role="img" aria-label="(link sends email)" xmlns="http://www.w3.org/2000/svg" viewBox="0 10 70 20"><metadata><sfw xmlns="http://ns.adobe.com/SaveForWeb/1.0/"><slicesourcebounds y="-8160" x="-8165" width="16389" height="16384" bottomleftorigin="true"></slicesourcebounds><optimizationsettings><targetsettings targetsettingsid="0" fileformat="PNG24Format"><png24format transparency="true" filtered="false" interlaced="false" nomattecolor="false" mattecolor="#FFFFFF"></png24format></targetsettings></optimizationsettings></sfw></metadata><title>(link sends email)</title><path d="M56 14H8c-1.1 0-2 0.9-2 2v32c0 1.1 0.9 2 2 2h48c1.1 0 2-0.9 2-2V16C58 14.9 57.1 14 56 14zM50.5 18L32 33.4 13.5 18H50.5zM10 46V20.3l20.7 17.3C31.1 37.8 31.5 38 32 38s0.9-0.2 1.3-0.5L54 20.3V46H10z"></path></svg>
-            </li>
-            <li>
-              <a href="#" onclick="window.print();" title="Print this page">
-                <span class="fa fa-solid fa-print animate__animated animate__heartBeat" aria-hidden="true" alt="Print this page"></span>
-              </a>
-            </li>
-          </ul>
-        </div>
         <div class="nav-block">
           <div class="nav-block-menu">
             <button class="c-hamburger c-hamburger--htx animate__animated animate__heartBeat">
@@ -186,27 +162,49 @@
             </button>
             <nav class="sub-menu">
               <div class="sub-menu-inner">
-                <ul class="list-unstyled">
+                <ul class="aha-menu-main">
                   <li>
-                    <a href="/"><i class="fa-regular fa-hand-point-right"></i> Home</a>
+                    <a href="/">Home <i class="fa-solid fa-caret-right"></i></a>
                   </li>
                   <li>
-                    <a href="thehuda.html"><i class="fa-regular fa-hand-point-right"></i> The Huda</a>
+                    <a href="thehuda.html">The Huda <i class="fa-solid fa-caret-right"></i></a>
                   </li>
                   <li>
-                    <a href="theniels.html"><i class="fa-regular fa-hand-point-right"></i> The Niels</a>
+                    <a href="theniels.html">The Niels <i class="fa-solid fa-caret-right"></i></a>
                   </li>
                   <li>
-                    <a href="thetwocolumn.html"><i class="fa-regular fa-hand-point-right"></i> The Two Column</a>
+                    <a href="thetwocolumn.html">The Two Column <i class="fa-solid fa-caret-right"></i></a>
                   </li>
                   <li>
-                    <a href="agency04.html"><i class="fa-regular fa-hand-point-right"></i> Agency 04</a>
+                    <a href="agency04.html">Agency 04 <i class="fa-solid fa-caret-right"></i></a>
                   </li>
                   <li>
-                    <a href="agency05.html"><i class="fa-regular fa-hand-point-right"></i> Agency 05</a>
+                    <a href="agency05.html">Agency 05 <i class="fa-solid fa-caret-right"></i></a>
                   </li>
                   <li>
-                    <a href="agency06.html"><i class="fa-regular fa-hand-point-right"></i> Agency 06</a>
+                    <a href="agency06.html">Agency 06 <i class="fa-solid fa-caret-right"></i></a>
+                  </li>
+                </ul>
+                <ul class="aha-share-buttons">
+                  <li>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.samhsa.gov/find-help" title="Share on Facebook" rel="noopener" target="_blank">
+                      <span class="fa fa-brands fa-facebook-f animate__animated animate__heartBeat" aria-hidden="true" alt="Share on Facebook"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://x.com/intent/tweet?url=https://www.samhsa.gov/find-help" title="Share on X" rel="noopener" target="_blank">
+                      <span class="fa fa-brands fa-square-x-twitter animate__animated animate__heartBeat" aria-hidden="true" alt="Share on X"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="mailto:?subject=Check this out from SAMHSA&amp;body=Find Help and Treatment for Mental Health, Drug, Alcohol Issues | SAMHSA - https://www.samhsa.gov/find-help" title="Share via Email" rel="noopener" target="_blank" class="mailto" data-extlink="">
+                      <span class="fa fas fa-envelope animate__animated animate__heartBeat" aria-hidden="true" alt="Share via Email"></span>
+                    </a><svg focusable="false" class="mailto" role="img" aria-label="(link sends email)" xmlns="http://www.w3.org/2000/svg" viewBox="0 10 70 20"><metadata><sfw xmlns="http://ns.adobe.com/SaveForWeb/1.0/"><slicesourcebounds y="-8160" x="-8165" width="16389" height="16384" bottomleftorigin="true"></slicesourcebounds><optimizationsettings><targetsettings targetsettingsid="0" fileformat="PNG24Format"><png24format transparency="true" filtered="false" interlaced="false" nomattecolor="false" mattecolor="#FFFFFF"></png24format></targetsettings></optimizationsettings></sfw></metadata><title>(link sends email)</title><path d="M56 14H8c-1.1 0-2 0.9-2 2v32c0 1.1 0.9 2 2 2h48c1.1 0 2-0.9 2-2V16C58 14.9 57.1 14 56 14zM50.5 18L32 33.4 13.5 18H50.5zM10 46V20.3l20.7 17.3C31.1 37.8 31.5 38 32 38s0.9-0.2 1.3-0.5L54 20.3V46H10z"></path></svg>
+                  </li>
+                  <li>
+                    <a href="#" onclick="window.print();" title="Print this page">
+                      <span class="fa fa-solid fa-print animate__animated animate__heartBeat" aria-hidden="true" alt="Print this page"></span>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -248,12 +246,11 @@
       </div>
     </div>
     <!--  TOP BACKGROUND MP4 -->
-    <div class="banner">
+    <div class="banner grid-col-12">
       <video autoplay muted loop>
         <source src="assets/img/Header-BurningSky.mp4" type="video/mp4">
       </video>
     </div>
-
     <!--  TOP MISSION  -->
     <div class="mission-block aha-bg-dark grid-col-12 grid-row grid-gap animationTrigger">
       <h2 class="grid-col-12">
@@ -267,25 +264,25 @@
 
         <div class="grid-col-12 desktop:grid-col-6">
         <ul class="grid-row grid-gap" style="list-style: none; padding: 0;">
-          <li class="grid-col-6 grid-row" style="margin-bottom:14px;">
+          <li class="grid-col-12 desktop:grid-col-6 grid-row" style="margin-bottom:14px;">
             <div class="grid-col-2">
               <i class="fa-regular fa-thumbs-up animate__animated animate__heartBeat" style="font-size: 30px; color:white;"></i>
             </div>
             <div class="grid-col-10" style="float: left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
           </li>
-          <li class="grid-col-6 grid-row" style="margin-bottom:14px;">
+          <li class="grid-col-12 desktop:grid-col-6 grid-row" style="margin-bottom:14px;">
             <div class="grid-col-2">
               <i class="fa-regular fa-face-smile animate__animated animate__heartBeat" style="font-size: 30px; color:white;"></i>
             </div>
             <div class="grid-col-10" style="float: left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
           </li>
-          <li class="grid-col-6 grid-row" style="margin-bottom:14px;">
+          <li class="grid-col-12 desktop:grid-col-6 grid-row" style="margin-bottom:14px;">
             <div class="grid-col-2">
               <i class="fa-regular fa-bell animate__animated animate__heartBeat" style="font-size: 30px; color:white;"></i>
             </div>
             <div class="grid-col-10" style="float: left;">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
           </li>
-          <li class="grid-col-6 grid-row" style="margin-bottom:14px;">
+          <li class="grid-col-12 desktop:grid-col-6 grid-row" style="margin-bottom:14px;">
             <div class="grid-col-2">
               <i class="fa-regular fa-image animate__animated animate__heartBeat" style="font-size: 30px; color:white;"></i>
             </div>
@@ -295,7 +292,7 @@
       </div>
       </div>
     </div>
-  </section>
+  </div>
 </header>
 
 <main>
@@ -678,7 +675,7 @@
         Component Library - Collections (w/ parallax & aha-bg-dark)
       </h2>
       <ul class="usa-collection grid-row grid-gap">
-        <li class="usa-collection__item grid-col-6">
+        <li class="usa-collection__item grid-col-12 desktop:grid-col-6">
           <div class="usa-collection__calendar-date">
             <time datetime="2020-09-30T12:00:00+01:00"><span class="usa-collection__calendar-date-month">SEP</span> <span class="usa-collection__calendar-date-day">30</span></time>
           </div>
@@ -691,7 +688,7 @@
             </p>
           </div>
         </li>
-        <li class="usa-collection__item grid-col-6">
+        <li class="usa-collection__item grid-col-12 desktop:grid-col-6">
           <div class="usa-collection__calendar-date">
             <time datetime="2020-09-30T12:00:00+01:00"><span class="usa-collection__calendar-date-month">SEP</span> <span class="usa-collection__calendar-date-day">30</span></time>
           </div>
@@ -704,7 +701,7 @@
             </p>
           </div>
         </li>
-        <li class="usa-collection__item grid-col-6">
+        <li class="usa-collection__item grid-col-12 desktop:grid-col-6">
           <div class="usa-collection__calendar-date">
             <time datetime="2020-09-30T12:00:00+01:00"><span class="usa-collection__calendar-date-month">SEP</span> <span class="usa-collection__calendar-date-day">30</span></time>
           </div>
@@ -717,7 +714,7 @@
             </p>
           </div>
         </li>
-        <li class="usa-collection__item grid-col-6">
+        <li class="usa-collection__item grid-col-12 desktop:grid-col-6">
           <div class="usa-collection__calendar-date">
             <time datetime="2020-09-30T12:00:00+01:00"><span class="usa-collection__calendar-date-month">SEP</span> <span class="usa-collection__calendar-date-day">30</span></time>
           </div>
@@ -730,7 +727,7 @@
             </p>
           </div>
         </li>
-        <li class="usa-collection__item grid-col-6">
+        <li class="usa-collection__item grid-col-12 desktop:grid-col-6">
           <div class="usa-collection__calendar-date">
             <time datetime="2020-09-30T12:00:00+01:00"><span class="usa-collection__calendar-date-month">SEP</span> <span class="usa-collection__calendar-date-day">30</span></time>
           </div>
@@ -743,7 +740,7 @@
             </p>
           </div>
         </li>
-        <li class="usa-collection__item grid-col-6">
+        <li class="usa-collection__item grid-col-12 desktop:grid-col-6">
           <div class="usa-collection__calendar-date">
             <time datetime="2020-09-30T12:00:00+01:00"><span class="usa-collection__calendar-date-month">SEP</span> <span class="usa-collection__calendar-date-day">30</span></time>
           </div>
@@ -880,7 +877,7 @@
            data-animationDuration="2s"
   >
     <div class="aha-component grid-row grid-gap animationTrigger">
-      <h2 class="grid-col-12" style="color:white;">
+      <h2 class="grid-col-12">
         Component Library - Hover Cards
       </h2>
       <p class="grid-col-12">
@@ -891,7 +888,7 @@
            target="_blank"
            title=""
            href="https://www.nasa.gov/careers"
-           class="grid-col-4 animationTrigger"
+           class=" grid-col-12 desktop:grid-col-4 animationTrigger"
         >
           <img decoding="async" loading="lazy" width="300" height="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyvFyVaCDiit4NhGDCchK23uHUZ5dy_FNzvQ&s" class="grc-grid-item-image wp-post-image" alt="" />
           <div class="grc-grid-item-label">Lorem ipsum</div>
@@ -901,12 +898,11 @@
             </div>
           </div>
         </a>
-
         <a rel="external noopener noreferrer"
            target="_blank"
            title=""
            href="https://intern.nasa.gov/"
-           class="grid-col-4 animationTrigger"
+           class="grid-col-12 desktop:grid-col-4 animationTrigger"
         >
           <img decoding="async" loading="lazy" width="300" height="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyvFyVaCDiit4NhGDCchK23uHUZ5dy_FNzvQ&s" class="grc-grid-item-image wp-post-image" alt="" />
           <div class="grc-grid-item-label">Lorem ipsum</div>
@@ -916,12 +912,11 @@
             </div>
           </div>
         </a>
-
         <a rel="external noopener noreferrer"
            target="_blank"
            title=""
            href="https://www.nasa.gov/centers/glenn/business/index.html"
-           class="grid-col-4 animationTrigger"
+           class="grid-col-12 desktop:grid-col-4 animationTrigger"
         >
           <img decoding="async" loading="lazy" width="300" height="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyvFyVaCDiit4NhGDCchK23uHUZ5dy_FNzvQ&s" class="grc-grid-item-image wp-post-image" alt="" />
           <div class="grc-grid-item-label">Lorem ipsum</div>
@@ -948,7 +943,7 @@
         Component Library - Left Flag Cards (w/ parallax & aha-bg-dark)
       </h2>
       <ul class="usa-card-group">
-        <li class="tablet:grid-col-12 usa-card usa-card--flag animationTrigger">
+        <li class="grid-col-12 usa-card usa-card--flag animationTrigger">
           <div class="usa-card__container">
             <header class="usa-card__header">
               <h2 class="usa-card__heading">Flag Left - Border</h2>
@@ -971,7 +966,7 @@
             </div>
           </div>
         </li>
-        <li class="tablet:grid-col-12 usa-card usa-card--flag animationTrigger">
+        <li class="grid-col-12 usa-card usa-card--flag animationTrigger">
           <div class="usa-card__container">
             <header class="usa-card__header">
               <h2 class="usa-card__heading">Flag Right - Border</h2>
@@ -995,7 +990,7 @@
             </div>
           </div>
         </li>
-        <li class="tablet:grid-col-12 usa-card usa-card--flag animationTrigger">
+        <li class="grid-col-12 usa-card usa-card--flag animationTrigger">
           <div class="usa-card__container">
             <header class="usa-card__header">
               <h2 class="usa-card__heading">Flag Right - Border</h2>
@@ -1019,7 +1014,7 @@
             </div>
           </div>
         </li>
-        <li class="tablet:grid-col-12 usa-card usa-card--flag animationTrigger">
+        <li class="grid-col-12 usa-card usa-card--flag animationTrigger">
           <div class="usa-card__container">
             <header class="usa-card__header">
               <h2 class="usa-card__heading">Flag Right - Border</h2>
@@ -1043,7 +1038,7 @@
             </div>
           </div>
         </li>
-        <li class="tablet:grid-col-12 usa-card usa-card--flag animationTrigger">
+        <li class="grid-col-12 usa-card usa-card--flag animationTrigger">
           <div class="usa-card__container">
             <header class="usa-card__header">
               <h2 class="usa-card__heading">Flag Right - Border</h2>
@@ -1067,7 +1062,7 @@
             </div>
           </div>
         </li>
-        <li class="tablet:grid-col-12 usa-card usa-card--flag animationTrigger">
+        <li class="grid-col-12 usa-card usa-card--flag animationTrigger">
           <div class="usa-card__container">
             <header class="usa-card__header">
               <h2 class="usa-card__heading">Flag Right - Border</h2>
@@ -1110,7 +1105,7 @@
         Because of you, Make America Healthy Again is the most dynamic and powerful movement in history. Together, we will create lasting reforms to public health policy and ensure that Americans are once again the healthiest people on Earth.
       </div>
       <div class="numbercards grid-col-12 grid-row">
-        <div class="numbercard-item grid-col-6 grid-row">
+        <div class="numbercard-item grid-col-12 desktop:grid-col-6 grid-row">
           <div class="grid-col-12">
         <div class="container">
           <h2>
@@ -1129,7 +1124,7 @@
             Children who suffer from at least one chronic health disease
           </div>
         </div>
-        <div class="numbercard-item grid-col-6 grid-row">
+        <div class="numbercard-item grid-col-12 desktop:grid-col-6 grid-row">
           <div class="grid-col-12">
             <div class="container">
               <h2>
@@ -1148,7 +1143,7 @@
             Children who suffer from at least one chronic health disease
           </div>
         </div>
-        <div class="numbercard-item grid-col-6 grid-row">
+        <div class="numbercard-item grid-col-12 desktop:grid-col-6 grid-row">
           <div class="grid-col-12">
             <div class="container">
               <h2>
@@ -1167,7 +1162,7 @@
             Children who suffer from at least one chronic health disease
           </div>
         </div>
-        <div class="numbercard-item grid-col-6 grid-row">
+        <div class="numbercard-item grid-col-12 desktop:grid-col-6 grid-row">
           <div class="grid-col-12">
             <div class="container">
               <h2>
@@ -1186,7 +1181,7 @@
             Children who suffer from at least one chronic health disease
           </div>
         </div>
-        <div class="numbercard-item grid-col-6 grid-row">
+        <div class="numbercard-item grid-col-12 desktop:grid-col-6 grid-row">
           <div class="grid-col-12">
             <div class="container">
               <h2>
@@ -1205,7 +1200,7 @@
             Children who suffer from at least one chronic health disease
           </div>
         </div>
-        <div class="numbercard-item grid-col-6 grid-row">
+        <div class="numbercard-item grid-col-12 desktop:grid-col-6 grid-row">
           <div class="grid-col-12">
             <div class="container">
               <h2>
@@ -1498,7 +1493,7 @@
            class="aha-bg-dark"
   >
     <div class="aha-component bottom40 grid-row grid-gap">
-      <div class="footer_menu_block grid-col-6 desktop:grid-col-2">
+      <div class="footer_menu_block grid-col-12 desktop:grid-col-2">
         <ul class="footer-menu__list">
           <li class="footer-menu__link">
             <a href="/">Home</a>
@@ -1517,7 +1512,7 @@
           </li>
         </ul>
       </div>
-      <div class="footer_menu_block grid-col-6 desktop:grid-col-2">
+      <div class="footer_menu_block grid-col-12 desktop:grid-col-2">
         <ul class="footer-menu__list">
           <li class="footer-menu__link">
             <a href="/about/budget">Budget/Performance</a>
@@ -1536,7 +1531,7 @@
           </li>
         </ul>
       </div>
-      <div class="footer_menu_block grid-col-6 desktop:grid-col-2">
+      <div class="footer_menu_block grid-col-12 desktop:grid-col-2">
         <ul class="footer-menu__list">
           <li class="footer-menu__link">
             <a href="https://www.hhs.gov/vulnerability-disclosure-policy/index.html">Vulnerability Disclosure Policy</a>
@@ -1555,7 +1550,7 @@
           </li>
         </ul>
       </div>
-      <div class="footer_menu_block grid-col-6 desktop:grid-col-2">
+      <div class="footer_menu_block grid-col-12 desktop:grid-col-2">
         <ul class="footer-menu__list">
           <li class="footer-menu__link">
             <a href="https://oig.hhs.gov/">Inspector General </a>
@@ -1568,7 +1563,7 @@
           </li>
         </ul>
       </div>
-      <div class="footer_menu_block grid-col-6 desktop:grid-col-4">
+      <div class="footer_menu_block grid-col-12 desktop:grid-col-4">
         <div class="footer-signup">
           <h2 class="footer-title">Sign Up for SAMHSA Email Updates</h2>
 
@@ -2148,13 +2143,24 @@
   });
 
   // TOGGLE LIGHT/DARK MODE
-  // Select the toggle button
   const toggleButton = document.getElementById('toggleClassButton');
 
   // Add an event listener to toggle a class
   toggleButton.addEventListener('click', function () {
-    document.body.classList.toggle('theniels'); // Replace 'custom-class' with your desired class name
+    // Toggle the body class
+    document.body.classList.toggle('theniels'); // Replace 'theniels' with your desired class name
+
+    // Check the current state of the toggle
+    const icon = toggleButton.querySelector('.fa-solid');
+    if (icon.classList.contains('fa-toggle-off')) {
+      icon.classList.replace('fa-toggle-off', 'fa-toggle-on');
+      toggleButton.setAttribute('aria-label', 'Dark');
+    } else {
+      icon.classList.replace('fa-toggle-on', 'fa-toggle-off');
+      toggleButton.setAttribute('aria-label', 'Light');
+    }
   });
+
 
 
   // SLIDER
@@ -2266,4 +2272,5 @@
     panels.eq(0).prop('hidden', false);
   });
 </script>
+
 </html>

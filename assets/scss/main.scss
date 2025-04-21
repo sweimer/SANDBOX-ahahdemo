@@ -1,7 +1,3 @@
-@use '@uswds/uswds' with (
-  $theme-color-primary: red, // Example override
-);
-
 @use 'config';
 
 @use 'base';
